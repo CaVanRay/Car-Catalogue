@@ -8,6 +8,7 @@
 //***********************************************************************
 class car {
 private:
+    int index;
     std::string Owner;
     std::string Model;
     std::string Vin;
@@ -19,6 +20,9 @@ private:
     car* Next;
 public:
     // First the Setters
+    void SetIndex(int newIndex) {
+        index = newIndex;
+    }
     void SetOwner(std::string newOwner) {
         Owner = newOwner;
     };
@@ -47,6 +51,9 @@ public:
         Next = newNext;
     };
     // Next the Getters
+    int GetIndex() {
+        return index;
+    }
     std::string GetOwner() {
         return Owner;
     };
@@ -80,7 +87,8 @@ void printCatalogue(car* n) {
     int index = 1;
     while (n != nullptr) {
         std::cout << std::endl << "***************************************" << std::endl;
-        std::cout << "Index#: " << index << std::endl;
+        n->SetIndex(index);
+        std::cout << "Index#: " << n->GetIndex() << std::endl;
         std::cout << "Owner: " << n->GetOwner() << std::endl;
         std::cout << "Model: " << n->GetModel() << std::endl;
         std::cout << "VIN# : " << n->GetVin() << std::endl;
@@ -107,7 +115,7 @@ car* findIndex(int indexN) {
 }
 //***********************************************************************
 
-void printCar(car* n){
+void printCar(car* n) {
     std::cout << std::endl << "***************************************" << std::endl;
     std::cout << "Owner: " << n->GetOwner() << std::endl;
     std::cout << "Model: " << n->GetModel() << std::endl;
@@ -126,14 +134,14 @@ void printCar(car* n){
 }
 //***********************************************************************
 
-void editCar(){
+void editCar() {
 
 
 
 }
 //***********************************************************************
 
-void deleteCar(){
+void deleteCar() {
 
 
 
@@ -217,7 +225,7 @@ int main() {
 
         carCatalogue.push_back(newCar);
 
-        std::cout << std::endl << std::endl << "Continue? (Y/N) :";
+        std::cout << std::endl << std::endl << "Continue adding cars? (Y/N) :";
         std::cin >> conti;
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     } while (toupper(conti) == 'Y');
