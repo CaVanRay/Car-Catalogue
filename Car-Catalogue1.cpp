@@ -229,6 +229,17 @@ int main() {
 
     std::cout << std::endl << "Now please feel free to peruse the catalogue: " << std::endl;
     printCatalogue(head);
+    // Here is where I'll put the commands for options
+    std::cout << std::endl << "***************************************" << std::endl;
+    std::cout << "1) Print Specific Car" << std::endl;
+    std::cout << "2) Add a Car" << std::endl;
+    std::cout << "3) Edit a Car" << std::endl;
+    std::cout << "4) Remove a Car" << std::endl;
+    std::cout << std::endl << "***************************************" << std::endl;
+    int selectedAction;
+    std::cout << "Please enter number for desired selection: ";
+    std::cin >> selectedAction;
+
 
     return 0;
 }
