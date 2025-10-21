@@ -101,13 +101,8 @@ void printCatalogue(car* n) {
 }
 //***********************************************************************
 
-car* findIndex() {
-    int SearchIndex;
-    std::cout << std::endl << "Please enter Index number to search for: ";
-    std::cin >> SearchIndex;
-
-
-
+car* findIndex(int indexN) {
+    car* n;
     return n;
 }
 //***********************************************************************
