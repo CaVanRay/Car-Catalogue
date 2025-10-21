@@ -100,26 +100,50 @@ void printCatalogue(car* n) {
     std::cout << std::endl;
 }
 //***********************************************************************
-// car* findIndex(){}
-int SearchIndex;
-std::cout << std::endl << "Please enter Index number to search for: "
-std::cin >> SearchIndex;
+
+car* findIndex() {
+    int SearchIndex;
+    std::cout << std::endl << "Please enter Index number to search for: "
+    std::cin >> SearchIndex;
 
 
 
+    return n;
+}
 //***********************************************************************
-// void printCars(){}
 
+void printCar(car* n){
+    std::cout << std::endl << "***************************************" << std::endl;
+    std::cout << "Owner: " << n->GetOwner() << std::endl;
+    std::cout << "Model: " << n->GetModel() << std::endl;
+    std::cout << "VIN# : " << n->GetVin() << std::endl;
+    std::cout << "Miles: " << n->GetMileage() << std::endl;
+    std::cout << "MPG  : " << n->GetMPG() << std::endl;
+    std::cout << "Price: " << n->GetPrice() << std::endl;
+    std::cout << "Status: ";
+    if (n->GetSale()) {
+        std::cout << "Still available" << std::endl;
+    }
+    else {
+        std::cout << "Not available" << std::endl;
+    }
 
+}
 //***********************************************************************
-// void editCar(){}
+
+void editCar(){
 
 
+
+}
 //***********************************************************************
-// void deleteCar(){}
+
+void deleteCar(){
 
 
-//***********************************************************************
+
+}//***********************************************************************
+
 int main() {
     char conti;
     car* head = nullptr;
