@@ -137,6 +137,7 @@ car* findCar(){
     car* n;
     std::cout << std::endl << "How would you like to search?";
     std::cout << std::endl << "1) - Index";
+    std::cout << std::endl << "1) - Index";
   return n;
 }
 
