@@ -135,10 +135,16 @@ void printCar(car* n) {
 
 car* findCar(){
     car* n;
+    int choice;
     std::cout << std::endl << "How would you like to search?";
     std::cout << std::endl << "1) - Index";
-    std::cout << std::endl << "1) - Index";
-    std::cout << std::endl << "1) - Index";
+    std::cout << std::endl << "1) - Owner";
+    std::cout << std::endl << "1) - Model";
+    std::cout << std::endl << "1) - Vin";
+    std::cout << std::endl << "1) - Mileage";
+    std::cout << std::endl << "1) - MPG";
+    std::cout << std::endl << "1) - Price";
+    std::cout << std::endl << "1) - Availability";
   return n;
 }
 
