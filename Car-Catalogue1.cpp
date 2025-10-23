@@ -138,13 +138,13 @@ car* findCar(){
     int choice;
     std::cout << std::endl << "How would you like to search?";
     std::cout << std::endl << "1) - Index";
-    std::cout << std::endl << "1) - Owner";
-    std::cout << std::endl << "1) - Model";
-    std::cout << std::endl << "1) - Vin";
-    std::cout << std::endl << "1) - Mileage";
-    std::cout << std::endl << "1) - MPG";
-    std::cout << std::endl << "1) - Price";
-    std::cout << std::endl << "1) - Availability";
+    std::cout << std::endl << "2) - Owner";
+    std::cout << std::endl << "3) - Model";
+    std::cout << std::endl << "4) - Vin";
+    std::cout << std::endl << "5) - Mileage";
+    std::cout << std::endl << "6) - MPG";
+    std::cout << std::endl << "7) - Price";
+    std::cout << std::endl << "8) - Availability";
   return n;
 }
 
