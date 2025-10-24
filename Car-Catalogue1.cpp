@@ -194,6 +194,12 @@ void editCar(car* n){
 		std::getline(std::cin, newVin);
 		n->SetVin(newVin);
 		break;
+	case 5:
+		int newMileage;
+		std::cout << "Enter new mileage: ";
+		std::cin >> newMileage;
+		n->SetMileage(newMileage);
+		break;
 
 
 }
