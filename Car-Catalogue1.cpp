@@ -200,6 +200,12 @@ void editCar(car* n){
 		std::cin >> newMileage;
 		n->SetMileage(newMileage);
 		break;
+	case 6:
+		int newMPG;
+		std::cout << "Enter new MPG: ";
+		std::cin >> newMPG;
+		n->SetMPG(newMPG);
+		break;
 
 
 }
