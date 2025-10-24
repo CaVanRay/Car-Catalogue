@@ -251,6 +251,9 @@ void editCar(car* n){
 
 void deleteCar(car* n){
 
+    // Need to add checks to avoid problems with 
+    // Head or tail
+
 	n->GetPrev()->SetNext(n->GetNext());
 	n->GetNext()->SetPrev(n->GetPrev());
     delete n;
