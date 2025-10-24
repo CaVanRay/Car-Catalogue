@@ -150,59 +150,9 @@ car* findCar(){
 
 //***********************************************************************
 
-void addCar() {
+void addCar() {}
 
-    std::string Cont = "YES";
-    do {
-
-        std::string Owner;
-        std::string Model;
-        std::string Vin;
-        int Mileage;
-        int MPG;
-        int Price;
-        std::string Available;
-        bool ForSale;
-        //***********************************************************************
-        std::cout << std::endl << "Please Add a vehicle to the catalogue" << std::endl << std::endl;
-
-        std::cout << "input car owner: ";
-        std::getline(std::cin, Owner);
-
-
-        std::cout << std::endl << "input car model: ";
-        std::getline(std::cin, Model);
-
-
-        std::cout << std::endl << "input car vin#: ";
-        std::getline(std::cin, Vin);
-
-
-        std::cout << std::endl << "input car mileage: ";
-        std::cin >> Mileage;
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-
-
-        std::cout << std::endl << "input car MPG: ";
-        std::cin >> MPG;
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-
-
-        std::cout << std::endl << "input car price: ";
-        std::cin >> Price;
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-
-        std::cout << std::endl << "is car available for purchase? (Yes/No): ";
-        std::getline(std::cin, Available);
-        std::transform(Available.begin(), Available.end(), Available.begin(),
-            [](unsigned char c) { return std::toupper(c); });
-        if (Available == "YES") {
-            ForSale = true;
-        }
-        else {
-            ForSale = false;
-        }
-        //***********************************************************************
+//***********************************************************************
 
         // Check for a head, if there isn't one create one, if there is one check array of pointers for size and then append new car to the end
 
@@ -373,3 +323,58 @@ int main() {
 
     return 0;
 }
+//***********************************************************************
+
+void addCar() {
+
+    std::string Cont = "YES";
+    do {
+
+        std::string Owner;
+        std::string Model;
+        std::string Vin;
+        int Mileage;
+        int MPG;
+        int Price;
+        std::string Available;
+        bool ForSale;
+        //***********************************************************************
+        std::cout << std::endl << "Please Add a vehicle to the catalogue" << std::endl << std::endl;
+
+        std::cout << "input car owner: ";
+        std::getline(std::cin, Owner);
+
+
+        std::cout << std::endl << "input car model: ";
+        std::getline(std::cin, Model);
+
+
+        std::cout << std::endl << "input car vin#: ";
+        std::getline(std::cin, Vin);
+
+
+        std::cout << std::endl << "input car mileage: ";
+        std::cin >> Mileage;
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+
+        std::cout << std::endl << "input car MPG: ";
+        std::cin >> MPG;
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+
+        std::cout << std::endl << "input car price: ";
+        std::cin >> Price;
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+        std::cout << std::endl << "is car available for purchase? (Yes/No): ";
+        std::getline(std::cin, Available);
+        std::transform(Available.begin(), Available.end(), Available.begin(),
+            [](unsigned char c) { return std::toupper(c); });
+        if (Available == "YES") {
+            ForSale = true;
+        }
+        else {
+            ForSale = false;
+        }
+        //***********************************************************************
