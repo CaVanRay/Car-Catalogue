@@ -316,9 +316,16 @@ void deleteCar(car* n) {
 
     // Need to add checks to avoid problems with 
     // Head or tail
+    if ((n->GetPrev()) == nullptr) {
 
-    n->GetPrev()->SetNext(n->GetNext());
-    n->GetNext()->SetPrev(n->GetPrev());
+    }
+    else if ((n->GetNext()) == nullptr) {
+    
+    }
+    else {
+        n->GetPrev()->SetNext(n->GetNext());
+        n->GetNext()->SetPrev(n->GetPrev());
+    }
     delete n;
     std::cout << std::endl << "Car deleted successfully." << std::endl;
 }
