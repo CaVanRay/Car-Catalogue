@@ -237,7 +237,7 @@ void editCar(car* n){
         std::getline(std::cin, Cont);
         std::transform(Cont.begin(), Cont.end(), Cont.begin(),
             [](unsigned char c) { return std::toupper(c); });
-    }while(Cont == "YES")
+    } while (Cont == "YES");
 
 //***********************************************************************
 
