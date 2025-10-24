@@ -180,7 +180,13 @@ void editCar(car* n){
 		std::getline(std::cin, newOwner);
 		n->SetOwner(newOwner);
 		break;
-
+	case 3:
+		std::string newModel;
+		std::cout << "Enter new model: ";
+		std::cin.ignore();
+		std::getline(std::cin, newModel);
+		n->SetModel(newModel);
+		break;
 
 }
 
