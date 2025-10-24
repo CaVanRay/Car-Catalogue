@@ -152,85 +152,92 @@ car* findCar(){
 
 void editCar(car* n){
     
-    car* m;
-	int choice;
-    std::cout << std::endl << "***************************************" << std::endl;
-	std::cout << "Enter the index of the car you want to edit: ";
-    std::cout << std::endl << "1) - Index";
-    std::cout << std::endl << "2) - Owner";
-    std::cout << std::endl << "3) - Model";
-    std::cout << std::endl << "4) - Vin";
-    std::cout << std::endl << "5) - Mileage";
-    std::cout << std::endl << "6) - MPG";
-    std::cout << std::endl << "7) - Price";
-    std::cout << std::endl << "8) - Availability";
-	std::cout << std::endl << "Please enter number for desired selection: ";   
-	std::cin >> choice;
-	switch (choice) {
-	case 1:
-		int newIndex;
-		std::cout << "Enter new index: ";
-		std::cin >> newIndex;
-		n->SetIndex(newIndex);
-		break;
-	case 2:
-		std::string newOwner;
-		std::cout << "Enter new owner: ";
-		std::cin.ignore();
-		std::getline(std::cin, newOwner);
-		n->SetOwner(newOwner);
-		break;
-	case 3:
-		std::string newModel;
-		std::cout << "Enter new model: ";
-		std::cin.ignore();
-		std::getline(std::cin, newModel);
-		n->SetModel(newModel);
-		break;
-	case 4:
-		std::string newVin;
-		std::cout << "Enter new vin#: ";
-		std::cin.ignore();
-		std::getline(std::cin, newVin);
-		n->SetVin(newVin);
-		break;
-	case 5:
-		int newMileage;
-		std::cout << "Enter new mileage: ";
-		std::cin >> newMileage;
-		n->SetMileage(newMileage);
-		break;
-	case 6:
-		int newMPG;
-		std::cout << "Enter new MPG: ";
-		std::cin >> newMPG;
-		n->SetMPG(newMPG);
-		break;
-	case 7:
-		int newPrice;
-		std::cout << "Enter new price: ";
-		std::cin >> newPrice;
-		n->SetPrice(newPrice);
-		break;
-	case 8:
-		std::string newAvailable;
-		bool newForSale;
-		std::cout << "Is the car available for purchase? (Yes/No): ";
-		std::cin.ignore();
-		std::getline(std::cin, newAvailable);
-		std::transform(newAvailable.begin(), newAvailable.end(), newAvailable.begin(),
-			[](unsigned char c) { return std::toupper(c); });
-		if (newAvailable == "YES") {
-			newForSale = true;
-		}
-		else {
-			newForSale = false;
-		}
-		n->SetSale(newForSale);
-		break;
-	default:
+    std::string Cont = "YES";
+    do {
+        int choice;
+        std::cout << std::endl << "***************************************" << std::endl;
+        std::cout << "Enter the index of the car you want to edit: ";
+        std::cout << std::endl << "1) - Index";
+        std::cout << std::endl << "2) - Owner";
+        std::cout << std::endl << "3) - Model";
+        std::cout << std::endl << "4) - Vin";
+        std::cout << std::endl << "5) - Mileage";
+        std::cout << std::endl << "6) - MPG";
+        std::cout << std::endl << "7) - Price";
+        std::cout << std::endl << "8) - Availability";
+        std::cout << std::endl << "Please enter number for desired selection: ";
+        std::cin >> choice;
+        switch (choice) {
+        case 1:
+            int newIndex;
+            std::cout << "Enter new index: ";
+            std::cin >> newIndex;
+            n->SetIndex(newIndex);
+            break;
+        case 2:
+            std::string newOwner;
+            std::cout << "Enter new owner: ";
+            std::cin.ignore();
+            std::getline(std::cin, newOwner);
+            n->SetOwner(newOwner);
+            break;
+        case 3:
+            std::string newModel;
+            std::cout << "Enter new model: ";
+            std::cin.ignore();
+            std::getline(std::cin, newModel);
+            n->SetModel(newModel);
+            break;
+        case 4:
+            std::string newVin;
+            std::cout << "Enter new vin#: ";
+            std::cin.ignore();
+            std::getline(std::cin, newVin);
+            n->SetVin(newVin);
+            break;
+        case 5:
+            int newMileage;
+            std::cout << "Enter new mileage: ";
+            std::cin >> newMileage;
+            n->SetMileage(newMileage);
+            break;
+        case 6:
+            int newMPG;
+            std::cout << "Enter new MPG: ";
+            std::cin >> newMPG;
+            n->SetMPG(newMPG);
+            break;
+        case 7:
+            int newPrice;
+            std::cout << "Enter new price: ";
+            std::cin >> newPrice;
+            n->SetPrice(newPrice);
+            break;
+        case 8:
+            std::string newAvailable;
+            bool newForSale;
+            std::cout << "Is the car available for purchase? (Yes/No): ";
+            std::cin.ignore();
+            std::getline(std::cin, newAvailable);
+            std::transform(newAvailable.begin(), newAvailable.end(), newAvailable.begin(),
+                [](unsigned char c) { return std::toupper(c); });
+            if (newAvailable == "YES") {
+                newForSale = true;
+            }
+            else {
+                newForSale = false;
+            }
+            n->SetSale(newForSale);
+            break;
+        default:
 
-}
+        }
+        std::cout << std::endl << "Would you like to change anything else? (Yes/No): ";
+        std::cin.ignore();
+        std::getline(std::cin, Cont);
+        std::transform(Cont.begin(), Cont.end(), Cont.begin(),
+            [](unsigned char c) { return std::toupper(c); });
+    }while(Cont == "YES")
 
 //***********************************************************************
 
