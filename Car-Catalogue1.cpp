@@ -212,7 +212,23 @@ void editCar(car* n){
 		std::cin >> newPrice;
 		n->SetPrice(newPrice);
 		break;
-
+	case 8:
+		std::string newAvailable;
+		bool newForSale;
+		std::cout << "Is the car available for purchase? (Yes/No): ";
+		std::cin.ignore();
+		std::getline(std::cin, newAvailable);
+		std::transform(newAvailable.begin(), newAvailable.end(), newAvailable.begin(),
+			[](unsigned char c) { return std::toupper(c); });
+		if (newAvailable == "YES") {
+			newForSale = true;
+		}
+		else {
+			newForSale = false;
+		}
+		n->SetSale(newForSale);
+		break;
+	default:
 
 }
 
