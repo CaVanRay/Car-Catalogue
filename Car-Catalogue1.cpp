@@ -154,38 +154,6 @@ void addCar() {}
 
 //***********************************************************************
 
-        // Check for a head, if there isn't one create one, if there is one check array of pointers for size and then append new car to the end
-
-        car* newCar = new car();
-        newCar->SetOwner(Owner);
-        newCar->SetModel(Model);
-        newCar->SetVin(Vin);
-        newCar->SetMileage(Mileage);
-        newCar->SetMPG(MPG);
-        newCar->SetPrice(Price);
-        newCar->SetSale(ForSale);
-
-
-        if (!carCatalogue.empty()) {
-            newCar->SetPrev(carCatalogue.back());
-            carCatalogue.back()->SetNext(newCar);
-        }
-        else {
-            head = newCar;
-        }
-
-        carCatalogue.push_back(newCar);
-
-        std::cout << std::endl << "Would you like to add another car? (Yes/No): ";
-        std::cin.ignore();
-        std::getline(std::cin, Cont);
-        std::transform(Cont.begin(), Cont.end(), Cont.begin(),
-            [](unsigned char c) { return std::toupper(c); });
-    } while (Cont == "YES");
-}
-
-//***********************************************************************
-
 void editCar(car* n) {
 
     std::string Cont = "YES";
@@ -378,3 +346,35 @@ void addCar() {
             ForSale = false;
         }
         //***********************************************************************
+
+        // Check for a head, if there isn't one create one, if there is one check array of pointers for size and then append new car to the end
+
+        car* newCar = new car();
+        newCar->SetOwner(Owner);
+        newCar->SetModel(Model);
+        newCar->SetVin(Vin);
+        newCar->SetMileage(Mileage);
+        newCar->SetMPG(MPG);
+        newCar->SetPrice(Price);
+        newCar->SetSale(ForSale);
+
+
+        if (!carCatalogue.empty()) {
+            newCar->SetPrev(carCatalogue.back());
+            carCatalogue.back()->SetNext(newCar);
+        }
+        else {
+            head = newCar;
+        }
+
+        carCatalogue.push_back(newCar);
+
+        std::cout << std::endl << "Would you like to add another car? (Yes/No): ";
+        std::cin.ignore();
+        std::getline(std::cin, Cont);
+        std::transform(Cont.begin(), Cont.end(), Cont.begin(),
+            [](unsigned char c) { return std::toupper(c); });
+    } while (Cont == "YES");
+}
+
+//***********************************************************************
