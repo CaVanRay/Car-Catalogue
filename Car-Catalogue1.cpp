@@ -151,6 +151,10 @@ car* findCar(){
 //***********************************************************************
 
 void editCar(car* n){
+    
+    car* m;
+    std::cout << std::endl << "***************************************" << std::endl;
+	std::cout << "Enter the index of the car you want to edit: ";
 
 
   
