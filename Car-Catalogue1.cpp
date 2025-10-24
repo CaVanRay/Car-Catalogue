@@ -153,6 +153,7 @@ car* findCar(){
 void editCar(car* n){
     
     car* m;
+	int choice;
     std::cout << std::endl << "***************************************" << std::endl;
 	std::cout << "Enter the index of the car you want to edit: ";
     std::cout << std::endl << "1) - Index";
@@ -163,9 +164,9 @@ void editCar(car* n){
     std::cout << std::endl << "6) - MPG";
     std::cout << std::endl << "7) - Price";
     std::cout << std::endl << "8) - Availability";
+	std::cout << std::endl << "Please enter number for desired selection: ";   
+	std::cin >> choice;
 
-
-  
 }
 
 //***********************************************************************
