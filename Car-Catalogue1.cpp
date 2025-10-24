@@ -166,6 +166,14 @@ void editCar(car* n){
     std::cout << std::endl << "8) - Availability";
 	std::cout << std::endl << "Please enter number for desired selection: ";   
 	std::cin >> choice;
+	switch (choice) {
+	case 1:
+		int newIndex;
+		std::cout << "Enter new index: ";
+		std::cin >> newIndex;
+		n->SetIndex(newIndex);
+		break;
+	case 2:
 
 }
 
