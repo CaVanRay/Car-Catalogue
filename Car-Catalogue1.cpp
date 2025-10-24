@@ -178,7 +178,7 @@ void editCar(car* n){
         case 2: {
             std::string newOwner;
             std::cout << "Enter new owner: ";
-            std::cin.ignore();
+            std::cin.ignore(); // Need better solution for all these ignore()'s
             std::getline(std::cin, newOwner);
             n->SetOwner(newOwner);
             break;
@@ -278,7 +278,7 @@ int main() {
         std::string Available;
         bool ForSale;
         //***********************************************************************
-        std::cout << std::endl << "Please Add a vehical to the catalogue" << std::endl << std::endl;
+        std::cout << std::endl << "Please Add a vehicle to the catalogue" << std::endl << std::endl;
 
         std::cout << "input car owner: ";
         std::getline(std::cin, Owner);
