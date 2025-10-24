@@ -134,7 +134,7 @@ void printCar(car* n) {
 //***********************************************************************
 
 car* findCar(){
-    car* n;
+    car* n = nullptr;
     int choice;
     std::cout << std::endl << "How would you like to search?";
     std::cout << std::endl << "1) - Index";
