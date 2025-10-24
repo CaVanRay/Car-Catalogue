@@ -174,6 +174,13 @@ void editCar(car* n){
 		n->SetIndex(newIndex);
 		break;
 	case 2:
+		std::string newOwner;
+		std::cout << "Enter new owner: ";
+		std::cin.ignore();
+		std::getline(std::cin, newOwner);
+		n->SetOwner(newOwner);
+		break;
+
 
 }
 
