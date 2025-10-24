@@ -155,6 +155,14 @@ void editCar(car* n){
     car* m;
     std::cout << std::endl << "***************************************" << std::endl;
 	std::cout << "Enter the index of the car you want to edit: ";
+    std::cout << std::endl << "1) - Index";
+    std::cout << std::endl << "2) - Owner";
+    std::cout << std::endl << "3) - Model";
+    std::cout << std::endl << "4) - Vin";
+    std::cout << std::endl << "5) - Mileage";
+    std::cout << std::endl << "6) - MPG";
+    std::cout << std::endl << "7) - Price";
+    std::cout << std::endl << "8) - Availability";
 
 
   
