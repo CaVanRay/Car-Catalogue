@@ -187,6 +187,14 @@ void editCar(car* n){
 		std::getline(std::cin, newModel);
 		n->SetModel(newModel);
 		break;
+	case 4:
+		std::string newVin;
+		std::cout << "Enter new vin#: ";
+		std::cin.ignore();
+		std::getline(std::cin, newVin);
+		n->SetVin(newVin);
+		break;
+
 
 }
 
