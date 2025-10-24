@@ -334,16 +334,12 @@ void deleteCar(car* n) {
 
 car* findCar() {
     car* n = nullptr;
-    int choice;
-    std::cout << std::endl << "How would you like to search?";
-    std::cout << std::endl << "1) - Index";
-    std::cout << std::endl << "2) - Owner";
-    std::cout << std::endl << "3) - Model";
-    std::cout << std::endl << "4) - Vin";
-    std::cout << std::endl << "5) - Mileage";
-    std::cout << std::endl << "6) - MPG";
-    std::cout << std::endl << "7) - Price";
-    std::cout << std::endl << "8) - Availability";
+    int index;
+    std::cout << std::endl << "***************************************" << std::endl;
+    std::cout << "What is the index# for the car you need? : ";
+    std::cin >> index;
+    // input search section here
+    printCar(n);
     return n;
 }
 
