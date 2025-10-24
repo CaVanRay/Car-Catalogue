@@ -152,6 +152,16 @@ car* findCar(){
 
 void addCar() {
 
+    std::string Cont = "YES";
+    do {
+
+
+        std::cout << std::endl << "Would you like to add another car? (Yes/No): ";
+        std::cin.ignore();
+        std::getline(std::cin, Cont);
+        std::transform(Cont.begin(), Cont.end(), Cont.begin(),
+            [](unsigned char c) { return std::toupper(c); });
+    } while (Cont == "YES");
 }
 
 //***********************************************************************
