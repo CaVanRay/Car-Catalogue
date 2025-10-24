@@ -155,6 +155,76 @@ void addCar() {
     std::string Cont = "YES";
     do {
 
+        std::string Owner;
+        std::string Model;
+        std::string Vin;
+        int Mileage;
+        int MPG;
+        int Price;
+        std::string Available;
+        bool ForSale;
+        //***********************************************************************
+        std::cout << std::endl << "Please Add a vehicle to the catalogue" << std::endl << std::endl;
+
+        std::cout << "input car owner: ";
+        std::getline(std::cin, Owner);
+
+
+        std::cout << std::endl << "input car model: ";
+        std::getline(std::cin, Model);
+
+
+        std::cout << std::endl << "input car vin#: ";
+        std::getline(std::cin, Vin);
+
+
+        std::cout << std::endl << "input car mileage: ";
+        std::cin >> Mileage;
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+
+        std::cout << std::endl << "input car MPG: ";
+        std::cin >> MPG;
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+
+        std::cout << std::endl << "input car price: ";
+        std::cin >> Price;
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+        std::cout << std::endl << "is car available for purchase? (Yes/No): ";
+        std::getline(std::cin, Available);
+        std::transform(Available.begin(), Available.end(), Available.begin(),
+            [](unsigned char c) { return std::toupper(c); });
+        if (Available == "YES") {
+            ForSale = true;
+        }
+        else {
+            ForSale = false;
+        }
+        //***********************************************************************
+
+        // Check for a head, if there isn't one create one, if there is one check array of pointers for size and then append new car to the end
+
+        car* newCar = new car();
+        newCar->SetOwner(Owner);
+        newCar->SetModel(Model);
+        newCar->SetVin(Vin);
+        newCar->SetMileage(Mileage);
+        newCar->SetMPG(MPG);
+        newCar->SetPrice(Price);
+        newCar->SetSale(ForSale);
+
+
+        if (!carCatalogue.empty()) {
+            newCar->SetPrev(carCatalogue.back());
+            carCatalogue.back()->SetNext(newCar);
+        }
+        else {
+            head = newCar;
+        }
+
+        carCatalogue.push_back(newCar);
 
         std::cout << std::endl << "Would you like to add another car? (Yes/No): ";
         std::cin.ignore();
@@ -285,83 +355,7 @@ int main() {
     car* head = nullptr;
     std::vector<car*> carCatalogue;
     size_t numberOfCars;
-    do {
-
-        std::string Owner;
-        std::string Model;
-        std::string Vin;
-        int Mileage;
-        int MPG;
-        int Price;
-        std::string Available;
-        bool ForSale;
-        //***********************************************************************
-        std::cout << std::endl << "Please Add a vehicle to the catalogue" << std::endl << std::endl;
-
-        std::cout << "input car owner: ";
-        std::getline(std::cin, Owner);
-
-
-        std::cout << std::endl << "input car model: ";
-        std::getline(std::cin, Model);
-
-
-        std::cout << std::endl << "input car vin#: ";
-        std::getline(std::cin, Vin);
-
-
-        std::cout << std::endl << "input car mileage: ";
-        std::cin >> Mileage;
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-
-
-        std::cout << std::endl << "input car MPG: ";
-        std::cin >> MPG;
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-
-
-        std::cout << std::endl << "input car price: ";
-        std::cin >> Price;
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-
-        std::cout << std::endl << "is car available for purchase? (Yes/No): ";
-        std::getline(std::cin, Available);
-        std::transform(Available.begin(), Available.end(), Available.begin(),
-            [](unsigned char c) { return std::toupper(c); });
-        if (Available == "YES") {
-            ForSale = true;
-        }
-        else {
-            ForSale = false;
-        }
-        //***********************************************************************
-
-        // Check for a head, if there isn't one create one, if there is one check array of pointers for size and then append new car to the end
-
-        car* newCar = new car();
-        newCar->SetOwner(Owner);
-        newCar->SetModel(Model);
-        newCar->SetVin(Vin);
-        newCar->SetMileage(Mileage);
-        newCar->SetMPG(MPG);
-        newCar->SetPrice(Price);
-        newCar->SetSale(ForSale);
-
-
-        if (!carCatalogue.empty()) {
-            newCar->SetPrev(carCatalogue.back());
-            carCatalogue.back()->SetNext(newCar);
-        }
-        else {
-            head = newCar;
-        }
-
-        carCatalogue.push_back(newCar);
-
-        std::cout << std::endl << std::endl << "Continue adding cars? (Y/N) :";
-        std::cin >> conti;
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-    } while (toupper(conti) == 'Y');
+    addCar();
 
     std::cout << std::endl << "Now please feel free to peruse the catalogue: " << std::endl;
     printCatalogue(head);
