@@ -172,8 +172,10 @@ void editCar(car* n){
 
 void deleteCar(car* n){
 
-
-  
+	n->GetPrev()->SetNext(n->GetNext());
+	n->GetNext()->SetPrev(n->GetPrev());
+    delete n;
+	std::cout << std::endl << "Car deleted successfully." << std::endl;
 }
 
 //***********************************************************************
