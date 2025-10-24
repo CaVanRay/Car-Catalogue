@@ -86,88 +86,17 @@ public:
 
 //***********************************************************************
 
-void printCatalogue(car* n) {
-    int index = 1;
-    while (n != nullptr) {
-        std::cout << std::endl << "***************************************" << std::endl;
-        n->SetIndex(index);
-        std::cout << "Index#: " << n->GetIndex() << std::endl;
-        std::cout << "Owner: " << n->GetOwner() << std::endl;
-        std::cout << "Model: " << n->GetModel() << std::endl;
-        std::cout << "VIN# : " << n->GetVin() << std::endl;
-        std::cout << "Miles: " << n->GetMileage() << std::endl;
-        std::cout << "MPG  : " << n->GetMPG() << std::endl;
-        std::cout << "Price: $" << n->GetPrice() << std::endl;
-        std::cout << "Status: ";
-        if (n->GetSale()) {
-            std::cout << "Still available" << std::endl;
-        }
-        else {
-            std::cout << "Not available" << std::endl;
-        }
-        index++;
-        n = n->GetNext();
-    }
-    std::cout << std::endl;
-}
+void printCatalogue(car* n);
 
-//***********************************************************************
+void printCar(car* n);
 
-void printCar(car* n) {
-    std::cout << std::endl << "***************************************" << std::endl;
-    std::cout << "Owner: " << n->GetOwner() << std::endl;
-    std::cout << "Model: " << n->GetModel() << std::endl;
-    std::cout << "VIN# : " << n->GetVin() << std::endl;
-    std::cout << "Miles: " << n->GetMileage() << std::endl;
-    std::cout << "MPG  : " << n->GetMPG() << std::endl;
-    std::cout << "Price: " << n->GetPrice() << std::endl;
-    std::cout << "Status: ";
-    if (n->GetSale()) {
-        std::cout << "Still available" << std::endl;
-    }
-    else {
-        std::cout << "Not available" << std::endl;
-    }
-
-}
-
-//***********************************************************************
-
-car* findCar() {
-    car* n = nullptr;
-    int choice;
-    std::cout << std::endl << "How would you like to search?";
-    std::cout << std::endl << "1) - Index";
-    std::cout << std::endl << "2) - Owner";
-    std::cout << std::endl << "3) - Model";
-    std::cout << std::endl << "4) - Vin";
-    std::cout << std::endl << "5) - Mileage";
-    std::cout << std::endl << "6) - MPG";
-    std::cout << std::endl << "7) - Price";
-    std::cout << std::endl << "8) - Availability";
-    return n;
-}
-
-//***********************************************************************
+car* findCar();
 
 void addCar(car*& head, std::vector<car*>& carCatalogue);
 
-//***********************************************************************
-
 void editCar(car* n);
 
-//***********************************************************************
-
-void deleteCar(car* n) {
-
-    // Need to add checks to avoid problems with 
-    // Head or tail
-
-    n->GetPrev()->SetNext(n->GetNext());
-    n->GetNext()->SetPrev(n->GetPrev());
-    delete n;
-    std::cout << std::endl << "Car deleted successfully." << std::endl;
-}
+void deleteCar(car* n);
 
 //***********************************************************************
 
@@ -381,4 +310,81 @@ void editCar(car* n) {
             [](unsigned char c) { return std::toupper(c); });
     } while (Cont == "YES");
 }
+//***********************************************************************
+
+void deleteCar(car* n) {
+
+    // Need to add checks to avoid problems with 
+    // Head or tail
+
+    n->GetPrev()->SetNext(n->GetNext());
+    n->GetNext()->SetPrev(n->GetPrev());
+    delete n;
+    std::cout << std::endl << "Car deleted successfully." << std::endl;
+}
+
+//***********************************************************************
+
+car* findCar() {
+    car* n = nullptr;
+    int choice;
+    std::cout << std::endl << "How would you like to search?";
+    std::cout << std::endl << "1) - Index";
+    std::cout << std::endl << "2) - Owner";
+    std::cout << std::endl << "3) - Model";
+    std::cout << std::endl << "4) - Vin";
+    std::cout << std::endl << "5) - Mileage";
+    std::cout << std::endl << "6) - MPG";
+    std::cout << std::endl << "7) - Price";
+    std::cout << std::endl << "8) - Availability";
+    return n;
+}
+
+//***********************************************************************
+
+void printCar(car* n) {
+    std::cout << std::endl << "***************************************" << std::endl;
+    std::cout << "Owner: " << n->GetOwner() << std::endl;
+    std::cout << "Model: " << n->GetModel() << std::endl;
+    std::cout << "VIN# : " << n->GetVin() << std::endl;
+    std::cout << "Miles: " << n->GetMileage() << std::endl;
+    std::cout << "MPG  : " << n->GetMPG() << std::endl;
+    std::cout << "Price: " << n->GetPrice() << std::endl;
+    std::cout << "Status: ";
+    if (n->GetSale()) {
+        std::cout << "Still available" << std::endl;
+    }
+    else {
+        std::cout << "Not available" << std::endl;
+    }
+
+}
+
+//***********************************************************************
+
+void printCatalogue(car* n) {
+    int index = 1;
+    while (n != nullptr) {
+        std::cout << std::endl << "***************************************" << std::endl;
+        n->SetIndex(index);
+        std::cout << "Index#: " << n->GetIndex() << std::endl;
+        std::cout << "Owner: " << n->GetOwner() << std::endl;
+        std::cout << "Model: " << n->GetModel() << std::endl;
+        std::cout << "VIN# : " << n->GetVin() << std::endl;
+        std::cout << "Miles: " << n->GetMileage() << std::endl;
+        std::cout << "MPG  : " << n->GetMPG() << std::endl;
+        std::cout << "Price: $" << n->GetPrice() << std::endl;
+        std::cout << "Status: ";
+        if (n->GetSale()) {
+            std::cout << "Still available" << std::endl;
+        }
+        else {
+            std::cout << "Not available" << std::endl;
+        }
+        index++;
+        n = n->GetNext();
+    }
+    std::cout << std::endl;
+}
+
 //***********************************************************************
