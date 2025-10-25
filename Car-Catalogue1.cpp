@@ -259,8 +259,13 @@ void editCar(car* n) {
     std::string Cont = "YES";
     do {
         int choice;
+        int indexSearch;
         std::cout << std::endl << "***************************************" << std::endl;
         std::cout << "Enter the index of the car you want to edit: ";
+        std::cin << indexSearch;
+        // search for index here - will return match 
+        // if match found printCar() here, or say "Car not found"
+        std::cout << std::endl << "***************************************" << std::endl;
         std::cout << std::endl << "1) - Index";
         std::cout << std::endl << "2) - Owner";
         std::cout << std::endl << "3) - Model";
