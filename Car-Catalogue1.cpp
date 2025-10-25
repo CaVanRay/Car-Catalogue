@@ -86,7 +86,7 @@ public:
 
 //**********************************************************************************************************************
 
-void optionsMenu();
+void optionsMenu(car*& head, std::vector<car*>& carCatalogue);
 
 void printCatalogue(car* n);
 
@@ -103,7 +103,7 @@ void deleteCar(car* n);
 //**********************************************************************************************************************
 
 int main() {
-    std string Cont = 'YES';
+    std::string Cont = "YES";
     car* head = nullptr;
     std::vector<car*> carCatalogue;
     size_t numberOfCars;
@@ -111,21 +111,21 @@ int main() {
 
     std::cout << std::endl << "Now please feel free to peruse the catalogue: " << std::endl;
     printCatalogue(head);
-    
+
     do {
-		optionsMenu();
+        optionsMenu(head, carCatalogue);
         std::cout << std::endl << "Would you like to change anything else? (Yes/No): ";
         std::cin.ignore();
         std::getline(std::cin, Cont);
         std::transform(Cont.begin(), Cont.end(), Cont.begin(),
             [](unsigned char c) { return std::toupper(c); });
-    } while (Cont == 'YES');
-    
+    } while (Cont == "YES");
+
     return 0;
 }
 //**********************************************************************************************************************
 
-void optionsMenu() {
+void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
     std::cout << std::endl << "***************************************" << std::endl;
     std::cout << "1) Print Specific Car" << std::endl;
     std::cout << "2) Add a Car" << std::endl;
@@ -363,7 +363,7 @@ void deleteCar(car* n) {
 
     }
     else if ((n->GetNext()) == nullptr) {
-    
+
     }
     else {
         n->GetPrev()->SetNext(n->GetNext());
