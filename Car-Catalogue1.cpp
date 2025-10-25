@@ -268,6 +268,7 @@ void editCar(car* n) {
         std::cout << std::endl << "6) - MPG";
         std::cout << std::endl << "7) - Price";
         std::cout << std::endl << "8) - Availability";
+        std::cout << std::endl << "***************************************" << std::endl;
         std::cout << std::endl << "Please enter number for desired selection: ";
         std::cin >> choice;
         switch (choice) {
