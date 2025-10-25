@@ -172,7 +172,7 @@ void addCar(car*& head, std::vector<car*>& carCatalogue) {
 
     std::string Cont = "YES";
     do {
-
+        int index;
         std::string Owner;
         std::string Model;
         std::string Vin;
@@ -237,9 +237,11 @@ void addCar(car*& head, std::vector<car*>& carCatalogue) {
         if (!carCatalogue.empty()) {
             newCar->SetPrev(carCatalogue.back());
             carCatalogue.back()->SetNext(newCar);
+            newCar->SetIndex((carCatalogue.size+1));
         }
         else {
             head = newCar;
+            newCar->SetIndex(1)
         }
 
         carCatalogue.push_back(newCar);
@@ -407,10 +409,8 @@ void printCar(car* n) {
 //**********************************************************************************************************************
 
 void printCatalogue(car* n) {
-    int index = 1;
     while (n != nullptr) {
         std::cout << std::endl << "***************************************" << std::endl;
-        n->SetIndex(index);
         std::cout << "Index#: " << n->GetIndex() << std::endl;
         std::cout << "Owner: " << n->GetOwner() << std::endl;
         std::cout << "Model: " << n->GetModel() << std::endl;
@@ -425,7 +425,6 @@ void printCatalogue(car* n) {
         else {
             std::cout << "Not available" << std::endl;
         }
-        index++;
         n = n->GetNext();
     }
     std::cout << std::endl;
