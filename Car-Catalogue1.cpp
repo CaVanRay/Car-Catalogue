@@ -168,8 +168,39 @@ void optionsMenu() {
     std::cout << "3) Edit a Car" << std::endl;
     std::cout << "4) Remove a Car" << std::endl;
     std::cout << std::endl << "***************************************" << std::endl;
-}
+    int selectedAction;
+    std::cout << "Please enter number for desired selection: ";
+    std::cin >> selectedAction;
+    switch (selectedAction) {
+    case 1: {
+        car* n = findCar();
+        printCar(n);
+        break;
+    }
+    case 2: {
+        addCar(head, carCatalogue);
+        printCatalogue(head);
+        break;
+    }
+    case 3: {
+        car* n = findCar();
+        editCar(n);
+        printCar(n);
+        break;
+    }
+    case 4: {
+        car* n = findCar();
+        deleteCar(n);
+        printCatalogue(head);
+        break;
+    }
+    default: {
+        std::cout << std::endl << "you have not selected a valid option" << std::endl;
+        break;
+    }
 
+    }
+}
 
 //**********************************************************************************************************************
 
