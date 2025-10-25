@@ -245,7 +245,6 @@ void addCar(car*& head, std::vector<car*>& carCatalogue) {
         carCatalogue.push_back(newCar);
 
         std::cout << std::endl << "Would you like to add another car? (Yes/No): ";
-        // std::cin.ignore(); was causing issues, I think it is safe to remove
         std::getline(std::cin, Cont);
         std::transform(Cont.begin(), Cont.end(), Cont.begin(),
             [](unsigned char c) { return std::toupper(c); });
