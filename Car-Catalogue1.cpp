@@ -101,7 +101,7 @@ void deleteCar(car* n);
 //***********************************************************************
 
 int main() {
-    char conti;
+    std string Cont = 'YES';
     car* head = nullptr;
     std::vector<car*> carCatalogue;
     size_t numberOfCars;
@@ -110,21 +110,23 @@ int main() {
     std::cout << std::endl << "Now please feel free to peruse the catalogue: " << std::endl;
     printCatalogue(head);
     
-    std::cout << std::endl << "***************************************" << std::endl;
-    std::cout << "1) Print Specific Car" << std::endl;
-    std::cout << "2) Add a Car" << std::endl;
-    std::cout << "3) Edit a Car" << std::endl;
-    std::cout << "4) Remove a Car" << std::endl;
-    std::cout << std::endl << "***************************************" << std::endl;
-    int selectedAction;
-    std::cout << "Please enter number for desired selection: ";
-    std::cin >> selectedAction;
-    switch (selectedAction) {
+    do {
+
+        std::cout << std::endl << "***************************************" << std::endl;
+        std::cout << "1) Print Specific Car" << std::endl;
+        std::cout << "2) Add a Car" << std::endl;
+        std::cout << "3) Edit a Car" << std::endl;
+        std::cout << "4) Remove a Car" << std::endl;
+        std::cout << std::endl << "***************************************" << std::endl;
+        int selectedAction;
+        std::cout << "Please enter number for desired selection: ";
+        std::cin >> selectedAction;
+        switch (selectedAction) {
         case 1: {
             car* n = findCar();
             printCar(n);
             break;
-		}
+        }
         case 2: {
             addCar(head, carCatalogue);
             printCatalogue(head);
@@ -135,7 +137,7 @@ int main() {
             editCar(n);
             printCar(n);
             break;
-		}
+        }
         case 4: {
             car* n = findCar();
             deleteCar(n);
@@ -145,9 +147,15 @@ int main() {
         default: {
             std::cout << std::endl << "you have not selected a valid option" << std::endl;
             break;
-		}
-    
-    }
+        }
+
+        }
+        std::cout << std::endl << "Would you like to change anything else? (Yes/No): ";
+        std::cin.ignore();
+        std::getline(std::cin, Cont);
+        std::transform(Cont.begin(), Cont.end(), Cont.begin(),
+            [](unsigned char c) { return std::toupper(c); });
+    } while (Cont == 'YES');
     
     return 0;
 }
