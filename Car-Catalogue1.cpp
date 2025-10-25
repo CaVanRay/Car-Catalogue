@@ -92,7 +92,7 @@ void printCatalogue(car* n);
 
 void printCar(car* n);
 
-car* findCar(car*& head, std::vector<car*>& carCatalogue);
+car* findCar(car*& head);
 
 void addCar(car*& head, std::vector<car*>& carCatalogue);
 
@@ -106,7 +106,6 @@ int main() {
     std::string Cont = "YES";
     car* head = nullptr;
     std::vector<car*> carCatalogue;
-    size_t numberOfCars;
     addCar(head, carCatalogue);
 
     std::cout << std::endl << "Now please feel free to peruse the catalogue: " << std::endl;
@@ -115,7 +114,6 @@ int main() {
     do {
         optionsMenu(head, carCatalogue);
         std::cout << std::endl << "Would you like to change anything else? (Yes/No): ";
-        std::cin.ignore();
         std::getline(std::cin, Cont);
         std::transform(Cont.begin(), Cont.end(), Cont.begin(),
             [](unsigned char c) { return std::toupper(c); });
@@ -137,7 +135,7 @@ void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
     std::cin >> selectedAction;
     switch (selectedAction) {
     case 1: {
-        car* n = findCar();
+        car* n = findCar(head);
         printCar(n);
         break;
     }
@@ -147,13 +145,13 @@ void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
         break;
     }
     case 3: {
-        car* n = findCar();
+        car* n = findCar(head);
         editCar(n);
         printCar(n);
         break;
     }
     case 4: {
-        car* n = findCar();
+        car* n = findCar(head);
         deleteCar(n);
         printCatalogue(head);
         break;
@@ -237,7 +235,7 @@ void addCar(car*& head, std::vector<car*>& carCatalogue) {
         if (!carCatalogue.empty()) {
             newCar->SetPrev(carCatalogue.back());
             carCatalogue.back()->SetNext(newCar);
-            newCar->SetIndex((carCatalogue.size+1));
+            newCar->SetIndex(carCatalogue.size() + 1);
         }
         else {
             head = newCar;
@@ -376,26 +374,29 @@ void deleteCar(car* n) {
 
 //**********************************************************************************************************************
 
-car* findCar(car*& head, std::vector<car*>& carCatalogue) {
+car* findCar(car*& head) {
     car* Pfound = nullptr;
-    do{
-    car* n = head;
     int indexSearch;
-    std::cout << std::endl << "***************************************" << std::endl;
-    std::cout << "Enter valid car index: ";
-    std::cin >> indexSearch;
 
-    // search for index here - will return match or state "Car not found, choose another index"
-        for (int i = 0; i < carCatalogue.size(); i++) {
+    do {
+        std::cout << "\n***************************************\n";
+        std::cout << "Enter valid car index: ";
+        std::cin >> indexSearch;
+
+        car* n = head;
+        while (n != nullptr) {
             if (n->GetIndex() == indexSearch) {
                 Pfound = n;
                 break;
             }
-            else {
-                n = n->GetNext();
-            }
+            n = n->GetNext();
         }
+
+        if (Pfound == nullptr)
+            std::cout << "Car not found, choose another index.\n";
+
     } while (Pfound == nullptr);
+
     printCar(Pfound);
     return Pfound;
 }
