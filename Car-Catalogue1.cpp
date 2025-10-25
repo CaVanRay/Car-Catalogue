@@ -259,12 +259,6 @@ void editCar(car* n) {
     std::string Cont = "YES";
     do {
         int choice;
-        int indexSearch;
-        std::cout << std::endl << "***************************************" << std::endl;
-        std::cout << "Enter the index of the car you want to edit: ";
-        std::cin << indexSearch;
-        // search for index here - will return match 
-        // if match found printCar() here, or say "Car not found"
         std::cout << std::endl << "***************************************" << std::endl;
         std::cout << std::endl << "1) - Index";
         std::cout << std::endl << "2) - Owner";
@@ -382,11 +376,10 @@ void deleteCar(car* n) {
 
 car* findCar() {
     car* n = nullptr;
-    int index;
     std::cout << std::endl << "***************************************" << std::endl;
-    std::cout << "What is the index# for the car you need? : ";
-    std::cin >> index;
-    // input search section here
+    std::cout << "Enter the index of the car: ";
+    std::cin << indexSearch;
+    // search for index here - will return match or state "Car not found, choose another index"
     printCar(n);
     return n;
 }
