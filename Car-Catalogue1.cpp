@@ -103,6 +103,9 @@ void deleteCar(car* n);
 //**********************************************************************************************************************
 
 int main() {
+
+	// This is where program checks for existing catalogue file to load
+
     std::string Cont = "YES";
     car* head = nullptr;
     std::vector<car*> carCatalogue;
