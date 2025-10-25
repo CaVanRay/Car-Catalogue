@@ -92,7 +92,7 @@ void printCatalogue(car* n);
 
 void printCar(car* n);
 
-car* findCar();
+car* findCar(car*& head, std::vector<car*>& carCatalogue);
 
 void addCar(car*& head, std::vector<car*>& carCatalogue);
 
@@ -241,7 +241,7 @@ void addCar(car*& head, std::vector<car*>& carCatalogue) {
         }
         else {
             head = newCar;
-            newCar->SetIndex(1)
+            newCar->SetIndex(1);
         }
 
         carCatalogue.push_back(newCar);
@@ -376,14 +376,28 @@ void deleteCar(car* n) {
 
 //**********************************************************************************************************************
 
-car* findCar() {
-    car* n = nullptr;
+car* findCar(car*& head, std::vector<car*>& carCatalogue) {
+    car* Pfound = nullptr;
+    do{
+    car* n = head;
+    int indexSearch;
     std::cout << std::endl << "***************************************" << std::endl;
-    std::cout << "Enter the index of the car: ";
-    std::cin << indexSearch;
+    std::cout << "Enter valid car index: ";
+    std::cin >> indexSearch;
+
     // search for index here - will return match or state "Car not found, choose another index"
-    printCar(n);
-    return n;
+        for (int i = 0; i < carCatalogue.size(); i++) {
+            if (n->GetIndex() == indexSearch) {
+                Pfound = n;
+                break;
+            }
+            else {
+                n = n->GetNext();
+            }
+        }
+    } while (Pfound == nullptr);
+    printCar(Pfound);
+    return Pfound;
 }
 
 //**********************************************************************************************************************
