@@ -105,6 +105,8 @@ void deleteCar(car* n);
 int main() {
 
 	// This is where program checks for existing catalogue file to load
+	// changes to catalogue would be saved to file as they are made in case of unexpected shutdown
+	// If no file is found, program creates new catalogue
 
     std::string Cont = "YES";
     car* head = nullptr;
