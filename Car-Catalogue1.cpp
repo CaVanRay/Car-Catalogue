@@ -86,6 +86,10 @@ public:
 
 //**********************************************************************************************************************
 
+/*
+Function declarations for program structure, defined after main function
+*/
+
 void optionsMenu(car*& head, std::vector<car*>& carCatalogue);
 
 void printCatalogue(car* n);
