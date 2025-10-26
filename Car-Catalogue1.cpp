@@ -426,6 +426,10 @@ void printCar(car* n) {
 
 //**********************************************************************************************************************
 
+/*
+printCatalogue function: Takes a pointer to the head of the linked list of car objects and iterates through the list,
+*/
+
 void printCatalogue(car* n) {
     while (n != nullptr) {
         std::cout << std::endl << "***************************************" << std::endl;
