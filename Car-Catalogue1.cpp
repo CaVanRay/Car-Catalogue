@@ -357,6 +357,10 @@ void editCar(car* n) {
 }
 //**********************************************************************************************************************
 
+/*
+deleteCar function: Takes a pointer to a car object and removes it from the linked list by updating the previous and next pointers
+*/
+
 void deleteCar(car* n) {
 
     if ((n->GetPrev()) == nullptr) {
