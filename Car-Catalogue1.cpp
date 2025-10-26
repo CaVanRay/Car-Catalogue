@@ -128,6 +128,10 @@ int main() {
 }
 //**********************************************************************************************************************
 
+/*
+optionsMenu function: Displays a menu of options to the user and prompts them to select an action.
+*/
+
 void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
     std::cout << std::endl << "***************************************" << std::endl;
     std::cout << "1) Print Specific Car" << std::endl;
