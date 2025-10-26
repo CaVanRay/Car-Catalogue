@@ -171,6 +171,11 @@ void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
 
 //**********************************************************************************************************************
 
+/*
+addCar function: Collects user input to create a new car object and adds it to the end of the linked list.
+If the list is empty, the new car becomes the head of the list.
+*/
+
 void addCar(car*& head, std::vector<car*>& carCatalogue) {
 
     std::string Cont = "YES";
