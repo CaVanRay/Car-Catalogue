@@ -109,12 +109,19 @@ void editCar(car* n);
 void deleteCar(car* n);
 
 //**********************************************************************************************************************
-
+ 
 int main() {
 
 	// This is where program checks for existing catalogue file to load
 	// changes to catalogue would be saved to file as they are made in case of unexpected shutdown
 	// If no file is found, program creates new catalogue
+    
+    /*
+	File Load Status: NOT STARTED
+
+	Main Status: WORKING
+    */
+
 
     std::string Cont = "YES";
     car* head = nullptr;
@@ -138,6 +145,8 @@ int main() {
 
 /*
 optionsMenu function: Displays a menu of options to the user and prompts them to select an action.
+
+STATUS: TESTING
 */
 
 void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
@@ -186,6 +195,8 @@ void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
 /*
 addCar function: Collects user input to create a new car object and adds it to the end of the linked list.
 If the list is empty, the new car becomes the head of the list.
+
+STATUS: WORKING
 */
 
 void addCar(car*& head, std::vector<car*>& carCatalogue) {
@@ -275,6 +286,8 @@ void addCar(car*& head, std::vector<car*>& carCatalogue) {
 
 /*
 editCar function: Takes a pointer to a car object and allows the user to edit any of its attributes by selecting from a menu.
+
+STATUS: TESTING
 */
 
 void editCar(car* n) {
@@ -380,6 +393,8 @@ void editCar(car* n) {
 
 /*
 deleteCar function: Takes a pointer to a car object and removes it from the linked list by updating the previous and next pointers
+
+STATUS: TESTING
 */
 
 void deleteCar(car* n) {
@@ -405,6 +420,8 @@ void deleteCar(car* n) {
 /*
 findCar function: Takes a pointer to the head of the linked list of car objects and prompts the user to enter a valid car index.
 It then iterates through the linked list to find the car with the matching index and returns a pointer to that car object.
+
+STATUS: WORKING
 */
 
 car* findCar(car*& head) {
@@ -438,6 +455,8 @@ car* findCar(car*& head) {
 
 /*
 printCar function: Takes a pointer to a car object and prints all of its details to the console.
+
+STATUS: WORKING
 */
 
 void printCar(car* n) {
@@ -462,6 +481,8 @@ void printCar(car* n) {
 
 /*
 printCatalogue function: Takes a pointer to the head of the linked list of car objects and iterates through the list,
+
+STATUS: WORKING
 */
 
 void printCatalogue(car* n) {
