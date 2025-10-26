@@ -195,6 +195,12 @@ void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
 
 //**********************************************************************************************************************
 
+void fileLoad() {
+    // TO - DO: implement file loading function to read existing catalogue from file
+}
+
+//**********************************************************************************************************************
+
 /*
 addCar function: Collects user input to create a new car object and adds it to the end of the linked list.
 If the list is empty, the new car becomes the head of the list.
