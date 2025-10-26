@@ -406,6 +406,10 @@ car* findCar(car*& head) {
 
 //**********************************************************************************************************************
 
+/*
+printCar function: Takes a pointer to a car object and prints all of its details to the console.
+*/
+
 void printCar(car* n) {
     std::cout << std::endl << "***************************************" << std::endl;
     std::cout << "Owner: " << n->GetOwner() << std::endl;
