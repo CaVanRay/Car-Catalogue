@@ -17,8 +17,8 @@ private:
     int MPG;
     int Price;
     bool ForSale;
-    car* Prev;
-    car* Next;
+    car* Prev = nullptr;
+    car* Next = nullptr;
 public:
     // First the Setters
     void SetIndex(int newIndex) {
@@ -225,8 +225,6 @@ void addCar(car*& head, std::vector<car*>& carCatalogue) {
         }
         //***********************************************************************
 
-        // Check for a head, if there isn't one create one, if there is one check array of pointers for size and then append new car to the end
-
         car* newCar = new car();
         newCar->SetOwner(Owner);
         newCar->SetModel(Model);
@@ -286,7 +284,7 @@ void editCar(car* n) {
         case 2: {
             std::string newOwner;
             std::cout << "Enter new owner: ";
-            std::cin.ignore(); // Need better solution for all these ignore()'s
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             std::getline(std::cin, newOwner);
             n->SetOwner(newOwner);
             break;
@@ -294,7 +292,7 @@ void editCar(car* n) {
         case 3: {
             std::string newModel;
             std::cout << "Enter new model: ";
-            std::cin.ignore();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             std::getline(std::cin, newModel);
             n->SetModel(newModel);
             break;
@@ -302,7 +300,7 @@ void editCar(car* n) {
         case 4: {
             std::string newVin;
             std::cout << "Enter new vin#: ";
-            std::cin.ignore();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             std::getline(std::cin, newVin);
             n->SetVin(newVin);
             break;
@@ -332,7 +330,7 @@ void editCar(car* n) {
             std::string newAvailable;
             bool newForSale;
             std::cout << "Is the car available for purchase? (Yes/No): ";
-            std::cin.ignore();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             std::getline(std::cin, newAvailable);
             std::transform(newAvailable.begin(), newAvailable.end(), newAvailable.begin(),
                 [](unsigned char c) { return std::toupper(c); });
@@ -351,7 +349,7 @@ void editCar(car* n) {
         }
         }
         std::cout << std::endl << "Would you like to change anything else? (Yes/No): ";
-        std::cin.ignore();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         std::getline(std::cin, Cont);
         std::transform(Cont.begin(), Cont.end(), Cont.begin(),
             [](unsigned char c) { return std::toupper(c); });
@@ -361,13 +359,13 @@ void editCar(car* n) {
 
 void deleteCar(car* n) {
 
-    // Need to add checks to avoid problems with 
-    // Head or tail
     if ((n->GetPrev()) == nullptr) {
 
+		n->GetNext()->SetPrev(nullptr);
     }
     else if ((n->GetNext()) == nullptr) {
 
+		n->GetPrev()->SetNext(nullptr);
     }
     else {
         n->GetPrev()->SetNext(n->GetNext());
