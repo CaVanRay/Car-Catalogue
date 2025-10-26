@@ -377,6 +377,11 @@ void deleteCar(car* n) {
 
 //**********************************************************************************************************************
 
+/*
+findCar function: Takes a pointer to the head of the linked list of car objects and prompts the user to enter a valid car index.
+It then iterates through the linked list to find the car with the matching index and returns a pointer to that car object.
+*/
+
 car* findCar(car*& head) {
     car* Pfound = nullptr;
     int indexSearch;
