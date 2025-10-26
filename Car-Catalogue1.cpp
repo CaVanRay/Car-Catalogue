@@ -256,6 +256,10 @@ void addCar(car*& head, std::vector<car*>& carCatalogue) {
 
 //**********************************************************************************************************************
 
+/*
+editCar function: Takes a pointer to a car object and allows the user to edit any of its attributes by selecting from a menu.
+*/
+
 void editCar(car* n) {
 
     std::string Cont = "YES";
