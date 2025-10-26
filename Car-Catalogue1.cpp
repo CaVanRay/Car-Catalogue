@@ -129,6 +129,8 @@ int main() {
     std::string Cont = "YES";
     car* head = nullptr;
     std::vector<car*> carCatalogue;
+	// fileLoad(); // TO - DO: implement file loading function to read existing catalogue from file
+	// printCatalogue(head); // to show loaded catalogue before any changes are made
     addCar(head, carCatalogue);
 
     std::cout << std::endl << "Now please feel free to peruse the catalogue: " << std::endl;
