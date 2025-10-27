@@ -111,7 +111,7 @@ void addCar(car*& head, std::vector<car*>& carCatalogue);
 
 void editCar(car* n);
 
-void deleteCar(car*& head, car* n);
+void deleteCar(car*& head, std::vector<car*>& carCatalogue, car* n);
 
 //**********************************************************************************************************************
  
@@ -189,7 +189,7 @@ void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
     }
     case 4: {
         car* n = findCar(head);
-        deleteCar(n);
+        deleteCar( head, carCatalogue, n);
         printCatalogue(head);
         break;
     }
@@ -422,24 +422,28 @@ STATUS: TESTING
 // I think if I delete the first car in the catalogue, that it will break several functions that require head
 // Testing this now
 
-void deleteCar(car*& head, car* n) {
+void deleteCar(car*& head, std::vector<car*>& carCatalogue, car* n) {
 
-    if ((n->GetPrev()) == nullptr) {
+    if (n == nullptr) return;
 
-        // if previous is NULL, then this function must be the head
-        // so I think i need to set head to the next item in the vector
-        head = n->GetNext();
-
-		n->GetNext()->SetPrev(nullptr);
+    // If this is the head
+    if (n->GetPrev() == nullptr) {
+        head = n->GetNext();   // update head
+        if (head != nullptr) { // if list not empty now
+            head->SetPrev(nullptr);
+        }
     }
-    else if ((n->GetNext()) == nullptr) {
-
-		n->GetPrev()->SetNext(nullptr);
+    else if (n->GetNext() == nullptr) { // if this is the tail
+        n->GetPrev()->SetNext(nullptr);
     }
-    else {
+    else { // middle of the list
         n->GetPrev()->SetNext(n->GetNext());
         n->GetNext()->SetPrev(n->GetPrev());
     }
+    carCatalogue.erase(
+        std::remove(carCatalogue.begin(), carCatalogue.end(), n),
+        carCatalogue.end()
+    );
     delete n;
     std::cout << std::endl << "Car deleted successfully." << std::endl;
 }
