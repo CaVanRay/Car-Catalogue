@@ -131,9 +131,12 @@ int main() {
     std::string Cont = "YES";
     car* head = nullptr;
     std::vector<car*> carCatalogue;
+
 	// loadCatalogue(); // TO - DO: implement file loading function to read existing catalogue from file
 	// printCatalogue(head); // to show loaded catalogue before any changes are made
     addCar(head, carCatalogue);
+
+    // saveCatalogue(); // TO - DO: implement file saving function to write catalogue to file
 
     std::cout << std::endl << "Now please feel free to peruse the catalogue: " << std::endl;
     printCatalogue(head);
