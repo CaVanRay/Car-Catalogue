@@ -139,11 +139,11 @@ int main() {
     // saveCatalogue(); // TO - DO: implement file saving function to write catalogue to file
 
     std::cout << std::endl << "Now please feel free to peruse the catalogue: " << std::endl;
-    printCatalogue(head);
 
     do {
+        printCatalogue(head);
         optionsMenu(head, carCatalogue);
-        std::cout << std::endl << "Would you like to change anything else? (Yes/No): ";
+        std::cout << std::endl << "Would you like to choose another option? (Yes/No): ";
         std::getline(std::cin, Cont);
         std::transform(Cont.begin(), Cont.end(), Cont.begin(),
             [](unsigned char c) { return std::toupper(c); });
