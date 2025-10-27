@@ -134,6 +134,7 @@ int main() {
 
 	// loadCatalogue(); // TO - DO: implement file loading function to read existing catalogue from file
 	// printCatalogue(head); // to show loaded catalogue before any changes are made
+
     addCar(head, carCatalogue);
 
     // saveCatalogue(); // TO - DO: implement file saving function to write catalogue to file
