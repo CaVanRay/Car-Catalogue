@@ -111,7 +111,7 @@ void addCar(car*& head, std::vector<car*>& carCatalogue);
 
 void editCar(car* n);
 
-void deleteCar(car* n);
+void deleteCar(car*& head, car* n);
 
 //**********************************************************************************************************************
  
