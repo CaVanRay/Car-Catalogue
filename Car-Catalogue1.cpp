@@ -95,7 +95,9 @@ public:
 Function declarations for program structure, defined after main function
 */
 
-void fileLoad();
+void saveCatalogue();
+
+void loadCatalogue();
 
 void optionsMenu(car*& head, std::vector<car*>& carCatalogue);
 
