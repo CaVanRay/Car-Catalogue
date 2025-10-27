@@ -422,7 +422,7 @@ STATUS: TESTING
 // I think if I delete the first car in the catalogue, that it will break several functions that require head
 // Testing this now
 
-void deleteCar(car* n) {
+void deleteCar(car*& head, car* n) {
 
     if ((n->GetPrev()) == nullptr) {
 
