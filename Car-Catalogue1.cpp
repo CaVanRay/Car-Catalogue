@@ -419,6 +419,8 @@ deleteCar function: Takes a pointer to a car object and removes it from the link
 
 STATUS: TESTING
 */
+// I think if I delete the first car in the catalogue, that it will break several functions that require head
+// Testing this now
 
 void deleteCar(car* n) {
 
