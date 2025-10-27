@@ -428,7 +428,7 @@ void deleteCar(car* n) {
 
         // if previous is NULL, then this function must be the head
         // so I think i need to set head to the next item in the vector
-        // head = n->GetNext();
+        head = n->GetNext();
 
 		n->GetNext()->SetPrev(nullptr);
     }
