@@ -131,7 +131,7 @@ int main() {
     std::string Cont = "YES";
     car* head = nullptr;
     std::vector<car*> carCatalogue;
-	// fileLoad(); // TO - DO: implement file loading function to read existing catalogue from file
+	// loadCatalogue(); // TO - DO: implement file loading function to read existing catalogue from file
 	// printCatalogue(head); // to show loaded catalogue before any changes are made
     addCar(head, carCatalogue);
 
@@ -199,7 +199,7 @@ void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
 
 //**********************************************************************************************************************
 
-void fileLoad() {
+void loadCatalogue() {
     // TO - DO: implement file loading function to read existing catalogue from file
 }
 
