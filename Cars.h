@@ -1,11 +1,6 @@
 #pragma once
 
-
-//**********************************************************************************************************************
-
-/*
-Class car: Represents a car object with various attributes such as owner, model, VIN, mileage, MPG, price, and availability status.
-*/
+// Class car: Represents a car object with various attributes such as owner, model, VIN, mileage, MPG, price, and availability status.
 
 class car {
 private:

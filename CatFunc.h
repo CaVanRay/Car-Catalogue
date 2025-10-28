@@ -1,9 +1,6 @@
 #pragma once
 
-
-
 //Function declarations for program structure, defined after main function
-
 
 void saveCatalogue();
 
