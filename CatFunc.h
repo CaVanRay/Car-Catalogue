@@ -1,4 +1,5 @@
 #pragma once
+#include <vector>
 
 //Function declarations for program structure, defined after main function
 
