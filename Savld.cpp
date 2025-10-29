@@ -24,6 +24,8 @@ void saveCatalogue(); {
 
 // For loading previously saved catalogue into a new instance of program
 
+// Status: To-Do
+
 void loadCatalogue(); {
 
 }
