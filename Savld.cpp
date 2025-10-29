@@ -20,6 +20,7 @@ void saveCatalogue(); {
 
 //**********************************************************************************************************************
 
+// For loading previously saved catalogue into a new instance of program
 
 void loadCatalogue(); {
 
