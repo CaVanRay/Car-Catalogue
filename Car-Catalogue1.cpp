@@ -22,7 +22,7 @@ int main() {
 
 	Main Status: WORKING
     */
-
+    saveCatalogue();
 
     std::string Cont = "YES";
     car* head = nullptr;

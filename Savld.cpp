@@ -19,11 +19,11 @@ void saveCatalogue() {
 
 	std::ofstream outputFile("CarCatalogue.txt");
 
-	if (outputFile.is_open) {
+	if (outputFile.is_open()) {
 		outputFile << "This is a test \n \n";
 	}
 	else {
-		std::cerr << "Error: Unable to open file 'CarCatalogue.txt' \n"
+		std::cerr << "Error: Unable to open file 'CarCatalogue.txt' \n";
 	}
 
 }
