@@ -1,2 +1,7 @@
 ﻿  Car-Catalogue1.cpp
-  Car-Catalogue.vcxproj -> C:\Users\ctheiss.AUTH\source\repos\Car-Catalogue\Car-Catalogue\x64\Debug\Car-Catalogue.exe
+  Savld.cpp
+C:\Users\ctheiss.AUTH\source\repos\Car-Catalogue\Savld.cpp(43,3): error C2562: 'loadCatalogue': 'void' function returning a value
+      C:\Users\ctheiss.AUTH\source\repos\Car-Catalogue\Savld.cpp(37,6):
+      see declaration of 'loadCatalogue'
+  
+  Generating Code...
