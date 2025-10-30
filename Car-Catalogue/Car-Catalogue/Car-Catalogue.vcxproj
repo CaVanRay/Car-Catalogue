@@ -126,10 +126,12 @@
   <ItemGroup>
     <ClCompile Include="..\..\Car-Catalogue1.cpp" />
     <ClCompile Include="..\..\CatFunc.cpp" />
+    <ClCompile Include="..\..\Savld.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Cars.h" />
     <ClInclude Include="..\..\CatFunc.h" />
+    <ClInclude Include="..\..\savld.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

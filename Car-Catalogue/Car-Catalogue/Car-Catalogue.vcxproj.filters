@@ -21,12 +21,18 @@
     <ClCompile Include="..\..\CatFunc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Savld.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\CatFunc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Cars.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\savld.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
