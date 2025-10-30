@@ -58,17 +58,6 @@ void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
     }
 }
 
-//**********************************************************************************************************************
-
-void saveCatalogue() {
-    // TO - DO: implement file saving function to write catalogue to a file
-}
-
-//**********************************************************************************************************************
-
-void loadCatalogue() {
-    // TO - DO: implement file loading function to read existing catalogue from file
-}
 
 //**********************************************************************************************************************
 

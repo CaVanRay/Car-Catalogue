@@ -15,8 +15,13 @@
 
 // Status: To-Do
 
-void saveCatalogue(); {
+void saveCatalogue() {
 
+	std::ofstream outputFile("CarCatalogue.txt");
+
+	if (outputFile.is_open) {
+		outputFile << "This is a test \n \n";
+	}
 
 }
 
@@ -26,7 +31,7 @@ void saveCatalogue(); {
 
 // Status: To-Do
 
-void loadCatalogue(); {
+void loadCatalogue() {
 
 }
 
