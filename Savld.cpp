@@ -13,7 +13,7 @@
 
 // For saving your current catalogue to be used next time the program is run
 
-// Status: To-Do
+// Status: In progress
 
 void saveCatalogue() {
 
@@ -32,7 +32,7 @@ void saveCatalogue() {
 
 // For loading previously saved catalogue into a new instance of program
 
-// Status: To-Do
+// Status: in progress
 
 void loadCatalogue() {
 
