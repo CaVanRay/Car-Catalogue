@@ -34,7 +34,7 @@ int main() {
 
     addCar(head, carCatalogue);
 
-    saveCatalogue();
+    saveCatalogue(head, carCatalogue);
 
     std::cout << std::endl << "Now please feel free to peruse the catalogue: " << std::endl;
 
