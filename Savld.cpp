@@ -15,6 +15,8 @@
 
 // Status: In progress
 
+// Needs the Catalogue vector and the header pointer pass from main
+
 void saveCatalogue() {
 
 	std::ofstream outputFile("CarCatalogue.txt");
@@ -33,6 +35,8 @@ void saveCatalogue() {
 // For loading previously saved catalogue into a new instance of program
 
 // Status: in progress
+
+// Needs the Catalogue vector and the header pointer pass from main
 
 void loadCatalogue() {
 
