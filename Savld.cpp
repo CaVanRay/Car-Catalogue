@@ -17,7 +17,7 @@
 
 // Needs the Catalogue vector and the header pointer pass from main
 
-void saveCatalogue() {
+void saveCatalogue(car*& head, std::vector<car*>& carCatalogue) {
 
 	std::ofstream outputFile("CarCatalogue.txt");
 
