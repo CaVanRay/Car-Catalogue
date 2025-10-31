@@ -28,7 +28,7 @@ int main() {
     car* head = nullptr;
     std::vector<car*> carCatalogue;
 
-    loadCatalogue();
+    loadCatalogue(head, carCatalogue);
 
 	// printCatalogue(head); // to show loaded catalogue before any changes are made
 
