@@ -38,7 +38,7 @@ void saveCatalogue(car*& head, std::vector<car*>& carCatalogue) {
 
 // Needs the Catalogue vector and the header pointer pass from main
 
-void loadCatalogue() {
+void loadCatalogue(car*& head, std::vector<car*>& carCatalogue) {
 
 	std::ifstream inputFile("CarCatalogue.txt");
 
