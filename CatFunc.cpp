@@ -35,6 +35,7 @@ void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
         int selectedAction;
         std::cout << "Please enter number for desired selection: ";
         std::cin >> selectedAction;
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         switch (selectedAction) {
         case 1: {
             printCatalogue(head);

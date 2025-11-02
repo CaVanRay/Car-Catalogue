@@ -32,7 +32,7 @@
     <ClInclude Include="..\..\Cars.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\savld.h">
+    <ClInclude Include="..\..\Savld.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
