@@ -24,6 +24,7 @@ void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
     std::cout << "3) Edit a Car" << std::endl;
     std::cout << "4) Remove a Car" << std::endl;
 	std::cout << "5) Save Catalogue" << std::endl;
+	std::cout << "6) Exit Menu" << std::endl;
     std::cout << "***************************************" << std::endl;
     int selectedAction;
     std::cout << "Please enter number for desired selection: ";
