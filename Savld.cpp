@@ -9,6 +9,8 @@
 #include "Cars.h"
 #include "savld.h"
 
+const std::string FILE_NAME = "CarCatalogue.txt";
+
 //**********************************************************************************************************************
 
 // For saving your current catalogue to be used next time the program is run
@@ -16,7 +18,7 @@
 // Status: In progress
 
 void saveCatalogue(car*& head) {
-    std::ofstream outputFile("CarCatalogue.txt");
+    std::ofstream outputFile(FILE_NAME);
     if (!outputFile.is_open()) {
         std::cerr << "Error: Could not open CarCatalogue.txt for writing.\n";
         return;
@@ -47,12 +49,15 @@ void saveCatalogue(car*& head) {
 
 void loadCatalogue(car*& head, std::vector<car*>& carCatalogue) {
 
-	std::ifstream inputFile("CarCatalogue.txt");
+	std::ifstream inputFile(FILE_NAME);
 
     if (!inputFile.is_open()) {
-        std::cerr << "Error: Could not open CarCatalogue.txt for reading.\n";
+        std::cout << "No existing catalogue found. Starting fresh.\n";
         return;
     }
+
+    carCatalogue.clear();
+    head = nullptr;
 
     std::string line;
     while (std::getline(inputFile, line)) {
