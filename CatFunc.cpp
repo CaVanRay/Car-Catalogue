@@ -22,44 +22,49 @@ void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
     do() {
 		bool runP = true;
         std::cout << std::endl << "***************************************" << std::endl;
-        std::cout << "1) Print Specific Car" << std::endl;
-        std::cout << "2) Add a Car" << std::endl;
-        std::cout << "3) Edit a Car" << std::endl;
-        std::cout << "4) Remove a Car" << std::endl;
-        std::cout << "5) Save Catalogue" << std::endl;
-        std::cout << "6) Exit Program" << std::endl;
+		std::cout << "1) Print Catalogue" << std::endl;
+        std::cout << "2) Print Specific Car" << std::endl;
+        std::cout << "3) Add a Car" << std::endl;
+        std::cout << "4) Edit a Car" << std::endl;
+        std::cout << "5) Remove a Car" << std::endl;
+        std::cout << "6) Save Catalogue" << std::endl;
+        std::cout << "7) Exit Program" << std::endl;
         std::cout << "***************************************" << std::endl;
         int selectedAction;
         std::cout << "Please enter number for desired selection: ";
         std::cin >> selectedAction;
         switch (selectedAction) {
         case 1: {
+            printCatalogue(head);
+            break;
+		}
+        case 2: {
             car* n = findCar(head);
             printCar(n);
             break;
         }
-        case 2: {
+        case 3: {
             addCar(head, carCatalogue);
             printCatalogue(head);
             break;
         }
-        case 3: {
+        case 4: {
             car* n = findCar(head);
             editCar(n);
             printCar(n);
             break;
         }
-        case 4: {
+        case 5: {
             car* n = findCar(head);
             deleteCar(head, carCatalogue, n);
             printCatalogue(head);
             break;
         }
-        case 5: {
+        case 6: {
             saveCatalogue(head);
             break;
         }
-        case 6: {
+        case 7: {
 			runP = false;
             break;
         }
