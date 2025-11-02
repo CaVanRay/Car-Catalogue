@@ -21,10 +21,6 @@ int main() {
 
     printCatalogue(head);
 
-    addCar(head, carCatalogue);
-
-    printCatalogue(head);
-
     optionsMenu(head, carCatalogue);
 
     return 0;
