@@ -52,9 +52,14 @@ void saveCatalogue(car*& head) {
 void loadCatalogue(car*& head, std::vector<car*>& carCatalogue) {
 
 	std::ifstream inputFile("CarCatalogue.txt");
+
     if (!inputFile.is_open()) {
         std::cerr << "Error: Could not open CarCatalogue.txt for reading.\n";
         return;
+    }
+
+    if (!inputFile) {
+        std::cout << "No existing catalogue found, creating new. \n";
     }
 
 	std::string line;
