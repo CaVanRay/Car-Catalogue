@@ -51,6 +51,10 @@ void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
         printCatalogue(head);
         break;
     }
+    case 5: {
+        saveCatalogue(head);
+        break;
+    }
     default: {
         std::cout << std::endl << "you have not selected a valid option" << std::endl;
         break;
