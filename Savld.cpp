@@ -18,21 +18,27 @@
 // Needs the Catalogue vector and the header pointer pass from main
 
 void saveCatalogue(car*& head) {
+    std::ofstream outputFile("CarCatalogue.txt");
+    if (!outputFile.is_open()) {
+        std::cerr << "Error: Could not open CarCatalogue.txt for writing.\n";
+        return;
+    }
 
-	std::ofstream outputFile("CarCatalogue.txt");
-	car* current = head;
-	while (current != nullptr) {
-		outputFile << "Index: " << current->GetIndex() << "\n";
-		outputFile << "Owner: " << current->GetOwner() << "\n";
-		outputFile << "Model: " << current->GetModel() << "\n";
-		outputFile << "Vin: " << current->GetVin() << "\n";
-		outputFile << "Mileage: " << current->GetMileage() << "\n";
-		outputFile << "MPG: " << current->GetMPG() << "\n";
-		outputFile << "Price: " << current->GetPrice() << "\n";
-		outputFile << "For Sale: " << (current->GetSale() ? "Yes" : "No") << "\n";
-		outputFile << "--------------------------\n";
-		current = current->GetNext();
-	}
+    car* current = head;
+    while (current != nullptr) {
+        outputFile << current->GetIndex() << '|'
+            << current->GetOwner() << '|'
+            << current->GetModel() << '|'
+            << current->GetVin() << '|'
+            << current->GetMileage() << '|'
+            << current->GetMPG() << '|'
+            << current->GetPrice() << '|'
+            << (current->GetSale() ? 1 : 0) << '\n';
+        current = current->GetNext();
+    }
+
+    outputFile.close();
+    std::cout << "Catalogue saved successfully to CarCatalogue.txt\n";
 }
 
 //**********************************************************************************************************************
