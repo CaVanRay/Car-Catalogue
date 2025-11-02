@@ -4,6 +4,6 @@
 
 //Function declarations for program structure, defined after main function
 
-void saveCatalogue();
+void saveCatalogue(car*& head);
 
-void loadCatalogue();
+void loadCatalogue(car*& head, std::vector<car*>& carCatalogue);
