@@ -19,8 +19,9 @@ STATUS: TESTING
 
 void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
 
+    bool runP = true;
+
     do {
-		bool runP = true;
         std::cout << std::endl << "***************************************" << std::endl;
 		std::cout << "1) Print Catalogue" << std::endl;
         std::cout << "2) Print Specific Car" << std::endl;
