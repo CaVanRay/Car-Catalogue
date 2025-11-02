@@ -47,6 +47,7 @@ void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
             break;
         }
         case 3: {
+			std::cout << std::endl << "DEBUG: addCar function called" << std::endl;
             addCar(head, carCatalogue);
             printCatalogue(head);
             break;
