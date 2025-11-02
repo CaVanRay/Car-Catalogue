@@ -19,6 +19,8 @@ int main() {
 
     loadCatalogue(head, carCatalogue);
 
+    printCatalogue(head);
+
     addCar(head, carCatalogue);
 
     printCatalogue(head);
