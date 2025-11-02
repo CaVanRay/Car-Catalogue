@@ -12,15 +12,13 @@
 const std::string FILE_NAME = "CarCatalogue.txt";
 
 //**********************************************************************************************************************
-
-// For saving your current catalogue to be used next time the program is run
-
-// Status: In progress
+// Save current catalogue to be used next time the program is run
+//**********************************************************************************************************************
 
 void saveCatalogue(car*& head) {
     std::ofstream outputFile(FILE_NAME);
     if (!outputFile.is_open()) {
-        std::cerr << "Error: Could not open CarCatalogue.txt for writing.\n";
+        std::cerr << "[Error] Could not open " << FILE_NAME << " for writing.\n";
         return;
     }
 
@@ -38,21 +36,18 @@ void saveCatalogue(car*& head) {
     }
 
     outputFile.close();
-    std::cout << "Catalogue saved successfully to CarCatalogue.txt\n";
+    std::cout << "[Info] Catalogue saved successfully to " << FILE_NAME << "\n";
 }
 
 //**********************************************************************************************************************
-
-// For loading previously saved catalogue into a new instance of program
-
-// Status: in progress
+// Load previously saved catalogue into a new instance of the program
+//**********************************************************************************************************************
 
 void loadCatalogue(car*& head, std::vector<car*>& carCatalogue) {
-
-	std::ifstream inputFile(FILE_NAME);
+    std::ifstream inputFile(FILE_NAME);
 
     if (!inputFile.is_open()) {
-        std::cout << "No existing catalogue found. Starting fresh.\n";
+        std::cout << "[Info] No existing catalogue found. Starting fresh.\n";
         return;
     }
 
@@ -63,8 +58,8 @@ void loadCatalogue(car*& head, std::vector<car*>& carCatalogue) {
     while (std::getline(inputFile, line)) {
         if (line.empty()) continue;
 
-            std::stringstream ss(line);
-            std::string token;
+        std::stringstream ss(line);
+        std::string token;
 
         int index, mileage, mpg, price;
         std::string owner, model, vin;
@@ -77,7 +72,7 @@ void loadCatalogue(car*& head, std::vector<car*>& carCatalogue) {
         std::getline(ss, token, '|'); mileage = std::stoi(token);
         std::getline(ss, token, '|'); mpg = std::stoi(token);
         std::getline(ss, token, '|'); price = std::stoi(token);
-        std::getline(ss, token, '|'); forSale = std::stoi(token);
+        std::getline(ss, token, '|'); forSale = (std::stoi(token) != 0);
 
         car* newCar = new car();
         newCar->SetIndex(index);
@@ -101,7 +96,5 @@ void loadCatalogue(car*& head, std::vector<car*>& carCatalogue) {
     }
 
     inputFile.close();
-    std::cout << "Catalogue loaded successfully.\n";
- }
-
-//**********************************************************************************************************************
+    std::cout << "[Info] Catalogue loaded successfully from " << FILE_NAME << "\n";
+}
