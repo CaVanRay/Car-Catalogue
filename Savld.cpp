@@ -33,13 +33,6 @@ void saveCatalogue(car*& head) {
 		outputFile << "--------------------------\n";
 		current = current->GetNext();
 	}
-	if (outputFile.is_open()) {
-		outputFile << "This is a test \n \n";
-	}
-	else {
-		std::cerr << "Error: Unable to open file 'CarCatalogue.txt' \n";
-	}
-
 }
 
 //**********************************************************************************************************************
