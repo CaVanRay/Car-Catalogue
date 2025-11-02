@@ -15,8 +15,6 @@
 
 // Status: In progress
 
-// Needs the Catalogue vector and the header pointer pass from main
-
 void saveCatalogue(car*& head) {
     std::ofstream outputFile("CarCatalogue.txt");
     if (!outputFile.is_open()) {
@@ -47,8 +45,6 @@ void saveCatalogue(car*& head) {
 
 // Status: in progress
 
-// Needs the Catalogue vector and the header pointer pass from main
-
 void loadCatalogue(car*& head, std::vector<car*>& carCatalogue) {
 
 	std::ifstream inputFile("CarCatalogue.txt");
@@ -58,17 +54,49 @@ void loadCatalogue(car*& head, std::vector<car*>& carCatalogue) {
         return;
     }
 
-    if (!inputFile) {
-        std::cout << "No existing catalogue found, creating new. \n";
+    std::string line;
+    while (std::getline(inputFile, line)) {
+        if (line.empty()) continue;
+
+            std::stringstream ss(line);
+            std::string token;
+
+        int index, mileage, mpg, price;
+        std::string owner, model, vin;
+        bool forSale;
+
+        std::getline(ss, token, '|'); index = std::stoi(token);
+        std::getline(ss, owner, '|');
+        std::getline(ss, model, '|');
+        std::getline(ss, vin, '|');
+        std::getline(ss, token, '|'); mileage = std::stoi(token);
+        std::getline(ss, token, '|'); mpg = std::stoi(token);
+        std::getline(ss, token, '|'); price = std::stoi(token);
+        std::getline(ss, token, '|'); forSale = std::stoi(token);
+
+        car* newCar = new car();
+        newCar->SetIndex(index);
+        newCar->SetOwner(owner);
+        newCar->SetModel(model);
+        newCar->SetVin(vin);
+        newCar->SetMileage(mileage);
+        newCar->SetMPG(mpg);
+        newCar->SetPrice(price);
+        newCar->SetSale(forSale);
+
+        if (!carCatalogue.empty()) {
+            newCar->SetPrev(carCatalogue.back());
+            carCatalogue.back()->SetNext(newCar);
+        }
+        else {
+            head = newCar;
+        }
+
+        carCatalogue.push_back(newCar);
     }
 
-	std::string line;
-	while (std::getline(inputFile, line)) {
-
-		std::cout << line << std::endl;
-
-	}
-	inputFile.close();
-}
+    inputFile.close();
+    std::cout << "Catalogue loaded successfully.\n";
+ }
 
 //**********************************************************************************************************************
