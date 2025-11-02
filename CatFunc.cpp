@@ -308,6 +308,11 @@ void deleteCar(car*& head, std::vector<car*>& carCatalogue, car* n) {
     else { // middle of the list
         n->GetPrev()->SetNext(n->GetNext());
         n->GetNext()->SetPrev(n->GetPrev());
+		car* temp = n->GetNext();
+        while (temp != nullptr) {
+            temp->SetIndex(temp->GetIndex() - 1);
+            temp = temp->GetNext();
+        }
     }
     carCatalogue.erase(
         std::remove(carCatalogue.begin(), carCatalogue.end(), n),
