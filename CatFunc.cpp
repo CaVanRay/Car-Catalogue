@@ -18,50 +18,58 @@ STATUS: TESTING
 */
 
 void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
-    std::cout << std::endl << "***************************************" << std::endl;
-    std::cout << "1) Print Specific Car" << std::endl;
-    std::cout << "2) Add a Car" << std::endl;
-    std::cout << "3) Edit a Car" << std::endl;
-    std::cout << "4) Remove a Car" << std::endl;
-	std::cout << "5) Save Catalogue" << std::endl;
-	std::cout << "6) Exit Menu" << std::endl;
-    std::cout << "***************************************" << std::endl;
-    int selectedAction;
-    std::cout << "Please enter number for desired selection: ";
-    std::cin >> selectedAction;
-    switch (selectedAction) {
-    case 1: {
-        car* n = findCar(head);
-        printCar(n);
-        break;
-    }
-    case 2: {
-        addCar(head, carCatalogue);
-        printCatalogue(head);
-        break;
-    }
-    case 3: {
-        car* n = findCar(head);
-        editCar(n);
-        printCar(n);
-        break;
-    }
-    case 4: {
-        car* n = findCar(head);
-        deleteCar(head, carCatalogue, n);
-        printCatalogue(head);
-        break;
-    }
-    case 5: {
-        saveCatalogue(head);
-        break;
-    }
-    default: {
-        std::cout << std::endl << "you have not selected a valid option" << std::endl;
-        break;
-    }
 
-    }
+    do() {
+		bool runP = true;
+        std::cout << std::endl << "***************************************" << std::endl;
+        std::cout << "1) Print Specific Car" << std::endl;
+        std::cout << "2) Add a Car" << std::endl;
+        std::cout << "3) Edit a Car" << std::endl;
+        std::cout << "4) Remove a Car" << std::endl;
+        std::cout << "5) Save Catalogue" << std::endl;
+        std::cout << "6) Exit Program" << std::endl;
+        std::cout << "***************************************" << std::endl;
+        int selectedAction;
+        std::cout << "Please enter number for desired selection: ";
+        std::cin >> selectedAction;
+        switch (selectedAction) {
+        case 1: {
+            car* n = findCar(head);
+            printCar(n);
+            break;
+        }
+        case 2: {
+            addCar(head, carCatalogue);
+            printCatalogue(head);
+            break;
+        }
+        case 3: {
+            car* n = findCar(head);
+            editCar(n);
+            printCar(n);
+            break;
+        }
+        case 4: {
+            car* n = findCar(head);
+            deleteCar(head, carCatalogue, n);
+            printCatalogue(head);
+            break;
+        }
+        case 5: {
+            saveCatalogue(head);
+            break;
+        }
+        case 6: {
+			runP = false;
+            break;
+        }
+        default: {
+            std::cout << std::endl << "you have not selected a valid option" << std::endl;
+            break;
+        }
+
+        }
+	} while (runP);
 }
 
 
