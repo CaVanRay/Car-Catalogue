@@ -8,7 +8,7 @@
 #include <cctype>
 #include "CatFunc.h"
 #include "Cars.h"
-#include "savld.h"
+#include "Savld.h"
 
 //**********************************************************************************************************************
 
@@ -47,7 +47,6 @@ void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
             break;
         }
         case 3: {
-			std::cout << std::endl << "DEBUG: addCar function called" << std::endl;
             addCar(head, carCatalogue);
             printCatalogue(head);
             break;
@@ -300,6 +299,7 @@ void deleteCar(car*& head, std::vector<car*>& carCatalogue, car* n) {
         head = n->GetNext();   // update head
         if (head != nullptr) { // if list not empty now
             head->SetPrev(nullptr);
+			head->SetIndex(1);
         }
     }
     else if (n->GetNext() == nullptr) { // if this is the tail
