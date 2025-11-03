@@ -35,7 +35,12 @@ void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
         std::cout << "***************************************" << std::endl;
         int selectedAction;
         std::cout << "Please enter number for desired selection: ";
-        std::cin >> selectedAction;
+        // std::cin >> selectedAction;
+        while (!(std::cin >> selectedAction)) {
+            std::cout << "Invalid input. Please enter a valid number: ";
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        }
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         switch (selectedAction) {
         case 1: {
