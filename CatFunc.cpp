@@ -209,7 +209,11 @@ void editCar(car* n) {
         std::cout << std::endl << "8) - Availability";
         std::cout << std::endl << "***************************************" << std::endl;
         std::cout << "Please enter number for desired selection: ";
-        std::cin >> choice;
+        while (!(std::cin >> choice)) {
+            std::cout << "Invalid input. Please enter a valid number: ";
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        }
         switch (choice) {
         case 1: {
             int newIndex;
