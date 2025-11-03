@@ -1,6 +1,6 @@
 #include <algorithm>
 #include <iostream>
-#include <stdlib.h> // Testing for adding a screen clear at the end of each function
+#include <stdlib.h>
 #include <fstream>
 #include <sstream>
 #include <string>
@@ -35,7 +35,6 @@ void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
         std::cout << "***************************************" << std::endl;
         int selectedAction;
         std::cout << "Please enter number for desired selection: ";
-        // std::cin >> selectedAction;
         while (!(std::cin >> selectedAction)) {
             std::cout << "Invalid input. Please enter a valid number: ";
             std::cin.clear();
