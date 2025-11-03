@@ -174,6 +174,8 @@ void addCar(car*& head, std::vector<car*>& carCatalogue) {
 
         carCatalogue.push_back(newCar);
 
+        system("CLS");
+
         std::cout << std::endl << "Would you like to add another car? (Yes/No): ";
         std::getline(std::cin, Cont);
         std::transform(Cont.begin(), Cont.end(), Cont.begin(),
