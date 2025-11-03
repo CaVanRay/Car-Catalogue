@@ -1,8 +1,4 @@
-﻿  Car-Catalogue1.cpp
-  CatFunc.cpp
-C:\Users\cavan\source\repos\Car-Catalogue\CatFunc.cpp(159,50): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\cavan\source\repos\Car-Catalogue\CatFunc.cpp(96,13): warning C4101: 'index': unreferenced local variable
-  Savld.cpp
-  Generating Code...
-  LINK : C:\Users\cavan\source\repos\Car-Catalogue\Car-Catalogue\x64\Debug\Car-Catalogue.exe not found or not built by the last incremental link; performing full link
-  Car-Catalogue.vcxproj -> C:\Users\cavan\source\repos\Car-Catalogue\Car-Catalogue\x64\Debug\Car-Catalogue.exe
+﻿  CatFunc.cpp
+C:\Users\ctheiss.AUTH\source\repos\Car-Catalogue\CatFunc.cpp(160,50): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\ctheiss.AUTH\source\repos\Car-Catalogue\CatFunc.cpp(97,13): warning C4101: 'index': unreferenced local variable
+  Car-Catalogue.vcxproj -> C:\Users\ctheiss.AUTH\source\repos\Car-Catalogue\Car-Catalogue\x64\Debug\Car-Catalogue.exe
