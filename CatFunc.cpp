@@ -195,6 +195,7 @@ void editCar(car* n) {
 
     std::string Cont = "YES";
     do {
+        printCar(n);
         int choice;
         std::cout << std::endl << "***************************************" << std::endl;
         std::cout << std::endl << "1) - Index";
