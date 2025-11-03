@@ -7,6 +7,9 @@ Currently capabilities:
   Find,  Print,  Add,  Remove,  Edit,  Save, load.
 
 To-Do:
-Create a GUI - in progress
-Add ability to include pictures - requires working GUI
-Add locations and link to google maps
+
+  - Create a GUI - in progress
+
+  - Add ability to include pictures - requires working GUI
+
+  - Add locations and link to google maps
