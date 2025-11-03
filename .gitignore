@@ -1,2 +1,8 @@
 .vs/
 Car-Catalogue/Car-Catalogue/
+*.ilk
+*.obj
+*.idb
+*.pdb
+*.exe
+/ x64/
