@@ -39,36 +39,43 @@ void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         switch (selectedAction) {
         case 1: {
+            system("CLS");
             printCatalogue(head);
             break;
 		}
         case 2: {
+            system("CLS");
             car* n = findCar(head);
             printCar(n);
             break;
         }
         case 3: {
+            system("CLS");
             addCar(head, carCatalogue);
             printCatalogue(head);
             break;
         }
         case 4: {
+            system("CLS");
             car* n = findCar(head);
             editCar(n);
             printCar(n);
             break;
         }
         case 5: {
+            system("CLS");
             car* n = findCar(head);
             deleteCar(head, carCatalogue, n);
             printCatalogue(head);
             break;
         }
         case 6: {
+            system("CLS");
             saveCatalogue(head);
             break;
         }
         case 7: {
+            system("CLS");
 			runP = false;
             break;
         }
