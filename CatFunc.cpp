@@ -1,5 +1,6 @@
 #include <algorithm>
 #include <iostream>
+#include <stdlib.h> // Testing for adding a screen clear at the end of each function
 #include <fstream>
 #include <sstream>
 #include <string>
