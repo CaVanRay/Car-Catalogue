@@ -393,6 +393,11 @@ STATUS: WORKING
 */
 
 void printCatalogue(car* n) {
+
+    if (n == nullptr) {
+        std::cout << std::endl << "No cars are currently listed in catalogue." << std::endl;
+    }
+
     while (n != nullptr) {
         std::cout << std::endl << "***************************************" << std::endl;
         std::cout << "Index#: " << n->GetIndex() << std::endl;
