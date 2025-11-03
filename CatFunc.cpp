@@ -354,7 +354,6 @@ car* findCar(car*& head) {
 
     } while (Pfound == nullptr);
 
-    printCar(Pfound);
     return Pfound;
 }
 
