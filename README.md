@@ -10,6 +10,8 @@ To-Do:
 
   - Create a GUI - in progress
 
+  - Make everything save in real time so you don't have to remember to save 
+
   - Add ability to include pictures - requires working GUI
 
   - Add locations and link to google maps
