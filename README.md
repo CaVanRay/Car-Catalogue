@@ -7,7 +7,7 @@ Currently capabilities:
   Find,  Print,  Add,  Remove,  Edit,  Save, load.
 
 
---To-Do (concrete):--
+**To-Do (concrete):**
 
   Day 1 - Add reindexing & better input validation
 
