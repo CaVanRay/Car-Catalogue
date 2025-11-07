@@ -9,6 +9,8 @@ Currently capabilities:
 
 To-Do (concrete):
 
+  Day 1 - Add reindexing & better input validation
+
 
 To-Do (general):
 
