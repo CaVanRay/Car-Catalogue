@@ -6,6 +6,10 @@ This is a simple car catalogue program that allows users to view a list of cars,
 Currently capabilities:
   Find,  Print,  Add,  Remove,  Edit,  Save, load.
 
+
+To-Do (concrete):
+
+
 To-Do (general):
 
   - Create a GUI - in progress
