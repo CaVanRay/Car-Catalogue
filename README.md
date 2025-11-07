@@ -11,6 +11,8 @@ To-Do (concrete):
 
   Day 1 - Add reindexing & better input validation
 
+  Day 2 - Add sorting and searching features
+
 
 To-Do (general):
 
