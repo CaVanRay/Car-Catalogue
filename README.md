@@ -9,15 +9,15 @@ Currently capabilities:
 
 **To-Do (concrete):**
 
-  Day 1 - Add reindexing & better input validation
+    Day 1 - Add reindexing & better input validation
 
-  Day 2 - Add sorting and searching features
+    Day 2 - Add sorting and searching features
 
-  Day 3 - Move linked list login into CarCatalogue class
+    Day 3 - Move linked list login into CarCatalogue class
 
-  Day 4 - Implement CSV export capability
+    Day 4 - Implement CSV export capability
 
-  Day 5 - Add unit tests and minor UX polish
+    Day 5 - Add unit tests and minor UX polish
 
 To-Do (general):
 
