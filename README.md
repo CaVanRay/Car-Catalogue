@@ -15,6 +15,8 @@ To-Do (concrete):
 
   Day 3 - Move linked list login into CarCatalogue class
 
+  Day 4 - Implement CSV export capability
+
 
 To-Do (general):
 
