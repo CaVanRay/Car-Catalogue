@@ -13,6 +13,8 @@ To-Do (concrete):
 
   Day 2 - Add sorting and searching features
 
+  Day 3 - Move linked list login into CarCatalogue class
+
 
 To-Do (general):
 
