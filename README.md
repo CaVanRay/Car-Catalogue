@@ -21,6 +21,8 @@ Currently capabilities:
 
 **To-Do (general):**
 
+    - Implement a lightweight stack of actions so user can undo a delete or edit
+
     - Create a GUI - in progress
 
     - Make everything save in real time so you don't have to remember to save 
