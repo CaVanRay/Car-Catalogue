@@ -19,7 +19,7 @@ Currently capabilities:
 
     Day 5 - Add unit tests and minor UX polish
 
-To-Do (general):
+**To-Do (general):**
 
   - Create a GUI - in progress
 
