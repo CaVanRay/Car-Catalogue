@@ -17,7 +17,7 @@ To-Do (concrete):
 
   Day 4 - Implement CSV export capability
 
-  Day 5 - 
+  Day 5 - Add unit tests and minor UX polish
 
 To-Do (general):
 
