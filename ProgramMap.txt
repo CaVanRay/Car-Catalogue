@@ -7,5 +7,5 @@ CatFunc (CRUD functions):
 Savld (Save/Load functions):
   -
 
-ReIndexing:
+ReIndexing (Insures correct indexing after catalogue changes):
   -
