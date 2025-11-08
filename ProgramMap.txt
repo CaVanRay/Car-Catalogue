@@ -7,6 +7,9 @@ CatFunc (CRUD functions):
   - printCatalogue
   - printCar
   - findCar
+  - addCar
+  - editCar
+  
 
 Savld (Save/Load functions):
   -
