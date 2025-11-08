@@ -5,8 +5,8 @@
   - optionsMenu()     - (Used to select what function to run)
   - printCatalogue()  - (Runs through current vector list and displays them all on screen)
   - printCar()        - (Searches for car by index and displays on screen)
-  - findCar()         -
-  - addCar()          -
+  - findCar()         - (Searches for car by index)
+  - addCar()          - (Takes car info and then creates new object with input data)
   - editCar()         -
   - deleteCar()       -
 
