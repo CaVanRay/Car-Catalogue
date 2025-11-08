@@ -1,6 +1,5 @@
 Car-Catalogue1:
-  - main()
-  - starts and organizes everything
+  - main() - starts and organizes everything
 
 CatFunc (CRUD functions):
   - optionsMenu() - (Might move)
