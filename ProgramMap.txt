@@ -9,3 +9,7 @@ Savld (Save/Load functions):
 
 ReIndexing (Insures correct indexing after catalogue changes):
   -
+
+ValidInput (Takes input and checks for valid data types):
+-
+
