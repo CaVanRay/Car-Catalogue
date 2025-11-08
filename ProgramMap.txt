@@ -2,20 +2,20 @@ Car-Catalogue1:
   - main() - starts and organizes everything
 
 CatFunc (CRUD functions):
-  - optionsMenu() - (Used to select what function to run)
-  - printCatalogue() - (Runs through current vector list and displays them all on screen)
-  - printCar() - (Searches for car by index and displays on screen)
-  - findCar() -
-  - addCar() -
-  - editCar() -
-  - deleteCar() -
+  - optionsMenu()     - (Used to select what function to run)
+  - printCatalogue()  - (Runs through current vector list and displays them all on screen)
+  - printCar()        - (Searches for car by index and displays on screen)
+  - findCar()         -
+  - addCar()          -
+  - editCar()         -
+  - deleteCar()       -
 
 Savld (Save/Load functions):
-  - saveCatalogue() - (Saves current vector list of items to a txt file)
-  - loadCatalogue() - (Opens txt file of previous catalogue and populates new vector list with information in file)
+  - saveCatalogue()   - (Saves current vector list of items to a txt file)
+  - loadCatalogue()   - (Opens txt file of previous catalogue and populates new vector list with information in file)
 
 ReIndexing (Insures correct indexing after catalogue changes):
-  - IndexUpdate() - (Checks for errors & repairs index after each addition/removal of a catalogue item)
-  - InputValidate() - (Takes input and checks for valid data types)
+  - IndexUpdate()     - (Checks for errors & repairs index after each addition/removal of a catalogue item)
+  - InputValidate()   - (Takes input and checks for valid data types)
   -
 
