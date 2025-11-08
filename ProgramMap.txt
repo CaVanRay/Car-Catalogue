@@ -3,7 +3,8 @@ Car-Catalogue1:
   - starts and organizes everything
 
 CatFunc (CRUD functions):
-  -
+  - optionsMenu - (Might move)
+  - PrintCatalogue
 
 Savld (Save/Load functions):
   -
