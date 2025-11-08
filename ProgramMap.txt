@@ -2,8 +2,8 @@ Car-Catalogue1:
   - main() - starts and organizes everything
 
 CatFunc (CRUD functions):
-  - optionsMenu() - (Might move)
-  - printCatalogue() -
+  - optionsMenu() - (Used to select what function to run)
+  - printCatalogue() - (
   - printCar() -
   - findCar() -
   - addCar() -
