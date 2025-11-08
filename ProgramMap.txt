@@ -9,7 +9,7 @@ CatFunc (CRUD functions):
   - findCar
   - addCar
   - editCar
-  
+  - deleteCar
 
 Savld (Save/Load functions):
   -
