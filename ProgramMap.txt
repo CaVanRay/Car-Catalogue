@@ -1,5 +1,6 @@
 Car-Catalogue1:
-  -
+  - main()
+  - starts and organizes everything
 
 CatFunc (CRUD functions):
   -
