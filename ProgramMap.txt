@@ -6,7 +6,7 @@ CatFunc (CRUD functions):
   - optionsMenu - (Might move)
   - printCatalogue
   - printCar
-  
+  - findCar
 
 Savld (Save/Load functions):
   -
