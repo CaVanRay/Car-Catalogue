@@ -7,8 +7,8 @@
   - printCar()        - (Searches for car by index and displays on screen)
   - findCar()         - (Searches for car by index)
   - addCar()          - (Takes car info and then creates new object with input data)
-  - editCar()         -
-  - deleteCar()       -
+  - editCar()         - (Searches for car by index, then allows user to edit existing data)
+  - deleteCar()       - (Searches for car by index, then deletes data and releases resources)
 
 **Savld (Save/Load functions):**
   - saveCatalogue()   - (Saves current vector list of items to a txt file)
