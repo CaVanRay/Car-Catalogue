@@ -3,7 +3,7 @@ Car-Catalogue1:
 
 CatFunc (CRUD functions):
   - optionsMenu() - (Used to select what function to run)
-  - printCatalogue() - (
+  - printCatalogue() - (Runs through current vector list and displays them all)
   - printCar() -
   - findCar() -
   - addCar() -
