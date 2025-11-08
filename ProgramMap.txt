@@ -3,13 +3,13 @@ Car-Catalogue1:
   - starts and organizes everything
 
 CatFunc (CRUD functions):
-  - optionsMenu - (Might move)
-  - printCatalogue
-  - printCar
-  - findCar
-  - addCar
-  - editCar
-  - deleteCar
+  - optionsMenu() - (Might move)
+  - printCatalogue()
+  - printCar()
+  - findCar()
+  - addCar()
+  - editCar()
+  - deleteCar()
 
 Savld (Save/Load functions):
   - saveCatalogue() - (Saves current vector list of items to a txt file)
