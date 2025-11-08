@@ -15,8 +15,7 @@ Savld (Save/Load functions):
   -
 
 ReIndexing (Insures correct indexing after catalogue changes):
+  - IndexUpdate() - (Checks for errors & repairs index after each addition/removal of a catalogue item)
+  - InputValidate() - (Takes input and checks for valid data types)
   -
-
-ValidInput (Takes input and checks for valid data types):
--
 
