@@ -7,6 +7,7 @@
   - printCar()        - (Searches for car by index and displays on screen)
   - findCar()         - (Searches for car by index)
   - addCar()          - (Takes car info and then creates new object with input data)
+  - repCar()		  - (Replaces one car with another)
   - editCar()         - (Searches for car by index, then allows user to edit existing data)
   - deleteCar()       - (Searches for car by index, then deletes data and releases resources)
 
