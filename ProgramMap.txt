@@ -14,8 +14,8 @@
   - saveCatalogue()   - (Saves current vector list of items to a txt file)
   - loadCatalogue()   - (Opens txt file of previous catalogue and populates new vector list with information in file)
 
-**ReIndexing (Insures correct indexing after catalogue changes):**
+**ValIndex (Insures correct indexing after catalogue changes):**
   - IndexUpdate()     - (Checks for errors & repairs index after each addition/removal of a catalogue item)
   - InputValidate()   - (Takes input and checks for valid data types)
-  -
+
 
