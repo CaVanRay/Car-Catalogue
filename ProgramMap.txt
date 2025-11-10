@@ -1,6 +1,8 @@
 **Car-Catalogue1:**
   - main()            - starts and organizes everything
 
+  UsePuts (tools for user in/output):
+
 **CatFunc (CRUD functions):**
   - optionsMenu()     - (Used to select what function to run)
   - printCatalogue()  - (Runs through current vector list and displays them all on screen)
