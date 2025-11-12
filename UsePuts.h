@@ -7,4 +7,4 @@
 
 void optionsMenu();
 
-void inputValidate();
+void printCatalogue();
