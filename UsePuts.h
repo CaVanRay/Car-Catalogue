@@ -5,6 +5,6 @@
 
 // Functions to handle any inputs & outputs
 
-void indexUpdate();
+void optionsMenu();
 
 void inputValidate();
