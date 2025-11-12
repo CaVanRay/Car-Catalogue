@@ -10,3 +10,5 @@ void optionsMenu();
 void printCatalogue();
 
 void printCar();
+
+void findCar();
