@@ -8,3 +8,5 @@
 void optionsMenu();
 
 void printCatalogue();
+
+void printCar();
