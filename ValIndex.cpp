@@ -16,7 +16,7 @@
 /*
 ValIndex functions: Validates the catalogue index as well as any inputs
 
-STATUS: TESTING
+STATUS: Designing
 */
 
 //**********************************************************************************************************************
