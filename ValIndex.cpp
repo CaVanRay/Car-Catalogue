@@ -21,6 +21,7 @@ STATUS: Designing
 
 //**********************************************************************************************************************
 
+// The entire catalogue will need to be passed to indexUpdate()
 
 void indexUpdate(){
 
