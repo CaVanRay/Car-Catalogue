@@ -11,4 +11,4 @@ void printCatalogue(car* n);
 
 void printCar(car* n);
 
-void findCar();
+car* findCar(car*& head);
