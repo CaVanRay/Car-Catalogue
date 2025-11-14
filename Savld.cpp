@@ -1,16 +1,4 @@
-#include <algorithm>
-#include <iostream>
-#include <fstream>
-#include <sstream>
-#include <string>
-#include <vector>
-#include <limits>
-#include <cctype>
-#include "CatFunc.h"
-#include "Cars.h"
-#include "UsePuts.h"
-#include "ValIndex.h"
-#include "Savld.h"
+#include "CarCatHeaders.h"
 
 const std::string FILE_NAME = "CarCatalogue.txt";
 
