@@ -111,10 +111,36 @@ void printCar(){
 
 //**********************************************************************************************************************
 
-void findCar(){
+/*
+findCar function: Takes a pointer to the head of the linked list of car objects and prompts the user to enter a valid car index.
+It then iterates through the linked list to find the car with the matching index and returns a pointer to that car object.
 
+STATUS: WORKING
+*/
 
-  
+car* findCar(car*& head) {
+    car* Pfound = nullptr;
+    int indexSearch;
+
+    do {
+        std::cout << "\n***************************************\n";
+        std::cout << "Enter valid car index: ";
+        std::cin >> indexSearch;
+
+        car* n = head;
+        while (n != nullptr) {
+            if (n->GetIndex() == indexSearch) {
+                Pfound = n;
+                break;
+            }
+            n = n->GetNext();
+        }
+
+        if (Pfound == nullptr)
+            std::cout << "Car not found, choose another index.\n";
+
+    } while (Pfound == nullptr);
+
+    return Pfound;
 }
-
 //**********************************************************************************************************************
