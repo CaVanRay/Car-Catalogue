@@ -1,13 +1,4 @@
-#include <algorithm>
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <vector>
-#include <limits>
-#include <cctype>
-#include "CatFunc.h"
-#include "Cars.h"
-#include "Savld.h"
+#include "CarCatHeaders.h"
 
 //**********************************************************************************************************************
  
