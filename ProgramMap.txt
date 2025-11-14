@@ -5,7 +5,7 @@
   - optionsMenu()     - (Used to select what function to run)
   - printCatalogue()  - (Runs through current vector list and displays them all on screen)
   - printCar()        - (Searches for car by index and displays on screen)
-  - findCar()         - (Searches for car by index)
+  - findCar()         - (Searches for car by index)(Returns pointer to car)
 
 **CatFunc (CRUD functions):**
   - addCar()          - (Takes car info and then creates new object with input data)
