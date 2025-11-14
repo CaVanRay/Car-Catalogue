@@ -13,11 +13,85 @@
 
 //**********************************************************************************************************************
 
-void optionsMenu(){
+/*
+optionsMenu function: Displays a menu of options to the user and prompts them to select an action.
 
+STATUS: TESTING
+*/
 
-  
+void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
+
+    bool runP = true;
+
+    do {
+        std::cout << std::endl << "***************************************" << std::endl;
+		std::cout << "1) Print Catalogue" << std::endl;
+        std::cout << "2) Print Specific Car" << std::endl;
+        std::cout << "3) Add a Car" << std::endl;
+        std::cout << "4) Edit a Car" << std::endl;
+        std::cout << "5) Remove a Car" << std::endl;
+        std::cout << "6) Save Catalogue" << std::endl;
+        std::cout << "7) Exit Program" << std::endl;
+        std::cout << "***************************************" << std::endl;
+        int selectedAction;
+        std::cout << "Please enter number for desired selection: ";
+        while (!(std::cin >> selectedAction)) {
+            std::cout << "Invalid input. Please enter a valid number: ";
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        }
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        switch (selectedAction) {
+        case 1: {
+            system("CLS");
+            printCatalogue(head);
+            break;
+		}
+        case 2: {
+            system("CLS");
+            car* n = findCar(head);
+            printCar(n);
+            break;
+        }
+        case 3: {
+            system("CLS");
+            addCar(head, carCatalogue);
+            printCatalogue(head);
+            break;
+        }
+        case 4: {
+            system("CLS");
+            car* n = findCar(head);
+            editCar(n);
+            printCar(n);
+            break;
+        }
+        case 5: {
+            system("CLS");
+            car* n = findCar(head);
+            deleteCar(head, carCatalogue, n);
+            printCatalogue(head);
+            break;
+        }
+        case 6: {
+            system("CLS");
+            saveCatalogue(head);
+            break;
+        }
+        case 7: {
+            system("CLS");
+			runP = false;
+            break;
+        }
+        default: {
+            std::cout << std::endl << "you have not selected a valid option" << std::endl;
+            break;
+        }
+
+        }
+	} while (runP);
 }
+
 
 //**********************************************************************************************************************
 
