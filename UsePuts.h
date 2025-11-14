@@ -5,7 +5,7 @@
 
 // Functions to handle any inputs & outputs
 
-void optionsMenu();
+void optionsMenu(car*& head, std::vector<car*>& carCatalogue);
 
 void printCatalogue();
 
