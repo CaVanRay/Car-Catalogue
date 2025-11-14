@@ -7,7 +7,7 @@
 
 void optionsMenu(car*& head, std::vector<car*>& carCatalogue);
 
-void printCatalogue();
+void printCatalogue(car* n);
 
 void printCar();
 
