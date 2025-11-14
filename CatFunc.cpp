@@ -10,6 +10,7 @@
 #include "CatFunc.h"
 #include "Cars.h"
 #include "UsePuts.h"
+#include "ValIndex.h"
 #include "Savld.h"
 
 //**********************************************************************************************************************
