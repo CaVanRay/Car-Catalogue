@@ -9,6 +9,7 @@
 #include <cctype>
 #include "CatFunc.h"
 #include "Cars.h"
+#include "UsePuts.h"
 #include "Savld.h"
 
 //**********************************************************************************************************************
