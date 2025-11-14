@@ -9,6 +9,6 @@ void optionsMenu(car*& head, std::vector<car*>& carCatalogue);
 
 void printCatalogue(car* n);
 
-void printCar();
+void printCar(car* n);
 
 void findCar();
