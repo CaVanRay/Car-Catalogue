@@ -15,11 +15,14 @@ STATUS: Designing
 // and then it will re-iterate through the linked list of items to re-set each index?
 
 void indexUpdate(car*& head, std::vector<car*>& carCatalogue){
+    
 car* n = head;
 int count = 1; 
-while(n != nullptr){
     
+while(n != nullptr){
+    n -> SetIndex(count);
  }
+    
 }
 
 //**********************************************************************************************************************
