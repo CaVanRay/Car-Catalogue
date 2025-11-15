@@ -14,7 +14,7 @@ STATUS: Designing
 // The size of the existing catalogue taken
 // and then it will re-iterate through the linked list of items to re-set each index?
 
-void indexUpdate(){
+void indexUpdate(car*& head, std::vector<car*>& carCatalogue){
 
 
   
