@@ -5,6 +5,6 @@
 
 // Functions to validate inputs & index
 
-void indexUpdate();
+void indexUpdate(car*& head, std::vector<car*>& carCatalogue);
 
 void inputValidate();
