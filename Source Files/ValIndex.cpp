@@ -22,6 +22,7 @@ int count = 1;
 while(n != nullptr){
     n -> SetIndex(count);
     count++;
+    n = n->GetNext();
  }
     
 }
