@@ -18,12 +18,15 @@ void indexUpdate(car*& head, std::vector<car*>& carCatalogue){
     
 car* n = head;
 int count = 1; 
-    
+
+// This section updates the index by linked list inside each item
 while(n != nullptr){
     n -> SetIndex(count);
     count++;
     n = n->GetNext();
  }
+
+
     
 }
 
