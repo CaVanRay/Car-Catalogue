@@ -15,7 +15,10 @@ STATUS: Designing
 // and then it will re-iterate through the linked list of items to re-set each index?
 
 void indexUpdate(car*& head, std::vector<car*>& carCatalogue){
-
+  
+      if (n == nullptr) {
+          std::cout << std::endl << "No cars are currently listed in catalogue." << std::endl;
+      }
 
   
 }
