@@ -48,13 +48,13 @@ int getInt(const std::string& prompt){
         std::cout << prompt;
 
         // Try reading an int
-        if (std::cin >> value) {
+        if (std::cin >> intValue) {
             // on success, return value, breaking the loop
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             return intValue;
         }
 
-        // if it reaches here that means input faile
+        // if it reaches here that means input failed
         std::cout << "Invalid number. Please try again. \n";
 
         // Clear input
@@ -69,8 +69,29 @@ int getInt(const std::string& prompt){
 
 double getDouble(const std::string& prompt){
 
+    // value to grab
+    double dValue;
 
-    
+    // will continouosly loop until break
+    while(true) {
+        std::cout << prompt;
+
+        //Try reading a double
+        if(std::cin >> dValue) {
+            // on success, return value, breaking the loop
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            return dValue;
+        }
+
+        // if it reaches here that means input failed
+        std::cout << "Invalid number. Please try again. \n";
+
+        // Clear input
+        std::cin.clear();
+
+        // Throw away invalid characters
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    }
 }
 
 //**********************************************************************************************************************
