@@ -22,6 +22,7 @@
   - getInt()          - Validates int input
   - getDouble()       - Validates double input
   - getYN()           - Validates bool input
-  - getVIN()          - Validates VIN number input
+  - isValidVin()      - Validates VIN number input
+  - getVIN()          - repeatedly asks for vin until valid
 
 
