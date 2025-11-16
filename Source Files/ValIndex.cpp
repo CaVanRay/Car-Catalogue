@@ -120,10 +120,28 @@ bool getYN(const std::string& prompt = "Enter (Y/N): ") {
 
 //**********************************************************************************************************************
 
-std::string getVIN(const std::string& prompt){
+std::string getVIN(const std::string& prompt = "Enter VIN: "){
+    std::string vin;
 
+    while (true) {
+        std::cout << prompt;
+        std::getline(std::cin, vin);
 
-    
+        // trim whitespace
+        vin.erase(0, vin.find_first_not_of(" \t\n\r"));
+        vin.erase(vin.find_last_not_of(" \t\n\r") + 1);
+
+        // uppercase everything
+        for (char &c : vin){
+            c = std::toupper(c);
+        }
+
+        if (isValidVin(vin)){
+            return vin;
+        }
+
+        std::cout << "Invalid VIN. It must be 17 characters, alphanumeric, and cannot contain I, O, or Q. \n";
+    }
 }
 
 //**********************************************************************************************************************
