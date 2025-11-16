@@ -85,7 +85,10 @@ void loadCatalogue(car*& head, std::vector<car*>& carCatalogue) {
 
         carCatalogue.push_back(newCar);
     }
-
+    
+	// Update the index's of each item in linked list
+	// Update the carCatalogue vector with linked list
     inputFile.close();
+    indexUpdate(head, carCatalogue);
     std::cout << "[Info] Catalogue loaded successfully from " << FILE_NAME << "\n";
 }
