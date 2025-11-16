@@ -40,8 +40,29 @@ while (n != nullptr){
 
 int getInt(const std::string& prompt){
 
+    // value to grab
+    int intValue;
 
-    
+    // will continuously loop until break
+    while(true) {
+        std::cout << prompt;
+
+        // Try reading an int
+        if (std::cin >> value) {
+            // on success, return value, breaking the loop
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            return intValue;
+        }
+
+        // if it reaches here that means input faile
+        std::cout << "Invalid number. Please try again. \n";
+
+        // Clear input
+        std::cin.clear();
+
+        // Throw away invalid characters
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    }
 }
 
 //**********************************************************************************************************************
