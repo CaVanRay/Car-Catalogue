@@ -7,10 +7,10 @@
 
 void indexUpdate(car*& head, std::vector<car*>& carCatalogue);
 
-int getInt();
+int getInt(const std::string& prompt);
 
-double getDouble();
+double getDouble(const std::string& prompt);
 
-bool getYN();
+bool getYN(const std::string& prompt);
 
-string getVIN();
+string getVIN(const std::string& prompt);
