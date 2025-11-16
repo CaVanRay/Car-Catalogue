@@ -228,7 +228,7 @@ void deleteCar(car*& head, std::vector<car*>& carCatalogue, car* n) {
         head = n->GetNext();   // update head
         if (head != nullptr) { // if list not empty now
             head->SetPrev(nullptr);
-			head->SetIndex(1);
+			indexUpdate(head, carCatalogue);
         }
     }
     else if (n->GetNext() == nullptr) { // if this is the tail
