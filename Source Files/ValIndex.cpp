@@ -104,7 +104,7 @@ bool getYN(const std::string& prompt){
 
 //**********************************************************************************************************************
 
-string getVIN(const std::string& prompt){
+std::string getVIN(const std::string& prompt){
 
 
     
