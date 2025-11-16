@@ -96,9 +96,7 @@ double getDouble(const std::string& prompt){
 
 //**********************************************************************************************************************
 
-bool getYN(const std::string& prompt){
-
-
+bool getYN(const std::string& prompt = "Enter (Y/N): ") {
     
 }
 
