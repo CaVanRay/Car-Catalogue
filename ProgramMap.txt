@@ -19,6 +19,9 @@
 
 **ValIndex (Insures correct indexing after catalogue changes):**
   - IndexUpdate()     - (Checks for errors & repairs index after each addition/removal of a catalogue item) (NOT DONE)
-  - InputValidate()   - (Takes input and checks for valid data types) (NOT DONE)
+  - getInt()          - Validates int input
+  - getDouble()       - Validates double input
+  - getYN()           - Validates bool input
+  - getVIN()          - Validates VIN number input
 
 
