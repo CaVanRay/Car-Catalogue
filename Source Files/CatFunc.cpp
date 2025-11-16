@@ -92,6 +92,10 @@ void addCar(car*& head, std::vector<car*>& carCatalogue) {
         std::transform(Cont.begin(), Cont.end(), Cont.begin(),
             [](unsigned char c) { return std::toupper(c); });
     } while (Cont == "YES");
+
+	// Update the index's of each item in linked list
+	// Update the carCatalogue vector with linked list
+	indexUpdate(head, carCatalogue);
 }
 
 
