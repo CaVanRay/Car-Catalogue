@@ -127,12 +127,19 @@ bool isValidVin(const std::string& vin) {
     }
 
     for (char c : vin) {
+        
         if (!std::isalnum(c)){
             return false;
         }
 
+        char upper = std::toupper(c);
+        if (upper == 'I' || upper == 'O' || upper == 'Q'){
+            return false;
+        }
     
     }
+
+    return true;
 }
 
 //**********************************************************************************************************************
