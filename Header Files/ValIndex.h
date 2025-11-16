@@ -7,4 +7,10 @@
 
 void indexUpdate(car*& head, std::vector<car*>& carCatalogue);
 
-void inputValidate();
+int getInt();
+
+double getDouble();
+
+bool getYN();
+
+string getVIN();
