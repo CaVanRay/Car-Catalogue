@@ -94,6 +94,7 @@ void addCar(car*& head, std::vector<car*>& carCatalogue) {
     } while (Cont == "YES");
 }
 
+
 //**********************************************************************************************************************
 
 /*
@@ -110,7 +111,7 @@ void editCar(car* n) {
         printCar(n);
         int choice;
         std::cout << std::endl << "***************************************" << std::endl;
-        std::cout << std::endl << "1) - Index";
+        std::cout << std::endl << "1) - Index"; // TO-DO Replace with re-order option
         std::cout << std::endl << "2) - Owner";
         std::cout << std::endl << "3) - Model";
         std::cout << std::endl << "4) - Vin";
@@ -207,6 +208,7 @@ void editCar(car* n) {
             [](unsigned char c) { return std::toupper(c); });
     } while (Cont == "YES");
 }
+
 //**********************************************************************************************************************
 
 /*
