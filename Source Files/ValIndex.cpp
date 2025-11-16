@@ -97,7 +97,25 @@ double getDouble(const std::string& prompt){
 //**********************************************************************************************************************
 
 bool getYN(const std::string& prompt = "Enter (Y/N): ") {
-    
+    std::string input;
+
+    while(true) {
+        std::cout << prompt;
+        std::getline(std::cin, input);
+
+        if (input.length() == 1 ) {
+            char c = std::tolower(input[0]);
+
+            if (c == 'y'){
+                return true;
+            }
+            if (c == 'n'){
+                return false;
+            }
+        }
+
+        std::cout << "Invalid input. Please type 'y' or 'n'. \n";
+    }
 }
 
 //**********************************************************************************************************************
