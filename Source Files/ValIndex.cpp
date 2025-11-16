@@ -120,6 +120,23 @@ bool getYN(const std::string& prompt = "Enter (Y/N): ") {
 
 //**********************************************************************************************************************
 
+bool isValidVin(const std::string& vin) {
+    
+    if (vin.length() != 17){
+        return false;
+    }
+
+    for (char c : vin) {
+        if (!std::isalnum(c)){
+            return false;
+        }
+
+    
+    }
+}
+
+//**********************************************************************************************************************
+
 std::string getVIN(const std::string& prompt = "Enter VIN: "){
     std::string vin;
 
