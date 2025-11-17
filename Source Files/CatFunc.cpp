@@ -19,34 +19,17 @@ void addCar(car*& head, std::vector<car*>& carCatalogue) {
         std::string Vin = getVin("input car vin#: ");
         int Mileage = getInt("input car mileage: ");
         int MPG = getDouble("input car MPG: ");
-        int Price;
-        std::string Available;
-        bool ForSale;
+        int Price = getDouble("input car price: ");
+        bool ForSale = getYN("is car available for purchase? (Y/N): ");
         //***********************************************************************
         std::cout << std::endl << "Please Add a vehicle to the catalogue" << std::endl << std::endl;
 
         std::cout << "input car owner: ";
         std::getline(std::cin, Owner);
 
-
         std::cout << std::endl << "input car model: ";
         std::getline(std::cin, Model);
 
-
-        std::cout << std::endl << "input car price: ";
-        std::cin >> Price;
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-
-        std::cout << std::endl << "is car available for purchase? (Yes/No): ";
-        std::getline(std::cin, Available);
-        std::transform(Available.begin(), Available.end(), Available.begin(),
-            [](unsigned char c) { return std::toupper(c); });
-        if (Available == "YES") {
-            ForSale = true;
-        }
-        else {
-            ForSale = false;
-        }
         //***********************************************************************
 
         car* newCar = new car();
