@@ -7,7 +7,7 @@
 
 void indexUpdate(car*& head, std::vector<car*>& carCatalogue);
 
-int getString(const std::string& prompt);
+std::string getString(const std::string& prompt);
 
 int getInt(const std::string& prompt);
 
