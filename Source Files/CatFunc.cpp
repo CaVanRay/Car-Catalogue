@@ -155,10 +155,7 @@ void editCar(car* n) {
             break;
         }
         case 4: {
-            std::string newVin;
-            std::cout << "Enter new vin#: ";
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-            std::getline(std::cin, newVin);
+            std::string newVin = getVIN();
             n->SetVin(newVin);
             break;
         }
