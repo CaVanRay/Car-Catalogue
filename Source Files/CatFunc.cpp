@@ -163,9 +163,7 @@ void editCar(car* n) {
             break;
         }
         case 5: {
-            int newMileage;
-            std::cout << "Enter new mileage: ";
-            std::cin >> newMileage;
+            int newMileage = getInt("Enter new mileage: ");
             n->SetMileage(newMileage);
             break;
         }
