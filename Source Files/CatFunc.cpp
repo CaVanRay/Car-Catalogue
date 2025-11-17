@@ -18,8 +18,8 @@ void addCar(car*& head, std::vector<car*>& carCatalogue) {
         std::string Model;
         std::string Vin = getVin("input car vin#: ");
         int Mileage = getInt("input car mileage: ");
-        int MPG = getDouble("input car MPG: ");
-        int Price = getDouble("input car price: ");
+        double MPG = getDouble("input car MPG: ");
+        double Price = getDouble("input car price: ");
         bool ForSale = getYN("is car available for purchase? (Y/N): ");
         //***********************************************************************
         std::cout << std::endl << "Please Add a vehicle to the catalogue" << std::endl << std::endl;
