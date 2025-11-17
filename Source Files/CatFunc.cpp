@@ -240,7 +240,6 @@ void deleteCar(car*& head, std::vector<car*>& carCatalogue, car* n) {
     else { // middle of the list
         n->GetPrev()->SetNext(n->GetNext());
         n->GetNext()->SetPrev(n->GetPrev());
-        }
     }
     delete n;
 	indexUpdate(head, carCatalogue);
