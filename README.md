@@ -81,35 +81,25 @@ Car-Catalogue[
 
 3. All modifications update both:
    
-       - The linked list
-   
-       - The vector
-   
-       - And re-index the entire catalogue using indexUpdate()
+   - The linked list
+   - The vector
+   - And re-index the entire catalogue using indexUpdate()
 
-Building
+## Building
 
-Compile with:
+### Compile with:
 
-g++ -std=c++17 Car-Catalogue1.cpp CatFunc.cpp UsePuts.cpp Savld.cpp ValIndex.cpp -o CarCatalogue
-
+     g++ -std=c++17 Car-Catalogue1.cpp CatFunc.cpp UsePuts.cpp Savld.cpp ValIndex.cpp -o CarCatalogue
 
 Or use your IDE’s build system.
 
-Future Improvements
+## Future Improvements
+- Full input validation integration (ongoing)
+- Index reassignment menu (instead of manual editing)
+- Optional CSV/JSON import/export
+- Sorting by price, mileage, or owner
+- Switch from manual memory management → smart pointers (std::unique_ptr)
+- Replace linked list with std::list
 
-Full input validation integration (ongoing)
-
-Index reassignment menu (instead of manual editing)
-
-Optional CSV/JSON import/export
-
-Sorting by price, mileage, or owner
-
-Switch from manual memory management → smart pointers (std::unique_ptr)
-
-Replace linked list with std::list
-
-License
-
+## License
 This project is for learning purposes and has no specific license unless added later.
