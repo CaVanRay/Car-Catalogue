@@ -19,7 +19,7 @@ A C++ console application for storing, editing, validating, saving, and loading 
 
 ### Saving & Loading
 
-- Saves catalogue to CarCatalogue.txt
+- Saves catalogue to `CarCatalogue.txt`
 
 - Loads catalogue automatically on startup
 
@@ -27,13 +27,13 @@ A C++ console application for storing, editing, validating, saving, and loading 
 
 ### Input Validation
 
-- getInt() — safe integer input
+- `getInt()` — safe integer input
 
-- getDouble() — safe double input
+- `getDouble()` — safe double input
 
-- getYN() — safe yes/no input
+- `getYN()` — safe yes/no input
 
-- getVIN() — fully validated 17-character VIN
+- `getVIN()` — fully validated 17-character VIN
 
 - - VIN validation disallows:
      - I, O, Q
@@ -68,7 +68,7 @@ Car-Catalogue[
 
 ## How the Program Works
 
-1. On start, it attempts to load CarCatalogue.txt.
+1. On start, it attempts to load `CarCatalogue.txt`.
 
 2. The main menu is displayed with options to:
    - Print the catalogue
@@ -83,7 +83,7 @@ Car-Catalogue[
    
    - The linked list
    - The vector
-   - And re-index the entire catalogue using indexUpdate()
+   - And re-index the entire catalogue using `indexUpdate()`
 
 ## Building
 
@@ -98,8 +98,8 @@ Or use your IDE’s build system.
 - Index reassignment menu (instead of manual editing)
 - Optional CSV/JSON import/export
 - Sorting by price, mileage, or owner
-- Switch from manual memory management → smart pointers (std::unique_ptr)
-- Replace linked list with std::list
+- Switch from manual memory management → smart pointers (`std::unique_ptr`)
+- Replace linked list with `std::list`
 
 ## License
 This project is for learning purposes and has no specific license unless added later.
