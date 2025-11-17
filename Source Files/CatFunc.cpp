@@ -168,9 +168,7 @@ void editCar(car* n) {
             break;
         }
         case 6: {
-            int newMPG;
-            std::cout << "Enter new MPG: ";
-            std::cin >> newMPG;
+            double newMPG = getDouble("Enter new MPG: ");
             n->SetMPG(newMPG);
             break;
         }
