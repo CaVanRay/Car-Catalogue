@@ -178,19 +178,8 @@ void editCar(car* n) {
             break;
         }
         case 8: {
-            std::string newAvailable;
-            bool newForSale;
-            std::cout << "Is the car available for purchase? (Yes/No): ";
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-            std::getline(std::cin, newAvailable);
-            std::transform(newAvailable.begin(), newAvailable.end(), newAvailable.begin(),
-                [](unsigned char c) { return std::toupper(c); });
-            if (newAvailable == "YES") {
-                newForSale = true;
-            }
-            else {
-                newForSale = false;
-            }
+            std::cout << "Is the car available for purchase? \n";
+            bool newForSale = getYN();
             n->SetSale(newForSale);
             break;
         }
