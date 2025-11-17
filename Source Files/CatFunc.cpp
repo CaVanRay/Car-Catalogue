@@ -173,9 +173,7 @@ void editCar(car* n) {
             break;
         }
         case 7: {
-            int newPrice;
-            std::cout << "Enter new price: ";
-            std::cin >> newPrice;
+            double newPrice = getDouble("Enter new price: ");
             n->SetPrice(newPrice);
             break;
         }
