@@ -28,7 +28,7 @@ while(n != nullptr){
 
 // This section updates the vector list to match the updated linked list
 carCatalogue.clear();
-car* n = head;
+n = head;
 while (n != nullptr){
     carCatalogue.push_back(n);
     n = n->GetNext();
