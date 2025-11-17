@@ -17,7 +17,7 @@ void addCar(car*& head, std::vector<car*>& carCatalogue) {
         std::string Owner;
         std::string Model;
         std::string Vin;
-        int Mileage;
+        int Mileage = getInt("input car mileage: ";
         int MPG;
         int Price;
         std::string Available;
@@ -34,12 +34,7 @@ void addCar(car*& head, std::vector<car*>& carCatalogue) {
 
 
         std::cout << std::endl << "input car vin#: ";
-        std::getline(std::cin, Vin);
-
-
-        std::cout << std::endl << "input car mileage: ";
-        std::cin >> Mileage;
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        std::getline(std::cin, Vin);;
 
 
         std::cout << std::endl << "input car MPG: ";
