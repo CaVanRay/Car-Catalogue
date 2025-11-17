@@ -13,6 +13,9 @@ void addCar(car*& head, std::vector<car*>& carCatalogue) {
 
     std::string Cont = "YES";
     do {
+
+        std::cout << std::endl << "Please Add a vehicle to the catalogue" << std::endl << std::endl;
+
         int index;
         std::string Owner = getString("input car owner: ");
         std::string Model = getString("input car model: ");
@@ -21,8 +24,6 @@ void addCar(car*& head, std::vector<car*>& carCatalogue) {
         double MPG = getDouble("input car MPG: ");
         double Price = getDouble("input car price: ");
         bool ForSale = getYN("is car available for purchase? (Y/N): ");
-        //***********************************************************************
-        std::cout << std::endl << "Please Add a vehicle to the catalogue" << std::endl << std::endl;
 
         //***********************************************************************
 
