@@ -96,7 +96,7 @@ double getDouble(const std::string& prompt){
 
 //**********************************************************************************************************************
 
-bool getYN(const std::string& prompt = "Enter (Y/N): ") {
+bool getYN(const std::string& prompt) {
     std::string input;
 
     while(true) {
@@ -144,7 +144,7 @@ bool isValidVin(const std::string& vin) {
 
 //**********************************************************************************************************************
 
-std::string getVIN(const std::string& prompt = "Enter VIN: "){
+std::string getVIN(const std::string& prompt){
     std::string vin;
 
     while (true) {

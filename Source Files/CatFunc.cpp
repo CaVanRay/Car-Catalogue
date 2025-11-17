@@ -155,7 +155,7 @@ void editCar(car* n) {
             break;
         }
         case 4: {
-            std::string newVin = getVIN();
+            std::string newVin = getVIN("Enter VIN: ");
             n->SetVin(newVin);
             break;
         }
@@ -176,7 +176,7 @@ void editCar(car* n) {
         }
         case 8: {
             std::cout << "Is the car available for purchase? \n";
-            bool newForSale = getYN();
+            bool newForSale = getYN("Enter (Y/N): ");
             n->SetSale(newForSale);
             break;
         }
