@@ -115,14 +115,14 @@ void editCar(car* n) {
         printCar(n);
         int choice;
         std::cout << std::endl << "***************************************" << std::endl;
-        std::cout << std::endl << "1) - Index"; // TO-DO Replace with re-order option
-        std::cout << std::endl << "2) - Owner";
-        std::cout << std::endl << "3) - Model";
-        std::cout << std::endl << "4) - Vin";
-        std::cout << std::endl << "5) - Mileage";
-        std::cout << std::endl << "6) - MPG";
-        std::cout << std::endl << "7) - Price";
-        std::cout << std::endl << "8) - Availability";
+        // std::cout << std::endl << "1) - Index"; // TO-DO Replace with re-order option
+        std::cout << std::endl << "1) - Owner";
+        std::cout << std::endl << "2) - Model";
+        std::cout << std::endl << "3) - Vin";
+        std::cout << std::endl << "4) - Mileage";
+        std::cout << std::endl << "5) - MPG";
+        std::cout << std::endl << "6) - Price";
+        std::cout << std::endl << "7) - Availability";
         std::cout << std::endl << "***************************************" << std::endl;
         std::cout << "Please enter number for desired selection: ";
         while (!(std::cin >> choice)) {
@@ -132,13 +132,6 @@ void editCar(car* n) {
         }
         switch (choice) {
         case 1: {
-            int newIndex;
-            std::cout << "Enter new index: ";
-            std::cin >> newIndex;
-            n->SetIndex(newIndex);
-            break;
-        }
-        case 2: {
             std::string newOwner;
             std::cout << "Enter new owner: ";
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
@@ -146,7 +139,7 @@ void editCar(car* n) {
             n->SetOwner(newOwner);
             break;
         }
-        case 3: {
+        case 2: {
             std::string newModel;
             std::cout << "Enter new model: ";
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
@@ -154,27 +147,27 @@ void editCar(car* n) {
             n->SetModel(newModel);
             break;
         }
-        case 4: {
+        case 3: {
             std::string newVin = getVIN("Enter VIN: ");
             n->SetVin(newVin);
             break;
         }
-        case 5: {
+        case 4: {
             int newMileage = getInt("Enter new mileage: ");
             n->SetMileage(newMileage);
             break;
         }
-        case 6: {
+        case 5: {
             double newMPG = getDouble("Enter new MPG: ");
             n->SetMPG(newMPG);
             break;
         }
-        case 7: {
+        case 6: {
             double newPrice = getDouble("Enter new price: ");
             n->SetPrice(newPrice);
             break;
         }
-        case 8: {
+        case 7: {
             std::cout << "Is the car available for purchase? \n";
             bool newForSale = getYN("Enter (Y/N): ");
             n->SetSale(newForSale);
