@@ -56,11 +56,37 @@ Car-Catalogue[
   
   /source[
 
-      Car-Catalogue1.cpp
-      CatFunc.cpp
-      UsePuts.cpp
-      Savld.cpp
-      ValIndex.cpp
+      Car-Catalogue1.cpp[
+          - main()
+     ]
+
+      CatFunc.cpp[
+          - addCar()
+          - repCar()
+          - editCar()
+          - deleteCar()
+     ]
+
+      UsePuts.cpp[
+          - optionsMenu()
+          - printCatalogue()
+          - printCar()
+          - findCar()
+     ]
+
+      Savld.cpp[
+          - saveCatalogue()
+          - loadCatalogue()
+     ]
+
+      ValIndex.cpp[
+          - IndexUpdate()
+          - getInt()
+          - getDouble()
+          - getYN()
+          - isValidVin()
+          - getVIN()
+     ]
 
   ]
 ]
