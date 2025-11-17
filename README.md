@@ -71,28 +71,18 @@ Car-Catalogue[
 1. On start, it attempts to load CarCatalogue.txt.
 
 2. The main menu is displayed with options to:
-
-  - Print the catalogue
-
-  - View a specific car
-
-  - Add a car
-
-  - Edit a car
-
-  - Delete a car
-
-  - Save manually
-
-  - Exit the program
+       - Print the catalogue
+       - View a specific car
+       - Add a car
+       - Edit a car
+       - Delete a car
+       - Save manually
+       - Exit the program
 
 3. All modifications update both:
-
-  - The linked list
-
-  - The vector
-
-  - And re-index the entire catalogue using indexUpdate()
+       - The linked list
+       - The vector
+       - And re-index the entire catalogue using indexUpdate()
 
 Building
 
