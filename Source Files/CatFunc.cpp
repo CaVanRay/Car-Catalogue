@@ -115,7 +115,6 @@ void editCar(car* n) {
         printCar(n);
         int choice;
         std::cout << std::endl << "***************************************" << std::endl;
-        // std::cout << std::endl << "1) - Index"; // TO-DO Replace with re-order option
         std::cout << std::endl << "1) - Owner";
         std::cout << std::endl << "2) - Model";
         std::cout << std::endl << "3) - Vin";
