@@ -1,32 +1,122 @@
-# Car-Catalogue
-Moving car list program to its own repository so I can work on using git to push commits from my local machine
+# **Car Catalogue Program**
 
-This is a simple car catalogue program that allows users to view a list of cars, add new cars, and search for cars by various attributes
+A C++ console application for storing, editing, validating, saving, and loading a catalogue of vehicles using a doubly linked list combined with a vector mirror for easy indexing.
 
-Currently capabilities:
-  Find,  Print,  Add,  Remove,  Edit,  Save, load.
+## Features
+### Catalogue Management
+
+- Add new vehicles
+- Edit existing vehicles
+- Remove vehicles
+- View full catalogue
+- View single vehicle
+
+### Data Structure
+
+- Doubly linked list for in-memory ordering
+- Vector mirror for quick access & loading
+- Automatic index rebuilding after any modification
+
+### Saving & Loading
+
+- Saves catalogue to CarCatalogue.txt
+
+- Loads catalogue automatically on startup
+
+- Pipe-delimited format (no external libraries required)
+
+### Input Validation
+
+- getInt() — safe integer input
+
+- getDouble() — safe double input
+
+- getYN() — safe yes/no input
+
+- getVIN() — fully validated 17-character VIN
+
+- - VIN validation disallows:
+     - I, O, Q
+     - Non-alphanumeric characters
+     - Any VIN not exactly 17 characters
+
+## Project Structure
+```
+Car-Catalogue[
+
+  /headers[
+      CarCatHeaders.h
+      Cars.h
+      CatFunc.h
+      UsePuts.h
+      Savld.h
+      ValIndex.h
+
+  ]
+  
+  /source[
+
+      Car-Catalogue1.cpp
+      CatFunc.cpp
+      UsePuts.cpp
+      Savld.cpp
+      ValIndex.cpp
+
+  ]
+]
+```
+
+## How the Program Works
+
+1. On start, it attempts to load CarCatalogue.txt.
+
+2. The main menu is displayed with options to:
+
+  - Print the catalogue
+
+  - View a specific car
+
+  - Add a car
+
+  - Edit a car
+
+  - Delete a car
+
+  - Save manually
+
+  - Exit the program
+
+3. All modifications update both:
+
+  - The linked list
+
+  - The vector
+
+  - And re-index the entire catalogue using indexUpdate()
+
+Building
+
+Compile with:
+
+g++ -std=c++17 Car-Catalogue1.cpp CatFunc.cpp UsePuts.cpp Savld.cpp ValIndex.cpp -o CarCatalogue
 
 
-**To-Do (concrete):**
+Or use your IDE’s build system.
 
-    Day 1 - Add reindexing & better input validation
+Future Improvements
 
-    Day 2 - Add sorting and searching features
+Full input validation integration (ongoing)
 
-    Day 3 - Move linked list login into CarCatalogue class
+Index reassignment menu (instead of manual editing)
 
-    Day 4 - Implement CSV export capability
+Optional CSV/JSON import/export
 
-    Day 5 - Add unit tests and minor UX polish
+Sorting by price, mileage, or owner
 
-**To-Do (general):**
+Switch from manual memory management → smart pointers (std::unique_ptr)
 
-    - Implement a lightweight stack of actions so user can undo a delete or edit
+Replace linked list with std::list
 
-    - Create a GUI - in progress
+License
 
-    - Make everything save in real time so you don't have to remember to save 
-
-    - Add ability to include pictures - requires working GUI
-
-    - Add locations and link to google maps
+This project is for learning purposes and has no specific license unless added later.
