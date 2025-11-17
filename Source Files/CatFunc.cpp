@@ -14,7 +14,7 @@ void addCar(car*& head, std::vector<car*>& carCatalogue) {
     std::string Cont = "YES";
     do {
         int index;
-        std::string Owner;
+        std::string Owner = getString("input car owner: ");
         std::string Model;
         std::string Vin = getVIN("input car vin#: ");
         int Mileage = getInt("input car mileage: ");
