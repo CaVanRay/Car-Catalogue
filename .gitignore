@@ -5,4 +5,11 @@ Car-Catalogue/Car-Catalogue/
 *.idb
 *.pdb
 *.exe
-/ x64/
+*.log
+*.tlog
+*.vcxproj
+*.filters
+x64/Debug
+x64/
+Debug/
+Car-Catalogue/x64
