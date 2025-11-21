@@ -150,12 +150,10 @@ STATUS: WORKING
 
 car* findCar(car*& head) {
     car* Pfound = nullptr;
-    int indexSearch;
 
     do {
         std::cout << "\n***************************************\n";
-        std::cout << "Enter valid car index: ";
-        std::cin >> indexSearch;
+        int indexSearch = getInt("Enter car index to delete: ");
 
         car* n = head;
         while (n != nullptr) {
