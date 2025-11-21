@@ -151,6 +151,11 @@ STATUS: WORKING
 car* findCar(car*& head) {
     car* Pfound = nullptr;
 
+    if (head = nullptr) {
+        std::cout << "\n\n Error: no searchable list provided \n\n";
+        return 0;
+    }
+
     do {
         std::cout << "\n***************************************\n";
         int indexSearch = getInt("Enter car index to delete: ");
