@@ -151,7 +151,7 @@ STATUS: WORKING
 car* findCar(car*& head) {
     car* Pfound = nullptr;
 
-    if (head = nullptr) {
+    if (head == nullptr) {
         std::cout << "\n\n Error: no searchable list provided \n\n";
         return 0;
     }
