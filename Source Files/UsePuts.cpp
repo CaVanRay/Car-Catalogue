@@ -14,7 +14,7 @@ void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
 
     do {
         std::cout << std::endl << "***************************************" << std::endl;
-		std::cout << "1) Print Catalogue" << std::endl;
+        std::cout << "1) Print Catalogue" << std::endl;
         std::cout << "2) Print Specific Car" << std::endl;
         std::cout << "3) Add a Car" << std::endl;
         std::cout << "4) Edit a Car" << std::endl;
@@ -22,14 +22,10 @@ void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
         std::cout << "6) Save Catalogue" << std::endl;
         std::cout << "7) Exit Program" << std::endl;
         std::cout << "***************************************" << std::endl;
-        int selectedAction;
-        std::cout << "Please enter number for desired selection: ";
-        while (!(std::cin >> selectedAction)) {
-            std::cout << "Invalid input. Please enter a valid number: ";
-            std::cin.clear();
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        int selectedAction = getInt("Enter option: ");
+        while (selectedAction < 1 || selectedAction > 7) {
+            selectedAction = getInt("Invalid option. Try again: ");
         }
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         switch (selectedAction) {
         case 1: {
             system("CLS");
@@ -73,7 +69,7 @@ void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
             break;
         }
         default: {
-            std::cout << std::endl << "you have not selected a valid option" << std::endl;
+            std::cout << std::endl << "Error: you have not selected a valid option" << std::endl;
             break;
         }
 
