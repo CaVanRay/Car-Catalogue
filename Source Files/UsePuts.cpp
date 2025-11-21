@@ -151,6 +151,15 @@ STATUS: WORKING
 car* findCar(car*& head) {
     car* Pfound = nullptr;
 
+
+    car* Pcount = head;
+    int listSize = 0;
+    while (Pcount != nullptr) {
+            listSize++;
+            Pcount = Pcount->GetNext();
+    }
+
+
     if (head == nullptr) {
         std::cout << "\n\n Error: no searchable list provided \n\n";
         return 0;
