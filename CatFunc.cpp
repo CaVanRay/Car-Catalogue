@@ -192,7 +192,8 @@ void moveCar(){
 	STATUS: Planning
 
     needed inputs:
-	get index of car to move
+	    - get index of car to move
+		- use findCar() to get pointer to car
 
 	*/
 }
