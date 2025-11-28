@@ -188,6 +188,9 @@ void moveCar(){
 	/* 
 	This will be the moveCar() function
 	Pretty self-explanitory, it moves cars up and down the list
+
+	STATUS: Planning
+
 	*/
 }
 
