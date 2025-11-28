@@ -192,7 +192,7 @@ void moveCar(){
 	STATUS: Planning
 
     needed inputs:
-
+	get index of car to move
 
 	*/
 }
