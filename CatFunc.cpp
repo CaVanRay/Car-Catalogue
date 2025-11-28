@@ -191,6 +191,9 @@ void moveCar(){
 
 	STATUS: Planning
 
+    needed inputs:
+
+
 	*/
 }
 
