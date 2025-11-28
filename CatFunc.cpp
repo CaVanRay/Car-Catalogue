@@ -194,6 +194,7 @@ void moveCar(){
     needed inputs:
 	    - get index of car to move
 		- use findCar() to get pointer to car
+		- get index of position to move to
 
 	*/
 }
