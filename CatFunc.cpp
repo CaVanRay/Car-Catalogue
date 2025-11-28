@@ -196,6 +196,7 @@ void moveCar(){
 		- use findCar() to get pointer to car
 		- get index of position to move to
 		- compare indexes and either move up or down, if up you go with prev pointers, if down you go with next pointers
+		- If manaully overwriting items as they move, you will need to store the data of the car being moved in temp variables
 
 	*/
 }
