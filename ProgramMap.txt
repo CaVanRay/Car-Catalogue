@@ -9,7 +9,7 @@
 
 **CatFunc (CRUD functions):**
   - addCar()          - (Takes car info and then creates new object with input data)
-  - repCar()		      - (Replaces one car with another) (NOT DONE)
+  - repCar()		    - (Replaces one car with another) (NOT DONE)
   - editCar()         - (Searches for car by index, then allows user to edit existing data)
   - deleteCar()       - (Searches for car by index, then deletes data and releases resources)
   - moveCar()         - (Gets pointer to car using findCar() and then moves it up or down the linked list and updates the catalogue)
