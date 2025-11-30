@@ -12,7 +12,7 @@
   - repCar()		      - (Replaces one car with another) (NOT DONE)
   - editCar()         - (Searches for car by index, then allows user to edit existing data)
   - deleteCar()       - (Searches for car by index, then deletes data and releases resources)
-  - moveCar()         -
+  - moveCar()         - (Gets pointer to car using findCar() and then moves it up or down the linked list and updates the catalogue)
 
 **Savld (Save/Load functions):**
   - saveCatalogue()   - (Saves current vector list of items to a txt file)
