@@ -184,7 +184,7 @@ void deleteCar(car*& head, std::vector<car*>& carCatalogue, car* n) {
 
 //**********************************************************************************************************************
 
-void moveCar(car*& head, std::vector<car*>& carCatalogue){
+void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 	/* 
 	This will be the moveCar() function
 	Pretty self-explanitory, it moves cars up and down the list
