@@ -196,8 +196,21 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 		- compare indexes and either move up or down, if up you go with prev pointers, if down you go with next pointers
 		- If manaully overwriting items as they move, you will need to store the data of the car being moved in temp variables
 	*/
+	
+	car* Pcount = head;
+    int listSize = 0;
+    while (Pcount != nullptr) {
+            listSize++;
+            Pcount = Pcount->GetNext();
+    }
+	
+	do {
 	int newindex = getInt("Enter desired new index for car: ");
 	
+		while (newIndex < 1 || newIndex > listSize){
+		
+		}
+	}
 }
 
 //**********************************************************************************************************************
