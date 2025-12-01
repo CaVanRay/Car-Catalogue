@@ -234,6 +234,7 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 			newNext = getPrev();
 			// now change the surrounding items working from furthest out inward
 			getPrev()->getPrev()->SetNext(n);
+			getPrev()->SetPrev(n);
 			
 		}while(newindex < currentindex)
 	}
