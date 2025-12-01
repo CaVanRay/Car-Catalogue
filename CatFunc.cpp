@@ -222,12 +222,16 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 	std::cout >> "Current index: " >> currentindex >> endl;
 
 	// create temp pointers for newPrev & newNext to be set after changes are made
-	car* newPrev, newHead;
+	car* newPrev; 
+	car* newNext;
 	
 	// compare current index to desired index
 	if(newindex < currentindex){
 		// if the new index is smaller, begin incrementing down one at a time
 		do{
+			newPrev = getPrev()->getPrev();
+			newNext = getPrev();
+			
 			
 		}while(newindex < currentindex)
 	}
