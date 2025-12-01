@@ -207,7 +207,8 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 
 	// get current index #
 	int currentindex = n->GetIndex();
-	
+
+	// get disired index #
 	do {
 	int newindex = getInt("Enter desired new index for car: ");
 	
