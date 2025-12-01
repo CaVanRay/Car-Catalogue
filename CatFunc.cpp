@@ -229,6 +229,7 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 		}while(newindex < currentindex)
 	}
 	if(newindex > currentindex){
+		// if the new index is larger, begin incrementing up one at a time
 		do{
 			
 		}while(newindex > currentindex)
