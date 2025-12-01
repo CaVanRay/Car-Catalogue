@@ -167,7 +167,7 @@ car* findCar(car*& head) {
 
     do {
         std::cout << "\n***************************************\n";
-        int indexSearch = getInt("Enter car index to delete: ");
+        int indexSearch = getInt("Enter desired car index: ");
         while (indexSearch < 1 || indexSearch > listSize) {
             indexSearch = getInt("Invalid index. Try again: ");
         }
