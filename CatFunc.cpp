@@ -229,6 +229,7 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 	if(newindex < currentindex){
 		// if the new index is smaller, begin incrementing down one at a time
 		do{
+			// set temp pointers for after changes are made
 			newPrev = getPrev()->getPrev();
 			newNext = getPrev();
 			
