@@ -228,7 +228,9 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 		}while(newindex < currentindex)
 	}
 	if(newindex > currentindex){
-		
+		do{
+			
+		}while(newindex > currentindex)
 	}
 	if(newindex == currentindex){
 		// If newindex == current index, then no change is required
