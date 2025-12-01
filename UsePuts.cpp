@@ -18,9 +18,10 @@ void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
         std::cout << "2) Print Specific Car" << std::endl;
         std::cout << "3) Add a Car" << std::endl;
         std::cout << "4) Edit a Car" << std::endl;
-        std::cout << "5) Remove a Car" << std::endl;
-        std::cout << "6) Save Catalogue" << std::endl;
-        std::cout << "7) Exit Program" << std::endl;
+		std::cout << "5) Move a car" << std::endl;
+        std::cout << "6) Remove a Car" << std::endl;
+        std::cout << "7) Save Catalogue" << std::endl;
+        std::cout << "8) Exit Program" << std::endl;
         std::cout << "***************************************" << std::endl;
         int selectedAction = getInt("Enter option: ");
         while (selectedAction < 1 || selectedAction > 7) {
@@ -51,19 +52,25 @@ void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
             printCar(n);
             break;
         }
-        case 5: {
+		case 5: {
+			system("CLS");
+			car* n = findCar(head);
+			moveCar(head, carCatalogue, n);
+			break;
+		}	
+        case 6: {
             system("CLS");
             car* n = findCar(head);
             deleteCar(head, carCatalogue, n);
             printCatalogue(head);
             break;
         }
-        case 6: {
+        case 7: {
             system("CLS");
             saveCatalogue(head);
             break;
         }
-        case 7: {
+        case 8: {
             system("CLS");
 			runP = false;
             break;
