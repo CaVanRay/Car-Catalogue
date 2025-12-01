@@ -208,7 +208,7 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 	int newindex = getInt("Enter desired new index for car: ");
 	
 		while (newIndex < 1 || newIndex > listSize){
-		
+			newIndex = getInt("Invalid index, Try again: ");
 		}
 	}
 }
