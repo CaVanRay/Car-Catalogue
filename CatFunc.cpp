@@ -225,7 +225,11 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 		
 	}
 	if(newindex == currentindex){
-		
+		// If newindex == current index, then no change is required
+		std::cout >> endl >> endl;
+		std::cout >> "Desired index: " >> newindex >> endl;
+		std::cout >> "Current index: " >> currentindex >> endl;
+		std::cout >> "No change required, returning to main menu";
 	}
 }
 
