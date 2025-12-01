@@ -230,11 +230,11 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 		// if the new index is smaller, begin incrementing down one at a time
 		do{
 			// set temp pointers for after changes are made
-			newPrev = getPrev()->getPrev();
-			newNext = getPrev();
+			newPrev = GetPrev()->GetPrev();
+			newNext = GetPrev();
 			// now change the surrounding items working from furthest out inward
-			getPrev()->getPrev()->SetNext(n);
-			getPrev()->SetPrev(n);
+			GetPrev()->GetPrev()->SetNext(n);
+			GetPrev()->SetPrev(n);
 			
 		}while(newindex < currentindex)
 	}
