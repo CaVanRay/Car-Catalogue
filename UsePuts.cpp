@@ -174,7 +174,7 @@ car* findCar(car*& head) {
 
     do {
         std::cout << "\n***************************************\n";
-        int indexSearch = getInt("Enter desired car index: ");
+        int indexSearch = getInt("Enter index of car to change: ");
         while (indexSearch < 1 || indexSearch > listSize) {
             indexSearch = getInt("Invalid index. Try again: ");
         }
