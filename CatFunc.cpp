@@ -242,9 +242,12 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 			
 			GetPrev()->SetPrev(n);
 
-			// if((n->GetNext()) != nullptr){
+			// I need to check if there is a next item after n
+			// if((n->GetNext()) != nullptr){}
 			GetPrev()->SetNext(n->GetNext());
 			GetNext()->SetPrev(n->GetPrev());
+
+			// I need to check if there is item before previous item or is it the head of list
 			n->SetPrev(newPrev);
 			n->SetNext(newNext);
 			
