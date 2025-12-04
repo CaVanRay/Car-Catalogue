@@ -231,21 +231,21 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 		do{
 			// set temp pointers for after changes are made
 			
-			newPrev = ((GetPrev()->GetPrev()) != nullptr) ? (GetPrev()->GetPrev()) : nullptr; 
-			newNext = GetPrev();
+			newPrev = ((n->GetPrev()->GetPrev()) != nullptr) ? (n->GetPrev()->GetPrev()) : nullptr; 
+			newNext = n->GetPrev();
 			
 			// now change the surrounding items working from furthest out inward
 			
 			//if((GetPrev()->GetPrev()) != nullptr){
-			GetPrev()->GetPrev()->SetNext(n);
+			n->GetPrev()->GetPrev()->SetNext(n);
 			//}
 			
-			GetPrev()->SetPrev(n);
+			n->GetPrev()->SetPrev(n);
 
 			// I need to check if there is a next item after n
 			//if((n->GetNext()) != nullptr){			
-			GetPrev()->SetNext(n->GetNext());
-			GetNext()->SetPrev(n->GetPrev());
+			n->GetPrev()->SetNext(n->GetNext());
+			n->GetNext()->SetPrev(n->GetPrev());
 			//}
 			
 			// I need to check if there is item before previous item or is it the head of list
@@ -259,7 +259,10 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 	if(newindex > currentindex){
 		// if the new index is larger, begin incrementing up one at a time
 		do{
+			
 			newPrev = n->GetNext();
+			newNext =
+				
 		}while(newindex > currentindex)
 	}
 	if(newindex == currentindex){
