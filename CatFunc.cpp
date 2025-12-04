@@ -264,6 +264,9 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 			newNext = n->GetNext()->GetNext();
 
 			n->GetNext()->GetNext()->SetPrev(n);
+			n->GetNext()->SetNext(n);
+
+			
 				
 		}while(newindex > currentindex)
 	}
