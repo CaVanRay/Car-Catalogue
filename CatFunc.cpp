@@ -215,9 +215,9 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 			newindex = getInt("Invalid index, Try again: ");
 		}
 		
-	std::cout << endl << endl;
-	std::cout << "Desired index: " << newindex << endl;
-	std::cout << "Current index: " << currentindex << endl;
+	std::cout << std::endl << std::endl;
+	std::cout << "Desired index: " << newindex << std::endl;
+	std::cout << "Current index: " << currentindex << std::endl;
 
 	// create temp pointers for newPrev & newNext to be set after changes are made
 	car* newPrev; 
