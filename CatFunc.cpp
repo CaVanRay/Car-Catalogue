@@ -237,8 +237,6 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 			// now change the surrounding items working from furthest out inward
 			
 			n->GetPrev()->GetPrev()->SetNext(n);
-			//}
-			
 			n->GetPrev()->SetPrev(n);
 
 			// I need to check if there is a next item after n
