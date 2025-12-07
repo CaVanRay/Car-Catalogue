@@ -223,6 +223,7 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 	car* newPrev; 
 	car* newNext;
 	car* A;
+	car* B;
 	
 	// compare current index to desired index
 	if(newindex < currentindex){
