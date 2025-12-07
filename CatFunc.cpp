@@ -256,7 +256,7 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 		do{
 			
 			newPrev = n->GetNext();
-			newNext = n->GetNext()->GetNext();
+			newNext = ((n->GetNext()->GetNext()) != nullptr) ? (n->GetNext()->GetNext()) : nullptr;
 
 			/*
 			
