@@ -235,24 +235,7 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 		n->GetNext()->SetPrev(nullptr);
 		head = (n->GetNext());
 	}
-	
-	if(newindex < currentindex){
-		// If newindex == lower than current index, we move down
-		do{
-			
-		}while(newindex < currentindex)
-	}
-	if(newindex > currentindex){
-		// If newindex == higher than current index, we move up
-		do{
-			
-			
-		}while(newindex > currentindex)
-	}
-	if(newindex == currentindex){
-		// If newindex == current index, then no change is required
-		std::cout << "No change required, returning to main menu";
-	}
+	indexUpdate(head, carCatalogue);
 }
 
 //**********************************************************************************************************************
