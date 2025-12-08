@@ -219,6 +219,18 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 	std::cout << "Desired index: " << newindex << std::endl;
 	std::cout << "Current index: " << currentindex << std::endl;
 
+	// First we need to remove n from the list, but also make sure neither the prev or next are nullptr's
+
+	if((n->GetPrev() != nullptr) && (n->GetNext() != nullptr) {
+		n->GetPrev()->SetNext(n->GetNext());
+		n->GetNext()->SetPrev(n->GetPrev());
+	}else if((n->GetPrev() != nullptr) && (n->GetNext() == nullptr){
+		n->GetPrev()->SetNext(nullptr);
+	}else if((n->GetPrev() == nullptr) && (n->GetNext() != nullptr){
+		n->GetNext()->SetPrev(nullptr);
+		head = (n->GetNext());
+	}
+	
 	if(newindex < currentindex){
 		// If newindex == lower than current index, we move down
 		do{
