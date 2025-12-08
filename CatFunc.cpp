@@ -239,6 +239,9 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 			B = n;
 			if((n->GetPrev()) != nullptr){A = (n->GetPrev());}
 			if((n->GetNext()) != nullptr){C = (n->GetNext());}
+
+			// A -> B -> C
+			// B -> A -> C
 			
 			// now change the surrounding items working from furthest out inward
 			/*
