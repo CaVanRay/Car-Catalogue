@@ -247,7 +247,11 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 		
 	}else{
 		
-		// Check Prev, set Prev's next to n, set n's Prev to Prev
+		// Check Prev, set Prev's Next to n, set n's Prev to Prev
+
+
+		
+		// Check Next, Set Next's Prev to n, set n's Next to Next
 		
 	}
 }
