@@ -221,13 +221,15 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 
 	// First we need to remove n from the list, but also make sure neither the prev or next are nullptr's
 
-	if((n->GetPrev() != nullptr) && (n->GetNext() != nullptr) {
+	if((n->GetPrev() != nullptr) && (n->GetNext() != nullptr)) {
 		// Case 1: n is in the middle
 		n->GetPrev()->SetNext(n->GetNext());
 		n->GetNext()->SetPrev(n->GetPrev());
+		
 	}else if((n->GetPrev() != nullptr) && (n->GetNext() == nullptr){
 		// Case 2: n is the tail
 		n->GetPrev()->SetNext(nullptr);
+		
 	}else if((n->GetPrev() == nullptr) && (n->GetNext() != nullptr){
 		// Case 3: n is the head
 		n->GetNext()->SetPrev(nullptr);
