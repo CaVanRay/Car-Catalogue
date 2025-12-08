@@ -219,88 +219,16 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 	std::cout << "Desired index: " << newindex << std::endl;
 	std::cout << "Current index: " << currentindex << std::endl;
 
-	// create temp pointers for newPrev & newNext to be set after changes are made
-	car* newPrev; 
-	car* newNext;
-	car* A;
-	car* B;
-	car* C;
-	car* D;
-	
-	// compare current index to desired index
 	if(newindex < currentindex){
-		// if the new index is smaller, begin incrementing down one at a time
+		// If newindex == lower than current index, we move down
 		do{
-			// set temp pointers for after changes are made
-			
-			newPrev = ((n->GetPrev()->GetPrev()) != nullptr) ? (n->GetPrev()->GetPrev()) : nullptr; 
-			newNext = n->GetPrev();
-
-			B = n;
-			if((n->GetPrev()) != nullptr){A = (n->GetPrev());}
-			if((n->GetNext()) != nullptr){C = (n->GetNext());}
-
-			// A -> B -> C
-			// B -> A -> C
-
-			B->SetNext(A);
-			A->SetNext(C);
-			C->SetPrev(A);
-			A->SetPrev(B);
-			
-			// now change the surrounding items working from furthest out inward
-			/*
-				
-			n->GetPrev()->GetPrev()->SetNext(n);
-			n->GetPrev()->SetPrev(n);
-			
-			n->GetPrev()->SetNext(n->GetNext());
-			n->GetNext()->SetPrev(n->GetPrev());
-			
-			n->SetPrev(newPrev);
-			n->SetNext(newNext);
-
-			indexUpdate(head, carCatalogue);
-			currentindex = n->GetIndex();
-
-			*/
 			
 		}while(newindex < currentindex)
 	}
 	if(newindex > currentindex){
-		// if the new index is larger, begin incrementing up one at a time
+		// If newindex == higher than current index, we move up
 		do{
 			
-			newPrev = n->GetNext();
-			newNext = ((n->GetNext()->GetNext()) != nullptr) ? (n->GetNext()->GetNext()) : nullptr;
-
-			B = n;
-			if((n->GetPrev()) != nullptr){A = (n->GetPrev());}
-			if((n->GetNext()) != nullptr){C = (n->GetNext());}
-
-			// A -> B -> C
-			// A -> C -> B
-			
-			A->SetNext(C);
-			C->SetNext(B);
-			B->SetPrev(C);
-			C->SetPrev(A);
-			
-			/*
-			
-			n->GetNext()->GetNext()->SetPrev(n);
-			n->GetNext()->SetNext(n);
-			
-			n->GetNext()->SetPrev(n->GetPrev());
-			n->GetPrev()->SetNext(n->GetNext());
-
-			n->SetPrev(newPrev);
-			n->SetNext(newNext);
-			
-			indexUpdate(head, carCatalogue);
-			currentindex = n->GetIndex();
-
-			*/
 			
 		}while(newindex > currentindex)
 	}
