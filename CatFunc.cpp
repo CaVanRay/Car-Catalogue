@@ -283,6 +283,8 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 			
 			A->SetNext(C);
 			C->SetNext(B);
+			B->SetPrev(C);
+			
 			
 			/*
 			
