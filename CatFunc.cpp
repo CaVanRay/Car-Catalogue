@@ -254,12 +254,12 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 		// Check Prev, set Prev's Next to n, set n's Prev to Prev
 		if(carCatalogue[(newindex - 2)] != nullptr){
 			carCatalogue[(newindex - 2)]->SetNext(n);
-			n->SetPrev(carCataloge[(newindex - 2)]);
+			n->SetPrev(carCatalogue[(newindex - 2)]);
 		}
 		// Check Next, Set Next's Prev to n, set n's Next to Next
 		if(carCatalogue[(newindex - 1)] != nullptr){
 			carCatalogue[(newindex - 1)]->SetPrev(n);
-			n->SetNext(carCatalogue[(newindex - 1)];
+			n->SetNext(carCatalogue[(newindex - 1)]);
 		}
 		indexUpdate(head, carCatalogue);
 	}
