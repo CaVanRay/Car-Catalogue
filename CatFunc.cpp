@@ -230,6 +230,7 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 	}else if((n->GetPrev() == nullptr) && (n->GetNext() != nullptr)){
 		// Case 3: n is the head
 		// Next Car Exists but Prev Car does not
+		// Set Next Car's Prev pointer to NULL
 		n->GetNext()->SetPrev(nullptr);
 		head = (n->GetNext());
 	}
