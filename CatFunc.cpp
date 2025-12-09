@@ -234,7 +234,9 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 		n->GetNext()->SetPrev(nullptr);
 		head = (n->GetNext());
 	}
-	
+
+	// Set n's Next pointer to NULL
+	// Set n's Prev pointer to NULL
 	n->SetNext(nullptr);
 	n->SetPrev(nullptr);
 	
