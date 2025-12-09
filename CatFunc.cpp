@@ -243,6 +243,10 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 	// Update the carCatalogue index
 	indexUpdate(head, carCatalogue);
 
+	// If desired index is in the first slot
+	// set n's next pointer to previous head
+	// set head pointer to equal n
+	// 
 	if(newindex == 1){
 		n->SetNext(head);
 		if(head) head->SetPrev(n);
