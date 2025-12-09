@@ -239,7 +239,8 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 	// Set n's Prev pointer to NULL
 	n->SetNext(nullptr);
 	n->SetPrev(nullptr);
-	
+
+	// Update the carCatalogue index
 	indexUpdate(head, carCatalogue);
 
 	if(newindex == 1){
