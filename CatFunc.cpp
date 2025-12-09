@@ -216,6 +216,7 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 
 	if((n->GetPrev() != nullptr) && (n->GetNext() != nullptr)) {
 		// Case 1: n is in the middle
+		// Both Prev Car & Next Car exist
 		n->GetPrev()->SetNext(n->GetNext());
 		n->GetNext()->SetPrev(n->GetPrev());
 		
