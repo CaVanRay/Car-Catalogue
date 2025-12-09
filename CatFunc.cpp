@@ -254,7 +254,8 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 	}
 	else{
 		// For every spot other than the 1st position
-		// 
+		// Using the requested index and the CarCatalogue vector list of car* pointers
+		//
 		car* PrevNode = carCatalogue[newindex - 2];
 		car* NextNode = (newindex - 1 < carCatalogue.size()) ? carCatalogue[newindex - 1] : nullptr;
 
