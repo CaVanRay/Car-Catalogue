@@ -6,3 +6,4 @@ This is a place to jot down some ideas for what to do next
 12/10/25
 
 1: Add a Gui
+2: Remote save that can be accessed & edited from all instances of the program
