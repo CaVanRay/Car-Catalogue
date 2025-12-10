@@ -9,3 +9,4 @@ This is a place to jot down some ideas for what to do next
 2: Remote save that can be accessed & edited from all instances of the program
 3: Notes section for each car
 4: deploy program on a container that constantly updates from the github repo
+5: replace save function with an always up-to-date local save that updates after every change
