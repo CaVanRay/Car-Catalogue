@@ -8,3 +8,4 @@ This is a place to jot down some ideas for what to do next
 1: Add a Gui - Ability to attach images
 2: Remote save that can be accessed & edited from all instances of the program
 3: Notes section for each car
+4: deploy program on a container that constantly updates from the github repo
