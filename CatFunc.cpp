@@ -201,9 +201,6 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
             Pcount = Pcount->GetNext();
     }
 
-	// get current index #
-	int currentindex = n->GetIndex();
-
 	// get desired index #
 	int newindex = getInt("Enter desired new index for car: ");
 	
