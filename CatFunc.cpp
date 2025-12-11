@@ -249,6 +249,7 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 	// set head pointer to equal n
 	if(newindex == 1){
 		n->SetNext(head);
+		// Make sure head currently exists
 		if (head) head->SetPrev(n);
 		head = n;	
 	}
