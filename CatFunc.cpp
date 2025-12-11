@@ -185,6 +185,7 @@ void deleteCar(car*& head, std::vector<car*>& carCatalogue, car* n) {
 //**********************************************************************************************************************
 
 // moveCar() function: Selected car is moved up or down the linked list to a desired location
+// STATUS: WORKING (UN-TESTED)
 
 void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 	/* 
