@@ -213,7 +213,7 @@ void moveCar(car*& head, std::vector<car*>& carCatalogue, car*n){
 		
 	std::cout << std::endl << std::endl;
 	std::cout << "Desired index: " << newindex << std::endl;
-	std::cout << "Current index: " << currentindex << std::endl;
+	std::cout << "Current index: " << n->GetIndex() << std::endl;
 
 	// First we need to remove n from the list, but also make sure neither the prev or next are nullptr's
 
