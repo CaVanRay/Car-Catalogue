@@ -13,7 +13,7 @@ int main() {
 
     printCatalogue(head);
 
-    optionsMenu(head, carCatalogue);
+    optionsMenu(head, tail, carCatalogue);
 
     return 0;
 }
