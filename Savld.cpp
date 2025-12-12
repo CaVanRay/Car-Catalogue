@@ -85,7 +85,13 @@ void loadCatalogue(car*& head, car*& tail, std::vector<car*>& carCatalogue) {
 
         carCatalogue.push_back(newCar);
     }
-    tail = (carCatalogue.back());
+	
+	if (!carCatalogue.empty()){
+		tail = (carCatalogue.back());
+	}else{
+		tail = nullptr;
+	}
+    
     inputFile.close();
 	
 	// Update the index's of each item in linked list
