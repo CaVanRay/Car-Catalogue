@@ -13,7 +13,7 @@ updated with tail:
 	main()
 	loadCatalogue()
 	optionMenu()
-	moveCar()
+	moveCar() - not called anywhere yet so safest place to update
 
 -----------------------------------------------------------------------------------------------------
 12/11/25
