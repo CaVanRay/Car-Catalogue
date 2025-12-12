@@ -5,6 +5,7 @@
 int main() {
 
     car* head = nullptr;
+    car* tail = nullptr;
 
     std::vector<car*> carCatalogue;
 
