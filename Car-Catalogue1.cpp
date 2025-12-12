@@ -9,7 +9,7 @@ int main() {
 
     std::vector<car*> carCatalogue;
 
-    loadCatalogue(head, carCatalogue);
+    loadCatalogue(head, tail, carCatalogue);
 
     printCatalogue(head);
 
