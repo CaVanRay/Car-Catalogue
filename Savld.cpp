@@ -34,7 +34,7 @@ void saveCatalogue(car*& head) {
 // Load previously saved catalogue into a new instance of the program
 //**********************************************************************************************************************
 
-void loadCatalogue(car*& head, std::vector<car*>& carCatalogue) {
+void loadCatalogue(car*& head, car*& tail, std::vector<car*>& carCatalogue) {
     std::ifstream inputFile(FILE_NAME);
 
     if (!inputFile.is_open()) {
@@ -85,7 +85,7 @@ void loadCatalogue(car*& head, std::vector<car*>& carCatalogue) {
 
         carCatalogue.push_back(newCar);
     }
-    
+    tail = (carCatalogue.back());
     inputFile.close();
 	
 	// Update the index's of each item in linked list
