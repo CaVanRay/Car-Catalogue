@@ -75,13 +75,13 @@ void loadCatalogue(car*& head, car*& tail, std::vector<car*>& carCatalogue) {
         newCar->SetPrice(price);
         newCar->SetSale(forSale);
 
-        if (!carCatalogue.empty()) {
-            newCar->SetPrev(carCatalogue.back());
-            carCatalogue.back()->SetNext(newCar);
-        }
-        else {
+        if (tail != nullptr) {
+            tail->SetNext(newCar);
+			newCar->SetPrev(tail);
+        } else {
             head = newCar;
         }
+		tail = newCar;
 
         carCatalogue.push_back(newCar);
     }
