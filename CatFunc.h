@@ -10,4 +10,4 @@ void editCar(car* n);
 
 void deleteCar(car*& head, std::vector<car*>& carCatalogue, car* n);
 
-void moveCar(car*& head, std::vector<car*>& carCatalogue, car* n);
+void moveCar(car*& head, car*& tail, std::vector<car*>& carCatalogue, car* n);
