@@ -85,12 +85,6 @@ void loadCatalogue(car*& head, car*& tail, std::vector<car*>& carCatalogue) {
 
         carCatalogue.push_back(newCar);
     }
-	
-	if (!carCatalogue.empty()){
-		tail = (carCatalogue.back());
-	}else{
-		tail = nullptr;
-	}
     
     inputFile.close();
 	
