@@ -6,7 +6,8 @@ This is a place to jot down some ideas for what to do next
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 12 / 25
 	
-I think adding a tail to the linked list is my best bet
+I think adding a tail to the linked list is my best bet, it should be the most straight forward and although it will require updating all of the rest of the program
+it won't be difficult, just requires work & time
 
 -----------------------------------------------------------------------------------------------------
 12/11/25
