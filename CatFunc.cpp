@@ -269,6 +269,8 @@ void moveCar(car*& head, car*& tail, std::vector<car*>& carCatalogue, car*n){
 		if (NextNode != nullptr){
 			NextNode->SetPrev(n);
 			n->SetNext(NextNode);
+		} else {
+			tail = n;
 		}
 	}
 	
