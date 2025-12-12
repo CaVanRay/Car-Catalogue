@@ -8,7 +8,7 @@ optionsMenu function: Displays a menu of options to the user and prompts them to
 STATUS: TESTING
 */
 
-void optionsMenu(car*& head, std::vector<car*>& carCatalogue) {
+void optionsMenu(car*& head, car*& tail, std::vector<car*>& carCatalogue) {
 
     bool runP = true;
 
