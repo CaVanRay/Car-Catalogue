@@ -6,4 +6,4 @@
 
 void saveCatalogue(car*& head);
 
-void loadCatalogue(car*& head, std::vector<car*>& carCatalogue);
+void loadCatalogue(car*& head, car*& tail, std::vector<car*>& carCatalogue);
