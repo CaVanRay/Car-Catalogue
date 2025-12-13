@@ -159,7 +159,7 @@ STATUS: TESTING
 // I think if I delete the first car in the catalogue, that it will break several functions that require head
 // Testing this now
 
-void deleteCar(car*& head, std::vector<car*>& carCatalogue, car* n) {
+void deleteCar(car*& head, car*& tail, std::vector<car*>& carCatalogue, car* n) {
 
     if (n == nullptr) return;
 
