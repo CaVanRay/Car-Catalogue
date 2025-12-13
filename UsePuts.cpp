@@ -61,7 +61,7 @@ void optionsMenu(car*& head, car*& tail, std::vector<car*>& carCatalogue) {
         case 6: {
             system("CLS");
             car* n = findCar(head);
-            deleteCar(head, carCatalogue, n);
+            deleteCar(head, tail, carCatalogue, n);
             printCatalogue(head);
             break;
         }
