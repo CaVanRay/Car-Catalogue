@@ -65,6 +65,7 @@ Car-Catalogue[
           - repCar()
           - editCar()
           - deleteCar()
+          - moveCar()
      ]
 
       UsePuts.cpp[
