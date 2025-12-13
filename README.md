@@ -10,6 +10,7 @@ A C++ console application for storing, editing, validating, saving, and loading 
 - Remove vehicles
 - View full catalogue
 - View single vehicle
+- Move vehicle location in the linked list order
 
 ### Data Structure
 
