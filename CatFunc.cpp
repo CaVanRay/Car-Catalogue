@@ -171,7 +171,8 @@ void deleteCar(car*& head, car*& tail, std::vector<car*>& carCatalogue, car* n) 
         }
     }
     else if (n->GetNext() == nullptr) { // if this is the tail
-        n->GetPrev()->SetNext(nullptr);
+		if (n->GetPrev()) ? tail = n->GetPrev() : tail = nullptr;
+        if (tail) ? tail->SetNext(nullptr);
     }
     else { // middle of the list
         n->GetPrev()->SetNext(n->GetNext());
