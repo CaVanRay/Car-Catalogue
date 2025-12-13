@@ -8,6 +8,6 @@ void addCar(car*& head, std::vector<car*>& carCatalogue);
 
 void editCar(car* n);
 
-void deleteCar(car*& head, std::vector<car*>& carCatalogue, car* n);
+void deleteCar(car*& head, car*& tail, std::vector<car*>& carCatalogue, car* n);
 
 void moveCar(car*& head, car*& tail, std::vector<car*>& carCatalogue, car* n);
