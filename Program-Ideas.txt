@@ -8,6 +8,8 @@ This is a place to jot down some ideas for what to do next
 
 I need to come up with a list of locations that I can update with a tail pointer and then start working my way through
 
+I think some functions could be completely re-written though, I'm not 100% sure, But I may be able to simplify certain actions now that I'm keeping track of the list's tail
+
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 12 / 25
 	
