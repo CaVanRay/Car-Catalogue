@@ -6,6 +6,7 @@ This is a place to jot down some ideas for what to do next
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 13 / 25
 
+I need to come up with a list of locations that I can update with a tail pointer and then start working my way through
 
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 12 / 25
