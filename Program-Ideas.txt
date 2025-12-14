@@ -15,7 +15,7 @@ Took stock and did some testing, Here are some things that I need To-Do:
 	4. When moveCar() current and desired index's are duplicate, the program will freeze
 	5. Check for duplicate VIN's between different cars
 	6. Add option to only show available cars
-	7. 
+	7. Program exit option is currently returning as an invalid option
 	
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 13 / 25
