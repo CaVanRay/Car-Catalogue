@@ -14,7 +14,8 @@ Took stock and did some testing, Here are some things that I need To-Do:
 	3. Print catalogue after using moveCar()
 	4. When moveCar() current and desired index's are duplicate, the program will freeze
 	5. Check for duplicate VIN's between different cars
-	6.
+	6. Add option to only show available cars
+	7. 
 	
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 13 / 25
