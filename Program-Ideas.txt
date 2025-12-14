@@ -10,6 +10,8 @@ This is a place to jot down some ideas for what to do next
 Took stock and did some testing, Here are some things that I need To-Do:
 
 	1. make repCar() function (replaces a car with a new car)
+	2. Fix AddCars() continue bool
+	
 	
 
 -------------------------------------------------------------------------------------------------------------------------- -
