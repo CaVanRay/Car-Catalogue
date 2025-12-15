@@ -3,8 +3,10 @@
 #include "Cars.h"
 
 //Function declarations for program structure, defined after main function
-  
+
+// addCar() : adds cars to the catalogue
 void addCar(car*& head, std::vector<car*>& carCatalogue);
+
 
 void repCar(car* n);
 
