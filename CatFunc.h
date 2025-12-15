@@ -6,6 +6,8 @@
   
 void addCar(car*& head, std::vector<car*>& carCatalogue);
 
+void repCar(car* n);
+
 void editCar(car* n);
 
 void deleteCar(car*& head, car*& tail, std::vector<car*>& carCatalogue, car* n);
