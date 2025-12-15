@@ -16,4 +16,5 @@ void editCar(car* n);
 // deleteCar() : removes existing car from the catalogue
 void deleteCar(car*& head, car*& tail, std::vector<car*>& carCatalogue, car* n);
 
+// moveCar() : changes selected car's location in the catalogue list
 void moveCar(car*& head, car*& tail, std::vector<car*>& carCatalogue, car* n);
