@@ -65,6 +65,11 @@ void addCar(car*& head, std::vector<car*>& carCatalogue) {
 
 //**********************************************************************************************************************
 
+/*
+repCar function: User chooses a car already in the catalogue and then enters all new information, effectivly swapping one car out for another
+
+STATUS: WRITING
+*/
 
 //**********************************************************************************************************************
 
