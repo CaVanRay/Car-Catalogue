@@ -52,6 +52,7 @@ void addCar(car*& head, std::vector<car*>& carCatalogue) {
         system("CLS");
 
         std::cout << std::endl << "Would you like to add another car? (Yes/No): ";
+		STD::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         std::getline(std::cin, Cont);
         std::transform(Cont.begin(), Cont.end(), Cont.begin(),
             [](unsigned char c) { return std::toupper(c); });
