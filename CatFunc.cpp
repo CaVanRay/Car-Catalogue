@@ -72,7 +72,13 @@ STATUS: WRITING
 */
 
 void repCar(car* n) {
-	
+ n->SetOwner(Owner);
+ n->SetModel(Model);
+ n->SetVin(Vin);
+ n->SetMileage(Mileage);
+ n->SetMPG(MPG);
+ n->SetPrice(Price);
+ n->SetSale(ForSale);
 }
 
 //**********************************************************************************************************************
