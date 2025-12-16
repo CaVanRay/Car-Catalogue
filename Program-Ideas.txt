@@ -10,7 +10,7 @@ This is a place to jot down some ideas for what to do next
 
 Busy with training, but I think I can get this done during the breaks
 
-	DONE - 1. make repCar() function (replaces a car with a new car)
+	DONE (testing) - 1. make repCar() function (replaces a car with a new car) I wrote the function and added it to the options menu, but I haven't compiled or run it yet
 	DONE (testing) - 2. Fix AddCars() continue bool
 	DONE - 3. Print catalogue after using moveCar()
 	4. When moveCar() current and desired index's are duplicate, the program will freeze
