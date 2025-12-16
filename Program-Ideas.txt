@@ -16,7 +16,7 @@ Busy with training, but I think I can get this done during the breaks
 	4. When moveCar() current and desired index's are duplicate, the program will freeze
 	5. Check for duplicate VIN's between different cars
 	6. Add option to only show available cars
-	DONE - 7. Program exit option is currently returning as an invalid option
+	DONE - 7. Program exit option is currently returning as an invalid option. input test had maximum set to 7, I've adjusted it to 10 (new options menu has 9 choices)
 
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 15 / 25
