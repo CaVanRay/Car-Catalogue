@@ -11,7 +11,7 @@ This is a place to jot down some ideas for what to do next
 Busy with training, but I think I can get this done during the breaks
 
 	DONE (testing) - 1. make repCar() function (replaces a car with a new car) I wrote the function and added it to the options menu, but I haven't compiled or run it yet
-	DONE (testing) - 2. Fix AddCars() continue bool
+	DONE (testing) - 2. Fix AddCars() continue bool. I compared it to the continue bool in editCar() and it was missing a line, I have added the line now but havent compiled/run it yet
 	DONE - 3. Print catalogue after using moveCar()
 	4. When moveCar() current and desired index's are duplicate, the program will freeze
 	5. Check for duplicate VIN's between different cars
