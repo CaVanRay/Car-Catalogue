@@ -14,7 +14,8 @@ Busy with training, but I think I can get this done during the breaks
 	DONE (testing) - 2. Fix AddCars() continue bool. I compared it to the continue bool in editCar() and it was missing a line, I have added the line now but havent compiled/run it yet
 	DONE - 3. Print catalogue after using moveCar(). added printCatalogue() function call after moveCar()
 	4. When moveCar() current and desired index's are duplicate, the program will freeze
-	5. Check for duplicate VIN's between different cars
+	5. Check for duplicate VIN's between different cars. I'm trying to decide if it would be better to write something that runs through the linked list comparing Vin #'s or if I should maintain smaller list of just vin's with indexs
+			I'm not sure it will make that much of a difference
 	6. Add option to only show available cars. Not sure where to put the choice, I'm thinking in printCatalogue() function start before showing the list, but not sure.
 	DONE - 7. Program exit option is currently returning as an invalid option. input test had maximum set to 7, I've adjusted it to 10 (new options menu has 9 choices)
 
