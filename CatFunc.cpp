@@ -72,6 +72,15 @@ STATUS: WRITING
 */
 
 void repCar(car* n) {
+
+std::string Owner = getString("input car owner: ");
+std::string Model = getString("input car model: ");
+std::string Vin = getVIN("input car vin#: ");
+int Mileage = getInt("input car mileage: ");
+double MPG = getDouble("input car MPG: ");
+double Price = getDouble("input car price: ");
+bool ForSale = getYN("is car available for purchase? (Y/N): ");
+
  n->SetOwner(Owner);
  n->SetModel(Model);
  n->SetVin(Vin);
