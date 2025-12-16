@@ -17,11 +17,12 @@ void optionsMenu(car*& head, car*& tail, std::vector<car*>& carCatalogue) {
         std::cout << "1) Print Catalogue" << std::endl;
         std::cout << "2) Print Specific Car" << std::endl;
         std::cout << "3) Add a Car" << std::endl;
-        std::cout << "4) Edit a Car" << std::endl;
-		std::cout << "5) Move a car" << std::endl;
-        std::cout << "6) Remove a Car" << std::endl;
-        std::cout << "7) Save Catalogue" << std::endl;
-        std::cout << "8) Exit Program" << std::endl;
+		std::cout << "4) Replace a Car" << std::endl;
+        std::cout << "5) edit a Car" << std::endl;
+		std::cout << "6) Move a car" << std::endl;
+        std::cout << "7) Remove a Car" << std::endl;
+        std::cout << "8) Save Catalogue" << std::endl;
+        std::cout << "9) Exit Program" << std::endl;
         std::cout << "***************************************" << std::endl;
         int selectedAction = getInt("Enter option: ");
         while (selectedAction < 1 || selectedAction > 7) {
