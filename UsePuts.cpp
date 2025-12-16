@@ -25,7 +25,7 @@ void optionsMenu(car*& head, car*& tail, std::vector<car*>& carCatalogue) {
         std::cout << "9) Exit Program" << std::endl;
         std::cout << "***************************************" << std::endl;
         int selectedAction = getInt("Enter option: ");
-        while (selectedAction < 1 || selectedAction > 7) {
+        while (selectedAction < 1 || selectedAction > 10) {
             selectedAction = getInt("Invalid option. Try again: ");
         }
         switch (selectedAction) {
