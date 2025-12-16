@@ -10,6 +10,13 @@ This is a place to jot down some ideas for what to do next
 
 Busy with training, but I think I can get this done during the breaks
 
+	1. make repCar() function (replaces a car with a new car)
+	2. Fix AddCars() continue bool
+	DONE - 3. Print catalogue after using moveCar()
+	4. When moveCar() current and desired index's are duplicate, the program will freeze
+	5. Check for duplicate VIN's between different cars
+	6. Add option to only show available cars
+	7. Program exit option is currently returning as an invalid option
 
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 15 / 25
