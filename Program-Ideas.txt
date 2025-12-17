@@ -8,7 +8,8 @@ This is a place to jot down some ideas for what to do next
 
 Almost done with training, a little over 3 hours left, I can make it (hopefully)
 
-	
+	1. When moveCar() current and desired index's are duplicate, the program will freeze
+
 
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 16 / 25
