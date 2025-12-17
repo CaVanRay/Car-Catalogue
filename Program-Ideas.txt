@@ -9,7 +9,8 @@ This is a place to jot down some ideas for what to do next
 Almost done with training, a little over 3 hours left, I can make it (hopefully)
 
 	1. When moveCar() current and desired index's are duplicate, the program will freeze
-
+	2. Check for duplicate VIN's between different cars. I'm trying to decide if it would be better to write something that runs through the linked list comparing Vin #'s or if I should maintain smaller list of just vin's with indexs
+			I'm not sure it will make that much of a difference
 
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 16 / 25
