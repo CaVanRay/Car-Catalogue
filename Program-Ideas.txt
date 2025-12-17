@@ -12,6 +12,7 @@ Almost done with training, a little over 3 hours left, I can make it (hopefully)
 	2. Check for duplicate VIN's between different cars. I'm trying to decide if it would be better to write something that runs through the linked list comparing Vin #'s or if I should maintain smaller list of just vin's with indexs
 			I'm not sure it will make that much of a difference
 	3. Add option to only show available cars. Not sure where to put the choice, I'm thinking in printCatalogue() function start before showing the list, but not sure.
+	4. Come with some way to expand the functionality, I'm having trouble thinking of something to add right now, currently my brain is fried
 
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 16 / 25
