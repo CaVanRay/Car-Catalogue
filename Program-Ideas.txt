@@ -12,7 +12,7 @@ I feel a little bad about this, but I feel like today is a good day to fuck off 
 I do have a few things still on the to do list
 	1. Check for duplicate VIN's between different cars.
 	2. Add option to only show available cars.
-	3.
+	3. create new build and test for bugs
 
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 17 / 25
