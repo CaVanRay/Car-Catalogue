@@ -8,6 +8,12 @@ This is a place to jot down some ideas for what to do next
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 19 / 25
 
+
+	1. Check for duplicate VIN's between different cars.
+	2. Add option to only show available cars.
+	3. Look into way to setup network connectivity within program
+	4. create new build and test for bugs
+
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 18 / 25
 
