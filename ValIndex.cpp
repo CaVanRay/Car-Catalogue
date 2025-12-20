@@ -155,12 +155,7 @@ bool isValidVin(car*& head, const std::string& vin) {
     if (vin.length() != 17){
         return false;
     }
-
-    car* n = head;
-    while(n != nullptr){
-        
-    }
-
+    
     for (char c : vin) {
         
         if (!std::isalnum(c)){
@@ -173,6 +168,16 @@ bool isValidVin(car*& head, const std::string& vin) {
         }
     
     }
+    
+    car* n = head;
+    while(n != nullptr){
+        if(n->GetVin() == vin){
+            return false;
+        }else{
+            n = n->GetNext();
+        }
+    }
+
 
     return true;
 }
