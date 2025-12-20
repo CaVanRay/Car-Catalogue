@@ -139,7 +139,7 @@ void editCar(car* n) {
             break;
         }
         case 3: {
-            std::string newVin = getVIN(head, "Enter VIN: ");
+            std::string newVin = getVIN("Enter VIN: ", head);
             n->SetVin(newVin);
             break;
         }
