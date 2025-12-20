@@ -195,7 +195,7 @@ std::string getVIN(car*& head, const std::string& prompt){
             c = std::toupper(c);
         }
 
-        if (isValidVin(vin)){
+        if (isValidVin(head, vin)){
             return vin;
         }
 
