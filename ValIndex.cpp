@@ -156,6 +156,11 @@ bool isValidVin(car*& head, const std::string& vin) {
         return false;
     }
 
+    car* n = head;
+    while(n != nullptr){
+        
+    }
+
     for (char c : vin) {
         
         if (!std::isalnum(c)){
