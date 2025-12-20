@@ -15,4 +15,4 @@ double getDouble(const std::string& prompt);
 
 bool getYN(const std::string& prompt);
 
-std::string getVIN(const std::string& prompt);
+std::string getVIN(car*& head, const std::string& prompt);
