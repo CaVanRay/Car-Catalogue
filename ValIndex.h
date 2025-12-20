@@ -17,4 +17,4 @@ bool getYN(const std::string& prompt);
 
 bool isValidVin(car*& head, const std::string& vin)
 
-std::string getVIN(car*& head, const std::string& prompt);
+std::string getVIN(const std::string& prompt, car*& head);
