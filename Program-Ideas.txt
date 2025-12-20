@@ -8,6 +8,11 @@ This is a place to jot down some ideas for what to do next
 
 Gonna try and get the duplicate VIN checker added today, after that I'll create a new build for testing
 
+	1. Check for duplicate VIN's between different cars.
+	2. Add option to only show available cars.
+	3. Look into way to setup network connectivity within program
+	4. create new build and test for bugs
+
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 19 / 25
 
