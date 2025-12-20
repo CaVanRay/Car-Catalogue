@@ -150,7 +150,7 @@ bool getYN(const std::string& prompt) {
 
 //**********************************************************************************************************************
 
-bool isValidVin(const std::string& vin) {
+bool isValidVin(car*& head, const std::string& vin) {
     
     if (vin.length() != 17){
         return false;
