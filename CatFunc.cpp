@@ -76,7 +76,7 @@ void repCar(car* n) {
 
 std::string Owner = getString("input car owner: ");
 std::string Model = getString("input car model: ");
-std::string Vin = getVIN("input car vin#: ");
+std::string Vin = getVIN(head, "input car vin#: ");
 int Mileage = getInt("input car mileage: ");
 double MPG = getDouble("input car MPG: ");
 double Price = getDouble("input car price: ");
