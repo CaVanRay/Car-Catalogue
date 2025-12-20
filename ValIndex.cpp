@@ -194,7 +194,7 @@ std::string getVIN(car*& head, const std::string& prompt){
             return vin;
         }
 
-        std::cout << "Invalid VIN. It must be 17 characters, alphanumeric, and cannot contain I, O, or Q. \n";
+        std::cout << "Invalid VIN. It must be 17 characters, alphanumeric, cannot contain I, O, or Q. And cannot duplicate already saved vehical VIN \n";
     }
 }
 
