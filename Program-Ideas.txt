@@ -6,6 +6,8 @@ This is a place to jot down some ideas for what to do next
 
 GetVIN is still throwing errors for adding "head"
 
+Original call: 
+
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 21 / 25
 
