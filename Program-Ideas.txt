@@ -13,7 +13,7 @@ New call:
 std::string Vin = getVIN("input car vin#: ", head);
 
 Current Errors preventing compile:
-'head': undeclared identifier - CatFunc.cpp line 79
+'head': undeclared identifier - CatFunc.cpp line 79		: GetVin issue
 'head': undeclared identifier - CatFunc.cpp line 142
 'car::GetIndex': non-standard syntax; use '&' to create a pointer to member - CatFunc.cpp line 244
 '==': no conversion from 'int (__cdecl car::* )(void)' to 'int' - CatFunc.cpp line 244
