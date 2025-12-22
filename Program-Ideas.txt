@@ -13,6 +13,9 @@ New call:
 std::string Vin = getVIN("input car vin#: ", head);
 
 Current Errors preventing compile:
+'head': undeclared identifier - CatFunc.cpp line 79
+
+
 
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 21 / 25
