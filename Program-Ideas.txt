@@ -16,7 +16,7 @@ Current Errors preventing compile:
 'head': undeclared identifier - CatFunc.cpp line 79		: GetVin issue
 'head': undeclared identifier - CatFunc.cpp line 142	: GetVin issue
 'car::GetIndex': non-standard syntax; use '&' to create a pointer to member - CatFunc.cpp line 244		: This is where I test for duplicate index in moveCar(), this'll be an easy fix tomorrow
-'==': no conversion from 'int (__cdecl car::* )(void)' to 'int' - CatFunc.cpp line 244
+'==': no conversion from 'int (__cdecl car::* )(void)' to 'int' - CatFunc.cpp line 244					: This is a weird error, it doesnt like that I'm using "==" inside a "while" test, but it'll be removed anyways so NBD
 
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 21 / 25
