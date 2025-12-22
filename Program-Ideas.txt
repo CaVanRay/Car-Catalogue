@@ -12,6 +12,8 @@ std::string Vin = getVIN("input car vin#: ");
 New call:
 std::string Vin = getVIN("input car vin#: ", head);
 
+Current Errors preventing compile:
+
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 21 / 25
 
