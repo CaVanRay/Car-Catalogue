@@ -6,7 +6,11 @@ This is a place to jot down some ideas for what to do next
 
 GetVIN is still throwing errors for adding "head"
 
-Original call: 
+Original call:
+std::string Vin = getVIN("input car vin#: ");
+
+New call:
+std::string Vin = getVIN("input car vin#: ", head);
 
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 21 / 25
