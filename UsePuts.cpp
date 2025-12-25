@@ -49,7 +49,7 @@ void optionsMenu(car*& head, car*& tail, std::vector<car*>& carCatalogue) {
 		case 4: {
 			system("CLS");
 			car* n = findCar(head);
-			repCar(n);
+			repCar(head, n);
 			break;
 		}
         case 5: {
