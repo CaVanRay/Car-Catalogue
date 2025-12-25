@@ -72,7 +72,7 @@ repCar function: User chooses a car already in the catalogue and then enters all
 STATUS: WRITING
 */
 
-void repCar(car* n) {
+void repCar(car*& head, car* n) {
 
 std::string Owner = getString("input car owner: ");
 std::string Model = getString("input car model: ");
