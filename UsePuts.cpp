@@ -55,7 +55,7 @@ void optionsMenu(car*& head, car*& tail, std::vector<car*>& carCatalogue) {
         case 5: {
             system("CLS");
             car* n = findCar(head);
-            editCar(n);
+            editCar(head, n);
             printCar(n);
             break;
         }
