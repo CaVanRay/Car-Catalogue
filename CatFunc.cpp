@@ -99,7 +99,7 @@ editCar function: Takes a pointer to a car object and allows the user to edit an
 STATUS: TESTING
 */
 
-void editCar(car* n) {
+void editCar(car*& head, car* n) {
 
     std::string Cont = "YES";
     do {
