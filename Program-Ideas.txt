@@ -12,7 +12,7 @@ Ok, did more than the bare minimum
 DONE 'head': undeclared identifier - CatFunc.cpp line 79														: repCar() needed head passed to it so GetVin() would be able to use it
 DONE 'head': undeclared identifier - CatFunc.cpp line 142														: editCar() needed head passed to it so GetVin() would be able to use it
 DONE 'car::GetIndex': non-standard syntax; use '&' to create a pointer to member - CatFunc.cpp line 244			: small typo, I had wrote "getVin" instead of "getVin()"
-
+DONE '==': no conversion from 'int (__cdecl car::* )(void)' to 'int' - CatFunc.cpp line 244
 
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 22 / 25
