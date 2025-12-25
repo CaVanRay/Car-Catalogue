@@ -11,7 +11,7 @@ void addCar(car*& head, std::vector<car*>& carCatalogue);
 void repCar(car* n);
 
 // editCar() : changes selected value on an existing car
-void editCar(car* n);
+void editCar(car*& head, car* n);
 
 // deleteCar() : removes existing car from the catalogue
 void deleteCar(car*& head, car*& tail, std::vector<car*>& carCatalogue, car* n);
