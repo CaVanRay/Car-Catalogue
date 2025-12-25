@@ -5,6 +5,8 @@ This is a place to jot down some ideas for what to do next
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 24 / 25
 
+I'm doing the bare minimum today, but I think I can fix the issue with the duplicate index test
+
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 22 / 25
 
