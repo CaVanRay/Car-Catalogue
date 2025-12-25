@@ -8,7 +8,7 @@
 void addCar(car*& head, std::vector<car*>& carCatalogue);
 
 // repCar() : swaps out existing car for a new car
-void repCar(car* n);
+void repCar(car*& head, car* n);
 
 // editCar() : changes selected value on an existing car
 void editCar(car*& head, car* n);
