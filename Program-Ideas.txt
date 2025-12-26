@@ -10,6 +10,8 @@ I'm going to try and fix the addCar() continue option, I'll figure out what's ne
 	DONE - add getYN() to addCar() continue option
 	DONE - add getYN() to editCar() continue option
 
+I need to add system("CLS") in a few more places
+
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 25 / 25
 
