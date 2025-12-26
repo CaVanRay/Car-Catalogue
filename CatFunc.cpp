@@ -170,7 +170,7 @@ void editCar(car*& head, car* n) {
         }
         Cont = getYN("Would you like to change anything else? (Y/N): ");
 		
-    } while (Cont == "YES");
+    } while (Cont);
 }
 
 //**********************************************************************************************************************
