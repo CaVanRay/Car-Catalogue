@@ -12,6 +12,8 @@ I'm going to try and fix the addCar() continue option, I'll figure out what's ne
 
 I need to add system("CLS") in a few more places
 
+Though I guess if I could figure out the GUI then I wouldnt need to...
+
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 25 / 25
 
