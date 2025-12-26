@@ -58,6 +58,8 @@ void addCar(car*& head, std::vector<car*>& carCatalogue) {
 	// Update the index's of each item in linked list
 	// Update the carCatalogue vector with linked list
 	indexUpdate(head, carCatalogue);
+
+	system("CLS");
 }
 
 
