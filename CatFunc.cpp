@@ -100,7 +100,7 @@ STATUS: TESTING
 
 void editCar(car*& head, car* n) {
 
-    std::string Cont = "YES";
+    bool Cont = true;
     do {
         // system("CLS");
         printCar(n);
