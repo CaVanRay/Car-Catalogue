@@ -9,7 +9,7 @@ This is a place to jot down some ideas for what to do next
 CarCatalogue1 is now compiling
 
 Looking for new bugs to fix/ideas to implement:
-					1.
+					1. addCar() continue option needs to verify input
 
 
 
