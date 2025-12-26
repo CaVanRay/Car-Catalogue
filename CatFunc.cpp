@@ -11,7 +11,7 @@ STATUS: WORKING
 
 void addCar(car*& head, std::vector<car*>& carCatalogue) {
 
-    std::string Cont = "YES";
+    bool Cont = true;
     do {
 
         std::cout << std::endl << "Please Add a vehicle to the catalogue" << std::endl << std::endl;
