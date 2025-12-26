@@ -168,11 +168,8 @@ void editCar(car*& head, car* n) {
             break;
         }
         }
-        std::cout << std::endl << "Would you like to change anything else? (Yes/No): ";
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        std::getline(std::cin, Cont);
-        std::transform(Cont.begin(), Cont.end(), Cont.begin(),
-            [](unsigned char c) { return std::toupper(c); });
+        Cont = getYN("Would you like to change anything else? (Y/N): ");
+		
     } while (Cont == "YES");
 }
 
