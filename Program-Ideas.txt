@@ -7,7 +7,7 @@ This is a place to jot down some ideas for what to do next
 
 I'm going to try and fix the addCar() continue option, I'll figure out what's next after that
 
-	add getYN() to addCar() continue option
+	DONE - add getYN() to addCar() continue option
 	add getYN() to editCar() continue option
 
 -------------------------------------------------------------------------------------------------------------------------- -
