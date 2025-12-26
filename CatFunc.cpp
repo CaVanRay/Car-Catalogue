@@ -51,12 +51,9 @@ void addCar(car*& head, std::vector<car*>& carCatalogue) {
 
         system("CLS");
 
-        std::cout << std::endl << "Would you like to add another car? (Yes/No): ";
-		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        std::getline(std::cin, Cont);
-        std::transform(Cont.begin(), Cont.end(), Cont.begin(),
-            [](unsigned char c) { return std::toupper(c); });
-    } while (Cont == "YES");
+        Cont = getYN("Would you like to add another car? (Y/N): ");
+		
+    } while (Cont);
 
 	// Update the index's of each item in linked list
 	// Update the carCatalogue vector with linked list
