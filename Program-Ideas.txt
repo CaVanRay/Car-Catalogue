@@ -5,7 +5,7 @@ This is a place to jot down some ideas for what to do next
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 29 / 25
 
-Tomorrow I'll make a new build, and then test for bugs
+Tomorrow I'll make a new build, and then test for bugs and ideas for things I wanna add
 
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 26 / 25
