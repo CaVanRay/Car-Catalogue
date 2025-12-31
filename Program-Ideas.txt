@@ -6,7 +6,7 @@ This is a place to jot down some ideas for what to do next
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 30 / 25
 
-Pulled latest code version, everything is compiling fine
+Pulled latest code version, everything is compiling fine, can't find any obvious bugs at the moment
 
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 29 / 25
