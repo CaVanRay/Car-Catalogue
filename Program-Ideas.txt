@@ -9,7 +9,7 @@ This is a place to jot down some ideas for what to do next
 
 I'm having trouble thinking of ideas for this program
 
-Obviously I need to work on making a UI
+Obviously I need to work on making a UI, but that's a big change
 
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 30 / 25
