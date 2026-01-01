@@ -11,6 +11,8 @@ I'm having trouble thinking of ideas for this program
 
 Obviously I need to work on making a UI, but that's a big change, I don't have any small ideas that can be implemented quickly
 
+Maybe I should start a different repo just for working on learning UI's?
+
 -------------------------------------------------------------------------------------------------------------------------- -
 12 / 30 / 25
 
