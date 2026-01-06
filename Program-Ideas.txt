@@ -7,7 +7,7 @@ This is a place to jot down some ideas for what to do next
 -------------------------------------------------------------------------------------------------------------------------- -
 1 / 6 / 26
 
-I need to break this program down into its smallest possible parts
+I need to break this program down into its smallest possible parts, then rebuild it in a more professional syntax
 
 -------------------------------------------------------------------------------------------------------------------------- -
 1 / 5 / 26
