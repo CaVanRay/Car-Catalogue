@@ -8,7 +8,9 @@ This is a place to jot down some ideas for what to do next
 -------------------------------------------------------------------------------------------------------------------------- -
 1 / 5 / 26
 
-Ok, what I need right now is to work on changing my style from student C++ code into Professional C++ code
+what I need right now is to work on changing my style from student C++ code into Professional C++ code
+
+And that means re-writing this entire program from the ground up
 
 -------------------------------------------------------------------------------------------------------------------------- -
 1 / 1 / 26
