@@ -9,6 +9,8 @@ This is a place to jot down some ideas for what to do next
 
 I need to break this program down into its smallest possible parts, then rebuild it in a more professional syntax
 
+to avoid breaking things and making a mess I'll save it in its own repo
+
 -------------------------------------------------------------------------------------------------------------------------- -
 1 / 5 / 26
 
