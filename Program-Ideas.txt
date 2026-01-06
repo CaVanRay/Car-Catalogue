@@ -12,6 +12,8 @@ what I need right now is to work on changing my style from student C++ code into
 
 And that means re-writing this entire program from the ground up
 
+I'll add more details tomorrow
+
 -------------------------------------------------------------------------------------------------------------------------- -
 1 / 1 / 26
 
