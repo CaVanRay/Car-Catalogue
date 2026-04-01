@@ -82,6 +82,7 @@ void optionsMenu(car*& head, car*& tail, std::vector<car*>& carCatalogue) {
 			std::cout << std::endl;
 			if(getYN("Would you like to save before you exit? (Y/N): ")){
 				system("CLS");
+				saveCatalogue(head);
 			}
             system("CLS");
 			runP = false;
