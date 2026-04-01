@@ -182,7 +182,7 @@ car* findCar(car*& head) {
 
     if (head == nullptr) {
         std::cout << "\n\n Error: no searchable list provided \n\n";
-        return 0;
+        return nullptr;
     }
 
     do {
