@@ -40,6 +40,7 @@ void addCar(car*& head, std::vector<car*>& carCatalogue) {
         if (!carCatalogue.empty()) {
             newCar->SetPrev(carCatalogue.back());
             carCatalogue.back()->SetNext(newCar);
+			tail = newCar;
             newCar->SetIndex(carCatalogue.size() + 1);
         }
         else {
