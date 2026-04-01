@@ -11,7 +11,7 @@ private:
     std::string Vin;
     int Mileage;
     double MPG;
-    int Price;
+    double Price;
     bool ForSale;
     car* Prev = nullptr;
     car* Next = nullptr;
