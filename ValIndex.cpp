@@ -43,6 +43,8 @@ std::string getString(const std::string& prompt) {
     // string to grab
     std::string StringInput;
 
+    // peek into the buffer to see if a leftover \n exists
+
     // will continuously loop until break
     while (true) {
         std::cout << prompt;
