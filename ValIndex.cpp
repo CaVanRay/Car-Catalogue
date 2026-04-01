@@ -46,6 +46,9 @@ std::string getString(const std::string& prompt) {
     // peek into the buffer to see if a leftover \n exists
     // if \n is there, it gets discarded
     // if \n isn't there, nothing happens
+    if (std::cin.peek() == '\n\) {
+        std::cin.ignore();
+    }
 
     // will continuously loop until break
     while (true) {
