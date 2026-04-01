@@ -44,6 +44,7 @@ std::string getString(const std::string& prompt) {
     std::string StringInput;
 
     // peek into the buffer to see if a leftover \n exists
+    // if \n is there, it gets discarded
 
     // will continuously loop until break
     while (true) {
