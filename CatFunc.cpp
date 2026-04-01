@@ -44,6 +44,7 @@ void addCar(car*& head, std::vector<car*>& carCatalogue) {
         }
         else {
             head = newCar;
+			tail = newCar;
             newCar->SetIndex(1);
         }
 
