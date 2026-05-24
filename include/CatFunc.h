@@ -5,7 +5,7 @@
 //Function declarations for program structure, defined after main function
 
 // addCar() : adds cars to the catalogue
-void addCar(car*& head, std::vector<car*>& carCatalogue);
+void addCar(car*& head, car*& tail, std::vector<car*>& carCatalogue);
 
 // repCar() : swaps out existing car for a new car
 void repCar(car*& head, car* n);

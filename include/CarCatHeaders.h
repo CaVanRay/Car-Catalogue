@@ -1,5 +1,5 @@
-#ifndef // CarCatHeaders_h
-#define CarCatHeaders_h
+#ifndef CAR_CAT_HEADERS_H
+#define CAR_CAT_HEADERS_H
 //***********************************
 #include <algorithm>
 #include <iostream>
@@ -16,6 +16,4 @@
 #include "ValIndex.h"
 #include "Savld.h"
 //***********************************
-#endif CarCatHeaders_h
-
-
+#endif //CAR_CAT_HEADERS_H
