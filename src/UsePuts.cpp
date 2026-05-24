@@ -42,7 +42,7 @@ void optionsMenu(car*& head, car*& tail, std::vector<car*>& carCatalogue) {
         }
         case 3: {
             system("CLS");
-            addCar(head, carCatalogue);
+            addCar(head, tail, carCatalogue);
             printCatalogue(head);
             break;
         }

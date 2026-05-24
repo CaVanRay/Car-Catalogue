@@ -9,7 +9,7 @@ If the list is empty, the new car becomes the head of the list.
 STATUS: WORKING
 */
 
-void addCar(car*& head, std::vector<car*>& carCatalogue) {
+void addCar(car*& head, car*& tail, std::vector<car*>& carCatalogue) {
 
     bool Cont = true;
     do {
