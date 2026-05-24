@@ -1,0 +1,29 @@
+**Car-Catalogue1:**
+  - main()            - starts and organizes everything
+
+**UsePuts (tools for user in/output):**
+  - optionsMenu()     - (Used to select what function to run)
+  - printCatalogue()  - (Runs through current vector list and displays them all on screen)
+  - printCar()        - (Searches for car by index and displays on screen)
+  - findCar()         - (Searches for car by index)(Returns pointer to car)
+
+**CatFunc (CRUD functions):**
+  - addCar()          - (Takes car info and then creates new object with input data)
+  - repCar()		  - (Replaces one car with another) (NOT DONE)
+  - editCar()         - (Searches for car by index, then allows user to edit existing data)
+  - deleteCar()       - (Searches for car by index, then deletes data and releases resources)
+  - moveCar()         - (Gets pointer to car using findCar() and then moves it up or down the linked list and updates the catalogue)
+
+**Savld (Save/Load functions):**
+  - saveCatalogue()   - (Saves current vector list of items to a txt file)
+  - loadCatalogue()   - (Opens txt file of previous catalogue and populates new vector list with information in file)
+
+**ValIndex (Insures correct indexing after catalogue changes):**
+  - IndexUpdate()     - (Checks for errors & repairs index after each addition/removal of a catalogue item) (NOT DONE)
+  - getInt()          - Validates int input
+  - getDouble()       - Validates double input
+  - getYN()           - Validates bool input
+  - isValidVin()      - Validates VIN number input
+  - getVIN()          - repeatedly asks for vin until valid
+
+

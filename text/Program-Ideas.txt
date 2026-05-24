@@ -1,0 +1,206 @@
+This is a place to jot down some ideas for what to do next
+
+
+I'm just testing something
+
+Ok, this is some bullshit
+
+-------------------------------------------------------------------------------------------------------------------------- -
+1 / 6 / 26
+
+I need to break this program down into its smallest possible parts, then rebuild it in a more professional syntax
+
+to avoid breaking things and making a mess I'll save it in its own repo
+
+-------------------------------------------------------------------------------------------------------------------------- -
+1 / 5 / 26
+
+what I need right now is to work on changing my style from student C++ code into Professional C++ code
+
+And that means re-writing this entire program from the ground up
+
+I'll add more details tomorrow
+
+-------------------------------------------------------------------------------------------------------------------------- -
+1 / 1 / 26
+
+I'm having trouble thinking of ideas for this program
+
+Obviously I need to work on making a UI, but that's a big change, I don't have any small ideas that can be implemented quickly
+
+Maybe I should start a different repo just for working on learning UI's?
+
+-------------------------------------------------------------------------------------------------------------------------- -
+12 / 30 / 25
+
+Pulled latest code version, everything is compiling fine, can't find any obvious bugs at the moment
+
+-------------------------------------------------------------------------------------------------------------------------- -
+12 / 29 / 25
+
+Tomorrow I'll make a new build, and then test for bugs and ideas for things I wanna add
+
+-------------------------------------------------------------------------------------------------------------------------- -
+12 / 26 / 25
+
+I'm going to try and fix the addCar() continue option, I'll figure out what's next after that
+
+	DONE - add getYN() to addCar() continue option
+	DONE - add getYN() to editCar() continue option
+
+I need to add system("CLS") in a few more places
+
+Though I guess if I could figure out the GUI then I wouldnt need to have system("CLS") at all...
+
+-------------------------------------------------------------------------------------------------------------------------- -
+12 / 25 / 25
+
+CarCatalogue1 is now compiling
+
+Looking for new bugs to fix/ideas to implement:
+					1. addCar() continue option needs to verify input
+
+-------------------------------------------------------------------------------------------------------------------------- -
+12 / 24 / 25
+
+I'm doing the bare minimum today, but I think I can fix the issue with the duplicate index test
+
+Ok, did more than the bare minimum
+**********************************
+DONE 'head': undeclared identifier - CatFunc.cpp line 79														: repCar() needed head passed to it so GetVin() would be able to use it
+DONE 'head': undeclared identifier - CatFunc.cpp line 142														: editCar() needed head passed to it so GetVin() would be able to use it
+DONE 'car::GetIndex': non-standard syntax; use '&' to create a pointer to member - CatFunc.cpp line 244			: small typo, I had wrote "getVin" instead of "getVin()"
+DONE '==': no conversion from 'int (__cdecl car::* )(void)' to 'int' - CatFunc.cpp line 244						: connected to same issue as previous error
+
+-------------------------------------------------------------------------------------------------------------------------- -
+12 / 22 / 25
+
+GetVIN is still throwing errors for adding "head"
+
+Original call:
+std::string Vin = getVIN("input car vin#: ");
+
+New call:
+std::string Vin = getVIN("input car vin#: ", head);
+
+Current Errors preventing compile:
+'head': undeclared identifier - CatFunc.cpp line 79		: GetVin issue
+'head': undeclared identifier - CatFunc.cpp line 142	: GetVin issue
+'car::GetIndex': non-standard syntax; use '&' to create a pointer to member - CatFunc.cpp line 244		: This is where I test for duplicate index in moveCar(), this'll be an easy fix tomorrow
+'==': no conversion from 'int (__cdecl car::* )(void)' to 'int' - CatFunc.cpp line 244					: This is a weird error, it doesnt like that I'm using "==" inside a "while" test, but it'll be removed anyways so NBD
+
+-------------------------------------------------------------------------------------------------------------------------- -
+12 / 21 / 25
+
+I'm having trouble compiling, I'll see if I can work out the kinks in the office tomorrow, might as well since it'll be dead AF anyways
+
+-------------------------------------------------------------------------------------------------------------------------- -
+12 / 20 / 25
+
+Gonna try and get the duplicate VIN checker added today, after that I'll create a new build for testing
+
+	 DONE (Testing) 1. Check for duplicate VIN's between different cars.
+					2. Add option to only show available cars.
+					3. Look into way to setup network connectivity within program
+					4. create new build and test for bugs
+
+-------------------------------------------------------------------------------------------------------------------------- -
+12 / 19 / 25
+
+I'm gonna try and work on my code after the party, maybe itll help the second half of the day go by faster
+
+	1. Check for duplicate VIN's between different cars.
+	2. Add option to only show available cars.
+	3. Look into way to setup network connectivity within program
+	4. create new build and test for bugs
+
+-------------------------------------------------------------------------------------------------------------------------- -
+12 / 18 / 25
+
+I feel a little bad about this, but I feel like today is a good day to fuck off a little bit
+
+I do have a few things still on the to do list
+	1. Check for duplicate VIN's between different cars.
+	2. Add option to only show available cars.
+	3. Look into way to setup network connectivity within program
+	4. create new build and test for bugs
+
+-------------------------------------------------------------------------------------------------------------------------- -
+12 / 17 / 25
+
+Almost done with training, a little over 3 hours left, I can make it (hopefully)
+
+	DONE (TESTING) - 1. When moveCar() current and desired index's are duplicate, the program will freeze. Expanded input check so on top of making sure it is in range it also checks to make sure Desired & Current do not match
+	2. Check for duplicate VIN's between different cars. I'm trying to decide if it would be better to write something that runs through the linked list comparing Vin #'s or if I should maintain smaller list of just vin's with indexs
+			I'm not sure it will make that much of a difference
+	3. Add option to only show available cars. Not sure where to put the choice, I'm thinking in printCatalogue() function start before showing the list, but not sure.
+	4. Come with some way to expand the functionality, I'm having trouble thinking of something to add right now, currently my brain is fried
+
+-------------------------------------------------------------------------------------------------------------------------- -
+12 / 16 / 25
+
+Busy with training, but I think I can get this done during the breaks
+
+	DONE (testing) - 1. make repCar() function (replaces a car with a new car) I wrote the function and added it to the options menu, but I haven't compiled or run it yet
+	DONE (testing) - 2. Fix AddCars() continue bool. I compared it to the continue bool in editCar() and it was missing a line, I have added the line now but havent compiled/run it yet
+	DONE - 3. Print catalogue after using moveCar(). added printCatalogue() function call after moveCar()
+	4. When moveCar() current and desired index's are duplicate, the program will freeze
+	5. Check for duplicate VIN's between different cars. I'm trying to decide if it would be better to write something that runs through the linked list comparing Vin #'s or if I should maintain smaller list of just vin's with indexs
+			I'm not sure it will make that much of a difference
+	6. Add option to only show available cars. Not sure where to put the choice, I'm thinking in printCatalogue() function start before showing the list, but not sure.
+	DONE - 7. Program exit option is currently returning as an invalid option. input test had maximum set to 7, I've adjusted it to 10 (new options menu has 9 choices)
+
+-------------------------------------------------------------------------------------------------------------------------- -
+12 / 15 / 25
+
+Starting later than I meant to today, but I've got my to-do list and have plenty of time
+
+I'm more worried about the next couple of days with training & holiday parties, but I'm sure it'll be fine
+
+-------------------------------------------------------------------------------------------------------------------------- -
+12 / 14 / 25
+
+Took stock and did some testing, Here are some things that I need To-Do:
+
+	1. make repCar() function (replaces a car with a new car)
+	2. Fix AddCars() continue bool
+	3. Print catalogue after using moveCar()
+	4. When moveCar() current and desired index's are duplicate, the program will freeze
+	5. Check for duplicate VIN's between different cars
+	6. Add option to only show available cars
+	7. Program exit option is currently returning as an invalid option
+
+	And as always work towards adding a GUI to this thing
+	
+-------------------------------------------------------------------------------------------------------------------------- -
+12 / 13 / 25
+
+I need to come up with a list of locations that I can update with a tail pointer and then start working my way through
+
+I think some functions could be completely re-written though, I'm not 100% sure, But I may be able to simplify certain actions now that I'm keeping track of the list's tail
+
+-------------------------------------------------------------------------------------------------------------------------- -
+12 / 12 / 25
+	
+I think adding a tail to the linked list is my best bet, it should be the most straight forward and although it will require updating all of the rest of the program
+it won't be difficult, just requires work & time
+
+updated with tail:
+	main()
+	loadCatalogue()
+	optionMenu()
+	moveCar() - not called anywhere yet so safest place to update
+
+-----------------------------------------------------------------------------------------------------
+12/11/25
+
+Add a Tail to linked list
+
+-----------------------------------------------------------------------------------------------------
+12/10/25
+
+1: Add a Gui - Ability to attach images
+2: Remote save that can be accessed & edited from all instances of the program
+3: Notes section for each car
+4: deploy program on a container that constantly updates from the github repo
+5: replace save function with an always up-to-date local save that updates after every change - then the local file is pushed to the remote save while the program keeps running on its own
