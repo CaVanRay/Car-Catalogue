@@ -43,12 +43,9 @@ std::string getString(const std::string& prompt) {
     // string to grab
     std::string StringInput;
 
-    // peek into the buffer to see if a leftover \n exists
-    // if \n is there, it gets discarded
-    // if \n isn't there, nothing happens
-    if (std::cin.peek() == '\n') {
-        std::cin.ignore();
-    }
+    // peek wasnt enough, changing to clear the entire input buffer
+    // before the loop to make sure it doesnt cause any issues with getline
+    // std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
     // will continuously loop until break
     while (true) {
@@ -64,6 +61,8 @@ std::string getString(const std::string& prompt) {
 
         // clear input 
         std::cin.clear();
+        // also clear the input buffer after failed getline
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
     }
     
