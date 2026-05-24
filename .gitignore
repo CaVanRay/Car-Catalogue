@@ -1,16 +1,1 @@
-.vs/
-Car-Catalogue/Car-Catalogue/
-*.ilk
-*.obj
-*.idb
-*.pdb
-*.exe
-*.log
-*.tlog
-*.vcxproj
-*.filters
-x64/Debug
-x64/
-Debug/
-Car-Catalogue/x64
-C:\Users\cavan\source\repos\Car-Catalogue\Car-Catalogue
+CarCatalogue.txt
