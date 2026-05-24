@@ -30,61 +30,61 @@ void optionsMenu(car*& head, car*& tail, std::vector<car*>& carCatalogue) {
         }
         switch (selectedAction) {
         case 1: {
-            system("CLS");
+            clearScreen();
             printCatalogue(head);
             break;
 		}
         case 2: {
-            system("CLS");
+            clearScreen();
             car* n = findCar(head);
             printCar(n);
             break;
         }
         case 3: {
-            system("CLS");
+            clearScreen();
             addCar(head, tail, carCatalogue);
             printCatalogue(head);
             break;
         }
 		case 4: {
-			system("CLS");
+			clearScreen();
 			car* n = findCar(head);
 			repCar(head, n);
 			break;
 		}
         case 5: {
-            system("CLS");
+            clearScreen();
             car* n = findCar(head);
             editCar(head, n);
             printCar(n);
             break;
         }
 		case 6: {
-			system("CLS");
+			clearScreen();
 			car* n = findCar(head);
 			moveCar(head, tail, carCatalogue, n);
 			printCatalogue(head);
 			break;
 		}	
         case 7: {
-            system("CLS");
+            clearScreen();
             car* n = findCar(head);
             deleteCar(head, tail, carCatalogue, n);
             printCatalogue(head);
             break;
         }
         case 8: {
-            system("CLS");
+            clearScreen();
             saveCatalogue(head);
             break;
         }
         case 9: {
 			std::cout << std::endl;
 			if(getYN("Would you like to save before you exit? (Y/N): ")){
-				system("CLS");
+				clearScreen();
 				saveCatalogue(head);
 			}
-            system("CLS");
+            clearScreen();
 			runP = false;
             break;
         }
