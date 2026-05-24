@@ -16,7 +16,6 @@ void addCar(car*& head, car*& tail, std::vector<car*>& carCatalogue) {
 
         std::cout << std::endl << "Please Add a vehicle to the catalogue" << std::endl << std::endl;
 
-        int index;
         std::string Owner = getString("input car owner: ");
         std::string Model = getString("input car model: ");
         std::string Vin = getVIN("input car vin#: ", head);
@@ -51,7 +50,7 @@ void addCar(car*& head, car*& tail, std::vector<car*>& carCatalogue) {
 
         carCatalogue.push_back(newCar);
 
-        system("CLS");
+        clearScreen();
 
         Cont = getYN("Would you like to add another car? (Y/N): ");
 		
@@ -61,7 +60,7 @@ void addCar(car*& head, car*& tail, std::vector<car*>& carCatalogue) {
 	// Update the carCatalogue vector with linked list
 	indexUpdate(head, carCatalogue);
 
-	system("CLS");
+	clearScreen();
 }
 
 
@@ -300,7 +299,7 @@ void moveCar(car*& head, car*& tail, std::vector<car*>& carCatalogue, car*n){
 		// the index is already off by 1, so to set Prev pointer I subtract 2
 		car* PrevNode = carCatalogue[newindex - 2];
 		// the item currently in the requested position will be bumped over and will be used to set Next pointer 
-		car* NextNode = (newindex - 1 < carCatalogue.size()) ? carCatalogue[newindex - 1] : nullptr;
+		car* NextNode = (newindex - 1 < static_cast<int>(carCatalogue.size())) ? carCatalogue[newindex - 1] : nullptr;
 
 		PrevNode->SetNext(n);
 		n->SetPrev(PrevNode);
