@@ -1,0 +1,20 @@
+Program outline:
+
+Car-Catalogue/
+|
+|__MakeFile
+|
+|__include/
+|	|_CarCatHeaders.h
+|	|_Cars.h
+|	|_CatFunc.h
+|	|_Savld.h
+|	|_UsePuts.h
+|	|_Valindx.h
+|
+|__src/
+|	|_Car-Catalogue1.cpp
+|	|_CatFunc.cpp
+|	|_Savld.cpp
+|	|_UsePuts.cpp
+|	|_Valindex.cpp
