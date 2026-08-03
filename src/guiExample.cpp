@@ -1,4 +1,4 @@
-/*
+/**************************************************************************
 Date: 08/03/2026
 Title: GUI Example / test file
 Author: Cavan Ray Theiss
@@ -9,7 +9,7 @@ using the QT library and then messing with that to both learn
 more about writing gui programs and eventually come up with 
 something that works for my car-catalogue program
 
-*/
+**************************************************************************/
 
 #include <QApplication>
 #include <QWidget>
@@ -39,8 +39,12 @@ public:
     }
 };
 
+//*************************************************************************
+
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
     Window window;
     return app.exec();
 }
+
+//*************************************************************************
