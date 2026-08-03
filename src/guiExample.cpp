@@ -16,6 +16,8 @@ something that works for my car-catalogue program
 #include <QPushButton>
 #include <QVBoxLayout>
 
+//*************************************************************************
+
 class Window : public QWidget {
 public:
     Window() {
