@@ -10,3 +10,8 @@ more about writing gui programs and eventually come up with
 something that works for my car-catalogue program
 
 */
+
+#include <QApplication>
+#include <QWidget>
+#include <QPushButton>
+#include <QVBoxLayout>
