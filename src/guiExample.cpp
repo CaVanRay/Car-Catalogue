@@ -15,3 +15,24 @@ something that works for my car-catalogue program
 #include <QWidget>
 #include <QPushButton>
 #include <QVBoxLayout>
+
+class Window : public QWidget {
+public:
+    Window() {
+        // Create a button
+        QPushButton* button = new QPushButton("Click Me!", this);
+        
+        // Connect the button's clicked signal to a lambda or slot
+        connect(button, &QPushButton::clicked, []() {
+            // Handle click event
+        });
+
+        // Set up layout
+        QVBoxLayout* layout = new QVBoxLayout(this);
+        layout->addWidget(button);
+        
+        // Set window properties
+        resize(300, 200);
+        show();
+    }
+};
