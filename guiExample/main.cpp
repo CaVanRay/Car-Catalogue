@@ -28,6 +28,7 @@ public:
         // Connect the button's clicked signal to a lambda or slot
         connect(button, &QPushButton::clicked, [button]() {
             // Handle click event
+            QDateTime now = QDateTime::currentDateTime();
         });
 
         // Set up layout
