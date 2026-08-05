@@ -15,6 +15,7 @@ something that works for my car-catalogue program
 #include <QWidget>
 #include <QPushButton>
 #include <QVBoxLayout>
+#include <QDateTime>
 
 //*************************************************************************
 
