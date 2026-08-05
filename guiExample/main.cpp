@@ -26,7 +26,7 @@ public:
         QPushButton* button = new QPushButton("Click Me!", this);
         
         // Connect the button's clicked signal to a lambda or slot
-        connect(button, &QPushButton::clicked, []() {
+        connect(button, &QPushButton::clicked, [button]() {
             // Handle click event
         });
 
