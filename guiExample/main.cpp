@@ -29,6 +29,7 @@ public:
         connect(button, &QPushButton::clicked, [button]() {
             // Handle click event
             QDateTime now = QDateTime::currentDateTime();
+            button->setText("The timeis " + now.toString("hh:mm:ss"));
         });
 
         // Set up layout
