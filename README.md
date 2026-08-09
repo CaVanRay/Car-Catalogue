@@ -129,7 +129,7 @@ Car-Catalogue[
 Or use your IDE’s build system.
 
 ## Future Improvements
-[ ] - Full input validation integration (ongoing)
+- [ ] Full input validation integration (ongoing)
 [ ] - Index reassignment menu (instead of manual editing)
 [ ] - Optional CSV/JSON import/export
 [ ] - Sorting by price, mileage, or owner
