@@ -135,6 +135,8 @@ Or use your IDE’s build system.
 - [ ] Sorting by price, mileage, or owner
 - [ ] Switch from manual memory management → smart pointers (`std::unique_ptr`)
 - [ ] Replace linked list with `std::list`
+- [ ] Full review and update of code
+- [ ] Network interactivity/link to shared server
 
 ## License
 This project is for learning purposes and has no specific license unless added later.
